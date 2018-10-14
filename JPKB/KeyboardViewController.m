@@ -42,12 +42,15 @@
     self.keyboardView = [[KeyboardView alloc] initWithFrame:self.inputView.bounds];
     self.keyboardView.translatesAutoresizingMaskIntoConstraints = NO;
     self.keyboardView.delegate = self;
+    
+    [self.inputView addSubview:self.keyboardView];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    /*
+
     [self.inputView.superview addConstraint:[NSLayoutConstraint constraintWithItem:self.inputView
                                                                     attribute:NSLayoutAttributeLeading
                                                                     relatedBy:NSLayoutRelationEqual
@@ -73,7 +76,7 @@
                                                         multiplier:0.0
                                                           constant:height + 44.0];
     [self.inputView addConstraint:self.heightConstraint];
-     */
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -106,7 +109,7 @@
                 [self showEmailKeyboard];
                 break;
             default:
-                [self showJapaneseKeyboard];
+                [self.keyboardView setInputMode:KeyboardInputModeKana];
                 break;
         }
     }

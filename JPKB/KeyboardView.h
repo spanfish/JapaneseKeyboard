@@ -19,7 +19,6 @@
 - (void)buttonDidTouchDown:(KeyboardButton *)button;
 - (void)buttonDidTouchUp:(KeyboardButton *)button;
 - (void)buttonDidTouchDownRepeat:(KeyboardButton *)button;
-
 @end
 
 @protocol KeyboardViewDelegate <NSObject>
