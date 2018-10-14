@@ -105,12 +105,10 @@
             case UIKeyboardTypeEmailAddress:
                 [self showEmailKeyboard];
                 break;
-                
             default:
                 [self showJapaneseKeyboard];
                 break;
         }
-//        [self addViewConstraints];
     }
 }
 
