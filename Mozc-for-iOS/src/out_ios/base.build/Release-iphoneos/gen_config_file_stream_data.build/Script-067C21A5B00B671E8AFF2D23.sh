@@ -1,0 +1,4 @@
+#!/bin/sh
+exec python gen_config_file_stream_data.py --output "${SHARED_INTERMEDIATE_DIR}/base/config_file_stream_data.h" ../data/keymap/atok.tsv ../data/keymap/chromeos.tsv ../data/keymap/kotoeri.tsv ../data/keymap/mobile.tsv ../data/keymap/ms-ime.tsv ../data/preedit/12keys-halfwidthascii.tsv ../data/preedit/12keys-hiragana.tsv ../data/preedit/12keys-number.tsv ../data/preedit/flick-halfwidthascii.tsv ../data/preedit/flick-hiragana.tsv ../data/preedit/flick-number.tsv ../data/preedit/hiragana-romanji.tsv ../data/preedit/kana.tsv ../data/preedit/godan-hiragana.tsv ../data/preedit/qwerty_mobile-halfwidthascii.tsv ../data/preedit/qwerty_mobile-hiragana-number.tsv ../data/preedit/qwerty_mobile-hiragana.tsv ../data/preedit/romanji-hiragana.tsv ../data/preedit/toggle_flick-halfwidthascii.tsv ../data/preedit/toggle_flick-hiragana.tsv ../data/preedit/toggle_flick-number.tsv
+exit 1
+

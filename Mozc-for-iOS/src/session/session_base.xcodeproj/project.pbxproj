@@ -1,0 +1,3484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9B390BE753782113359929F6 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6B3934EE4003968423CB6A77 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				06D06299DF28256451F92840 /* PBXTargetDependency */,
+				9729EB6D4B4B50CB4662CEDE /* PBXTargetDependency */,
+				4C8BC7B1819E46A81E6C51CF /* PBXTargetDependency */,
+				9AC4B5976C72A7E7294F6904 /* PBXTargetDependency */,
+				8712A4E39BC9D0EA129C30DD /* PBXTargetDependency */,
+				75D17264980A97965830CE98 /* PBXTargetDependency */,
+				BA588E43A1F2C4C55A9D8156 /* PBXTargetDependency */,
+				FB0AEC3E1E7CE7D744997467 /* PBXTargetDependency */,
+				A809B12B45E82D6764BE7468 /* PBXTargetDependency */,
+				6B805AD926EA47CE8D4D295D /* PBXTargetDependency */,
+				17A93DBDD975D8A5598F56E5 /* PBXTargetDependency */,
+				D0C9069D57B316BD3BAA0C53 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+		AC7E538390F90F1E066259FE /* genproto_session */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DCFB1768B0B63C8B75A54EF4 /* Build configuration list for PBXAggregateTarget "genproto_session" */;
+			buildPhases = (
+				71DFAA12A8EE34766937C1B5 /* Rule "genproto" */,
+			);
+			dependencies = (
+				7C6843881691DBB22F16CAEE /* PBXTargetDependency */,
+				EAF58C4FA6111563ECE878C5 /* PBXTargetDependency */,
+				E748C269298D19DB0A55CED1 /* PBXTargetDependency */,
+			);
+			name = genproto_session;
+			productName = genproto_session;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0E8E48F707083DB512010721 /* output_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = AC2FC8DC306FE41FF26EF127 /* output_util.cc */; };
+		100B9CBCEF9AE90239F69398 /* state.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 267A3BAD5ACF4348DB1FECD3 /* state.pb.cc */; };
+		52BF678002A1186FA4A8F8C9 /* key_event_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = AA5E8A5BFD1783436799FAC2 /* key_event_util.cc */; };
+		6842C90FB9576D9A5CD4177F /* candidates.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8507FE18B825B37B4F330E47 /* candidates.pb.cc */; };
+		69DAFF24FC3F573570246120 /* keymap_factory.cc in Sources */ = {isa = PBXBuildFile; fileRef = 53A8868F4BBE15EC4390781B /* keymap_factory.cc */; };
+		6FEB3193EF245413FF08664E /* commands.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = EA8620FDE5B1FE12CCF4CA3F /* commands.pb.cc */; };
+		745F238CE0CDF2E4C0E7C0E7 /* generic_storage_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 899D72C8B3076F4EB40BF42A /* generic_storage_manager.cc */; };
+		86ACF1FEA3BAD4935F23887B /* key_info_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2592173AEBD21AFCFBE44013 /* key_info_util.cc */; };
+		8CDFDEC2B7D17740238D24FC /* session_usage_stats_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = DCFB4878B616AF27686C951F /* session_usage_stats_util.cc */; };
+		9A4FC52507EB3838A53386D4 /* key_parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 767F441BD48F90A6517299E1 /* key_parser.cc */; };
+		D30778ACA4F3DEDE91E42739 /* keymap.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3841B3D8A89CD57DDECA49E6 /* keymap.cc */; };
+		F33B15BC64A632DE730149AD /* request_test_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = D93D752427B10AA55B070DA4 /* request_test_util.cc */; };
+		FEFB0CEF5601E66FD5DA2317 /* ime_switch_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = BD188CF49B78E48AA2B26A9C /* ime_switch_util.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02C5446807FF7ADE25C106F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A84F94737DC0CE8A7E085B;
+			remoteInfo = keymap;
+		};
+		03A03D6641DF63056F768501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		043A9E8901B6D23FD1C00907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		05E01E68FFB86E2B9D730561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3776F12635076F3F48A2615 /* usage_stats_base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35EFB282231046BC7076F3B3;
+			remoteInfo = usage_stats;
+		};
+		0CD025E72F4796CED1B5D371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		11BA50CD533C4170B84A0F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		122104CCC969F81972421637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		128DA78215C7B345D555D701 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BE2B7793ACC94A5366ED20D;
+			remoteInfo = generic_storage_manager;
+		};
+		13365DCC4C8B2FA5F328D0C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		15EFB102243271F4511467B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 213DDE7082449E15DCDAECE8;
+			remoteInfo = output_util;
+		};
+		2142FB75B1F5B4D8E68AC948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 704E0E54CE79CAD288E5A1B5;
+			remoteInfo = session_usage_stats_util;
+		};
+		283F79DE8D2D56D9F14AEAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A820D807F630C87931B1D56B;
+			remoteInfo = config_handler;
+		};
+		2E8633F27F4A516766C17EF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A671E19A447CC303B5F6568;
+			remoteInfo = key_info_util;
+		};
+		2FD52420A810F4E879299CDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		30C361FC1934D03B6E8DF1FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F3B4F601B59ED931D0877A5;
+			remoteInfo = character_form_manager;
+		};
+		33AA273895AC798FAC961C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		36306049320B200FBDCA31DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A820D807F630C87931B1D56B;
+			remoteInfo = config_handler;
+		};
+		38C20DED62D2115BCE7210D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AC6FDA4B807C23F98A71C4C1;
+			remoteInfo = config_protocol;
+		};
+		399DBB35B68535432F76414A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CD9BA785CC2C4F741F0AC71;
+			remoteInfo = ime_switch_util;
+		};
+		3A81936D31FC61A4910B8661 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		3C136A4FEB29E0472647CC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BC1E2F332F7C699F6C33818;
+			remoteInfo = genproto_dictionary;
+		};
+		43B05BA0C9E3AFE830874A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBFD6AC86E125A8570D45E98;
+			remoteInfo = request_test_util;
+		};
+		4489071A13B67612381078F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		450770C2DC8A846D635E3BC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		59A2D71AB8CFCCC5E5F9673C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC1E8D83859055F01C94D8A7;
+			remoteInfo = text_dictionary_loader;
+		};
+		60DF134FA6A81AA34CD7B101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 69CB99825740AEA91AAB981A;
+			remoteInfo = config_handler;
+		};
+		646EA5D4B006314F482DA36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		7CF3F5D3AC8F64EDC1B1464B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		7DDBB1B12DEC360515661550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B7A1CE2E0C1A3B31F7A6CBA;
+			remoteInfo = genproto_config;
+		};
+		7EB0D2AE728A8CAA04E0C2B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82220025DCE6C5D304C8B701;
+			remoteInfo = user_dictionary;
+		};
+		8098CE07F09F67BA76CB457B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 797DAE31EE2B11532994599F;
+			remoteInfo = key_event_util;
+		};
+		89011C15FB40FE852E0BE3CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		8B9B24E4993077A2432B5376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3776F12635076F3F48A2615 /* usage_stats_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0F19E39F1AB629C3ED468C87;
+			remoteInfo = usage_stats;
+		};
+		933A283728AAE904211CDE11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3776F12635076F3F48A2615 /* usage_stats_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D23FA672C2A738173E89643;
+			remoteInfo = usage_stats_protocol;
+		};
+		9BB57D96A4FBAE8B1FC8C49E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E408881098CB1150D6AB12B4;
+			remoteInfo = dictionary_protocol;
+		};
+		9E11D3FC747094C7CA96A7B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C620FC07F55D6B3513F00FB /* protobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 868337388CC3A13282E4B09C;
+			remoteInfo = protobuf;
+		};
+		9E4DD45490BDA37FCBAE36AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		A12DDA31735A7B4B68DCE2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5A425105718AFF4A1C2AA98;
+			remoteInfo = user_pos;
+		};
+		A57A64139CB6517ED5393F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55D5C6ECECCC9473D51543AD;
+			remoteInfo = stats_config_util;
+		};
+		B2A153956D65F7D2B4B870A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA8955F9A167A63F9A7CE52F;
+			remoteInfo = keymap_factory;
+		};
+		B3CCB885DFE14BE8A4F59B3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		BA434CEDC7DE3A09FF176771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C620FC07F55D6B3513F00FB /* protobuf.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB2CBEE35B856C3C000C4EB;
+			remoteInfo = protoc;
+		};
+		C1A7C71E474DDE01C9E1848F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E5447C1109FF438DC088C30;
+			remoteInfo = config_protocol;
+		};
+		C8305CAC0D8099FB8A3AC247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35A338BDEE179ABF53B41B0C;
+			remoteInfo = session_protocol;
+		};
+		C9C6499AC2B1CE42331D302B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A820D807F630C87931B1D56B;
+			remoteInfo = config_handler;
+		};
+		D0DAF9E2988927AD69BB2556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AC5D065270A5D7B061E4BA2;
+			remoteInfo = dictionary_protocol;
+		};
+		D92F733113F9FF7F0A642135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7E538390F90F1E066259FE;
+			remoteInfo = genproto_session;
+		};
+		E1D3DFE60DBB6E896F97A619 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC7E538390F90F1E066259FE;
+			remoteInfo = genproto_session;
+		};
+		E2DEC45FEB14A8B6B262C02D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68D8AD6271F04CAA8EF1007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F3E590560DAC6DB3EE3D3A;
+			remoteInfo = key_parser;
+		};
+		F0810F95AF7B7D85A79B9622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A59CE3FFE40184FAF73E8A6;
+			remoteInfo = suppression_dictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0041384C6FF30632B3EF211B /* state.proto */ = {isa = PBXFileReference; lastKnownFileType = text; path = state.proto; sourceTree = "<group>"; };
+		077A0094FC2EEB4F081BE617 /* protoc */ = {isa = PBXFileReference; lastKnownFileType = text; path = protoc; sourceTree = "<group>"; };
+		0C620FC07F55D6B3513F00FB /* protobuf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = protobuf.xcodeproj; path = ../protobuf/protobuf.xcodeproj; sourceTree = SOURCE_ROOT; };
+		14E777EED4F7F6AA31319BB4 /* commands.proto */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands.proto; sourceTree = "<group>"; };
+		189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dictionary_base.xcodeproj; path = ../dictionary/dictionary_base.xcodeproj; sourceTree = SOURCE_ROOT; };
+		1F668E39F1BE937EDD67FE99 /* librequest_test_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librequest_test_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2592173AEBD21AFCFBE44013 /* key_info_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = key_info_util.cc; sourceTree = "<group>"; };
+		267A3BAD5ACF4348DB1FECD3 /* state.pb.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = state.pb.cc; sourceTree = "<group>"; };
+		2A1EE5B1DA1893C9E3D74B53 /* libgeneric_storage_manager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgeneric_storage_manager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE512B4B3431008D34D7859 /* candidates.pb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = candidates.pb.h; sourceTree = "<group>"; };
+		3841B3D8A89CD57DDECA49E6 /* keymap.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keymap.cc; sourceTree = "<group>"; };
+		3E46A45C9F200101ADEB80A3 /* libsession_protocol.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsession_protocol.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4821869EE3846F92B8302735 /* libkeymap_factory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkeymap_factory.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1DEF5AE9A85720BAB85E3C /* libkey_event_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkey_event_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53A8868F4BBE15EC4390781B /* keymap_factory.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keymap_factory.cc; sourceTree = "<group>"; };
+		624958650389EAD43E6578A3 /* config.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = config.xcodeproj; path = ../config/config.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6471375150A0FC9B7624EABE /* genproto.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = genproto.gypi; path = ../protobuf/genproto.gypi; sourceTree = "<group>"; };
+		767F441BD48F90A6517299E1 /* key_parser.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = key_parser.cc; sourceTree = "<group>"; };
+		77F8AC57BBA52BB6550C4FB0 /* libkeymap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkeymap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E0C7ACFAAE41C0E063EFA9 /* libime_switch_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libime_switch_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8507FE18B825B37B4F330E47 /* candidates.pb.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = candidates.pb.cc; sourceTree = "<group>"; };
+		899D72C8B3076F4EB40BF42A /* generic_storage_manager.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = generic_storage_manager.cc; sourceTree = "<group>"; };
+		8CD2959B21306B39ADD60AED /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../gyp/common.gypi; sourceTree = "<group>"; };
+		8EB2BD2443B04FC1B48E81A4 /* libkey_info_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkey_info_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4617DEFE02D93F7320B5071 /* liboutput_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboutput_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A687D59EBD46936B994D7852 /* candidates.proto */ = {isa = PBXFileReference; lastKnownFileType = text; path = candidates.proto; sourceTree = "<group>"; };
+		AA5E8A5BFD1783436799FAC2 /* key_event_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = key_event_util.cc; sourceTree = "<group>"; };
+		AC2FC8DC306FE41FF26EF127 /* output_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = output_util.cc; sourceTree = "<group>"; };
+		BC5B7A2D2AFA83747DE03210 /* protoc_wrapper.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = protoc_wrapper.py; sourceTree = "<group>"; };
+		BD188CF49B78E48AA2B26A9C /* ime_switch_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ime_switch_util.cc; sourceTree = "<group>"; };
+		BF2DADF77947646F2F15F01F /* libkey_parser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkey_parser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5AF6E7077AA5FFA1906A2C /* libsession_usage_stats_util.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsession_usage_stats_util.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93D752427B10AA55B070DA4 /* request_test_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = request_test_util.cc; sourceTree = "<group>"; };
+		DC68A09A2F1CCC6F56B893EF /* session_base.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = session_base.gyp; sourceTree = "<group>"; };
+		DCFB4878B616AF27686C951F /* session_usage_stats_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = session_usage_stats_util.cc; sourceTree = "<group>"; };
+		E3776F12635076F3F48A2615 /* usage_stats_base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = usage_stats_base.xcodeproj; path = ../usage_stats/usage_stats_base.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E49A8C7D4EBA1F6328F047D2 /* state.pb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.pb.h; sourceTree = "<group>"; };
+		EA8620FDE5B1FE12CCF4CA3F /* commands.pb.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = commands.pb.cc; sourceTree = "<group>"; };
+		F519D9BE5013489B5C29514C /* commands.pb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commands.pb.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04249C30F5A626BB03468615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286C3C97B951D3C3B40B67C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60CA479E28EA3E4FE307C1D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7686211A8F1A1458A8CA232F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BBBD5A1FE2BFEA528E5C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC70E840F52B3F42678D9FC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADAF22CFCF1E7467D41E84AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C304AA02BD3FD8D6C62398B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB34FED19E37986ADA7D8183 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0A882D3677677B4BBEC8D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E102999582567EC1B959127C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0270170CDB05AE0EFF9651C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8362F706FDF2B09E9B6B29B /* libusage_stats.a */,
+				6506A8D5F33C3339B8E0EB46 /* libusage_stats_protocol.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F02808DA5B6BD388DBD113C /* Intermediates */ = {
+			isa = PBXGroup;
+			children = (
+				8507FE18B825B37B4F330E47 /* candidates.pb.cc */,
+				2FE512B4B3431008D34D7859 /* candidates.pb.h */,
+				EA8620FDE5B1FE12CCF4CA3F /* commands.pb.cc */,
+				F519D9BE5013489B5C29514C /* commands.pb.h */,
+				267A3BAD5ACF4348DB1FECD3 /* state.pb.cc */,
+				E49A8C7D4EBA1F6328F047D2 /* state.pb.h */,
+			);
+			name = Intermediates;
+			path = proto_out/session;
+			sourceTree = SHARED_INTERMEDIATE_DIR;
+		};
+		31118E72255AC1ED0037080C /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				3841B3D8A89CD57DDECA49E6 /* keymap.cc */,
+				53A8868F4BBE15EC4390781B /* keymap_factory.cc */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		40C174049D4E20E74E4DD027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5952330D4E9CAC31ADF68C2C /* libprotobuf.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		485C4A4783E192887AF9C846 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				8CD2959B21306B39ADD60AED /* common.gypi */,
+				6471375150A0FC9B7624EABE /* genproto.gypi */,
+				DC68A09A2F1CCC6F56B893EF /* session_base.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		519B14C3E5308B791EFB8562 = {
+			isa = PBXGroup;
+			children = (
+				7AD660CAC4A667147DDCE0F0 /* Source */,
+				2F02808DA5B6BD388DBD113C /* Intermediates */,
+				AE980295D7E0D90C35A09C1D /* Projects */,
+				D27B9DC105804E262ECC83A2 /* Products */,
+				485C4A4783E192887AF9C846 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		7AD660CAC4A667147DDCE0F0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CC419BF213BA5ABF90F41BF8 /* ../build_tools */,
+				BA73A38ACC10B2F495CA0507 /* BUILT_PRODUCTS_DIR */,
+				31118E72255AC1ED0037080C /* internal */,
+				A687D59EBD46936B994D7852 /* candidates.proto */,
+				14E777EED4F7F6AA31319BB4 /* commands.proto */,
+				899D72C8B3076F4EB40BF42A /* generic_storage_manager.cc */,
+				BD188CF49B78E48AA2B26A9C /* ime_switch_util.cc */,
+				AA5E8A5BFD1783436799FAC2 /* key_event_util.cc */,
+				2592173AEBD21AFCFBE44013 /* key_info_util.cc */,
+				767F441BD48F90A6517299E1 /* key_parser.cc */,
+				AC2FC8DC306FE41FF26EF127 /* output_util.cc */,
+				D93D752427B10AA55B070DA4 /* request_test_util.cc */,
+				DCFB4878B616AF27686C951F /* session_usage_stats_util.cc */,
+				0041384C6FF30632B3EF211B /* state.proto */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		85C429EB57CBBBC2D0B310DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E3E8C55D1DC86028D9E19E1 /* libconfig_handler.a */,
+				BC2C2215D4E5DEBFAFBCB0BC /* libconfig_protocol.a */,
+				B03CEF68F4103A2A7C3339EB /* libstats_config_util.a */,
+				6ED8C46FF4D56476AEA178F0 /* libcharacter_form_manager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE980295D7E0D90C35A09C1D /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				624958650389EAD43E6578A3 /* config.xcodeproj */,
+				189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */,
+				0C620FC07F55D6B3513F00FB /* protobuf.xcodeproj */,
+				E3776F12635076F3F48A2615 /* usage_stats_base.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		BA73A38ACC10B2F495CA0507 /* BUILT_PRODUCTS_DIR */ = {
+			isa = PBXGroup;
+			children = (
+				077A0094FC2EEB4F081BE617 /* protoc */,
+			);
+			name = BUILT_PRODUCTS_DIR;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C377B5330ECEF4B624D9CB2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1889A99FDF3445942B74E15 /* libtext_dictionary_loader.a */,
+				7FD6C9E3E25F69B6B76A5EEB /* libuser_pos.a */,
+				405350EE0028A41A95E0C66A /* libdictionary_protocol.a */,
+				37D076D50590B078A502606F /* libsuppression_dictionary.a */,
+				1106F6F797EC3E98281626BC /* libuser_dictionary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC419BF213BA5ABF90F41BF8 /* ../build_tools */ = {
+			isa = PBXGroup;
+			children = (
+				BC5B7A2D2AFA83747DE03210 /* protoc_wrapper.py */,
+			);
+			path = ../build_tools;
+			sourceTree = "<group>";
+		};
+		D27B9DC105804E262ECC83A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F668E39F1BE937EDD67FE99 /* librequest_test_util.a */,
+				BF2DADF77947646F2F15F01F /* libkey_parser.a */,
+				77F8AC57BBA52BB6550C4FB0 /* libkeymap.a */,
+				4821869EE3846F92B8302735 /* libkeymap_factory.a */,
+				84E0C7ACFAAE41C0E063EFA9 /* libime_switch_util.a */,
+				4D1DEF5AE9A85720BAB85E3C /* libkey_event_util.a */,
+				8EB2BD2443B04FC1B48E81A4 /* libkey_info_util.a */,
+				A4617DEFE02D93F7320B5071 /* liboutput_util.a */,
+				CA5AF6E7077AA5FFA1906A2C /* libsession_usage_stats_util.a */,
+				2A1EE5B1DA1893C9E3D74B53 /* libgeneric_storage_manager.a */,
+				3E46A45C9F200101ADEB80A3 /* libsession_protocol.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		213DDE7082449E15DCDAECE8 /* output_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4126A633EC58AB28D970C95 /* Build configuration list for PBXNativeTarget "output_util" */;
+			buildPhases = (
+				1FABA0070D4841109743E7A2 /* Sources */,
+				04249C30F5A626BB03468615 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897770397C012CABC92E5143 /* PBXTargetDependency */,
+			);
+			name = output_util;
+			productName = output_util;
+			productReference = A4617DEFE02D93F7320B5071 /* liboutput_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		35A338BDEE179ABF53B41B0C /* session_protocol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EF389B3C43B55A08F9FE519 /* Build configuration list for PBXNativeTarget "session_protocol" */;
+			buildPhases = (
+				5FA49BB4869D6C470FC3CE0E /* Sources */,
+				286C3C97B951D3C3B40B67C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E332027BCDC790C07D920B6 /* PBXTargetDependency */,
+				5FC813B1A943C93485AF7500 /* PBXTargetDependency */,
+				D5A96FA07FE6450FEDEE94B8 /* PBXTargetDependency */,
+			);
+			name = session_protocol;
+			productName = session_protocol;
+			productReference = 3E46A45C9F200101ADEB80A3 /* libsession_protocol.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		40A84F94737DC0CE8A7E085B /* keymap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3036F6913443DDB93D5D4002 /* Build configuration list for PBXNativeTarget "keymap" */;
+			buildPhases = (
+				87FA9BB3C03E3F4368824F15 /* Sources */,
+				AC70E840F52B3F42678D9FC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C96722DD44F313CF82D60B /* PBXTargetDependency */,
+				F17775B087EF6A57C90F6D79 /* PBXTargetDependency */,
+				44E1C0EA0442DD06293CC764 /* PBXTargetDependency */,
+			);
+			name = keymap;
+			productName = keymap;
+			productReference = 77F8AC57BBA52BB6550C4FB0 /* libkeymap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A671E19A447CC303B5F6568 /* key_info_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F363FB81B67E7D10FBDCA44 /* Build configuration list for PBXNativeTarget "key_info_util" */;
+			buildPhases = (
+				956BB24D48163403E2AEB81A /* Sources */,
+				60CA479E28EA3E4FE307C1D5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A893D64C85D7F00DD1E91049 /* PBXTargetDependency */,
+				8CBA31445B4F98EECAFA764F /* PBXTargetDependency */,
+				4A0B5CAB8667B97377B71A30 /* PBXTargetDependency */,
+			);
+			name = key_info_util;
+			productName = key_info_util;
+			productReference = 8EB2BD2443B04FC1B48E81A4 /* libkey_info_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5BE2B7793ACC94A5366ED20D /* generic_storage_manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50F2B4AE5BEDBBDFB81B6BEF /* Build configuration list for PBXNativeTarget "generic_storage_manager" */;
+			buildPhases = (
+				2FFC0324F00DD0B724EA5449 /* Sources */,
+				CB34FED19E37986ADA7D8183 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA5B9AC307F641D05D2A3BB2 /* PBXTargetDependency */,
+			);
+			name = generic_storage_manager;
+			productName = generic_storage_manager;
+			productReference = 2A1EE5B1DA1893C9E3D74B53 /* libgeneric_storage_manager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6CD9BA785CC2C4F741F0AC71 /* ime_switch_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958F09E1D9B6C91A2470BF03 /* Build configuration list for PBXNativeTarget "ime_switch_util" */;
+			buildPhases = (
+				467D678E8899178A0A8AC1B4 /* Sources */,
+				ADAF22CFCF1E7467D41E84AE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B3B086D49F75FC824F1974 /* PBXTargetDependency */,
+				CB77A41592D620C5B9DA2B75 /* PBXTargetDependency */,
+				0B7D9554130367C4FC5029BC /* PBXTargetDependency */,
+			);
+			name = ime_switch_util;
+			productName = ime_switch_util;
+			productReference = 84E0C7ACFAAE41C0E063EFA9 /* libime_switch_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		704E0E54CE79CAD288E5A1B5 /* session_usage_stats_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3BA03FD4113037E97F5EC18 /* Build configuration list for PBXNativeTarget "session_usage_stats_util" */;
+			buildPhases = (
+				5C2B8FAA3D97C86A139404A0 /* Sources */,
+				7686211A8F1A1458A8CA232F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739D79216CAE7951298BFBE3 /* PBXTargetDependency */,
+				F0ABD413BDAE63E1E4FE5837 /* PBXTargetDependency */,
+			);
+			name = session_usage_stats_util;
+			productName = session_usage_stats_util;
+			productReference = CA5AF6E7077AA5FFA1906A2C /* libsession_usage_stats_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		797DAE31EE2B11532994599F /* key_event_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C30A4271FD8A664FA73D42 /* Build configuration list for PBXNativeTarget "key_event_util" */;
+			buildPhases = (
+				A24CE242313051C002EB8A9A /* Sources */,
+				A6BBBD5A1FE2BFEA528E5C34 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7777F57DF76FCDC28731011 /* PBXTargetDependency */,
+			);
+			name = key_event_util;
+			productName = key_event_util;
+			productReference = 4D1DEF5AE9A85720BAB85E3C /* libkey_event_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92F3E590560DAC6DB3EE3D3A /* key_parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4C3B1BBD316400BF6CE3A29 /* Build configuration list for PBXNativeTarget "key_parser" */;
+			buildPhases = (
+				47BC6D783589C97CCC41A94C /* Sources */,
+				E102999582567EC1B959127C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF4B08E69D8F0211441A5C6B /* PBXTargetDependency */,
+				A7F14F25C8E9CA13F9B877A0 /* PBXTargetDependency */,
+			);
+			name = key_parser;
+			productName = key_parser;
+			productReference = BF2DADF77947646F2F15F01F /* libkey_parser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA8955F9A167A63F9A7CE52F /* keymap_factory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 806C55441420B5B790FFC114 /* Build configuration list for PBXNativeTarget "keymap_factory" */;
+			buildPhases = (
+				84D38DF4646545A702D50382 /* Sources */,
+				D0A882D3677677B4BBEC8D49 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4268BA4D918B4D127BC09FA7 /* PBXTargetDependency */,
+				74E83B7772D32DABDD7BB66F /* PBXTargetDependency */,
+			);
+			name = keymap_factory;
+			productName = keymap_factory;
+			productReference = 4821869EE3846F92B8302735 /* libkeymap_factory.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EBFD6AC86E125A8570D45E98 /* request_test_util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E605F48FA67CA1CC8B8C18 /* Build configuration list for PBXNativeTarget "request_test_util" */;
+			buildPhases = (
+				90FC4E5ADDF73DDB9A8FEC79 /* Sources */,
+				C304AA02BD3FD8D6C62398B6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E15EE7BC0262C286EDA4957 /* PBXTargetDependency */,
+				303E5EC3101CF669CCEE4102 /* PBXTargetDependency */,
+			);
+			name = request_test_util;
+			productName = request_test_util;
+			productReference = 1F668E39F1BE937EDD67FE99 /* librequest_test_util.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B68D8AD6271F04CAA8EF1007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 45E5A370D4C85C2DE057495D /* Build configuration list for PBXProject "session_base" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 519B14C3E5308B791EFB8562;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 85C429EB57CBBBC2D0B310DF /* Products */;
+					ProjectRef = 624958650389EAD43E6578A3 /* config.xcodeproj */;
+				},
+				{
+					ProductGroup = C377B5330ECEF4B624D9CB2D /* Products */;
+					ProjectRef = 189CDA88AA28A4227BD4F1AC /* dictionary_base.xcodeproj */;
+				},
+				{
+					ProductGroup = 40C174049D4E20E74E4DD027 /* Products */;
+					ProjectRef = 0C620FC07F55D6B3513F00FB /* protobuf.xcodeproj */;
+				},
+				{
+					ProductGroup = 0270170CDB05AE0EFF9651C7 /* Products */;
+					ProjectRef = E3776F12635076F3F48A2615 /* usage_stats_base.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9B390BE753782113359929F6 /* All */,
+				EBFD6AC86E125A8570D45E98 /* request_test_util */,
+				92F3E590560DAC6DB3EE3D3A /* key_parser */,
+				40A84F94737DC0CE8A7E085B /* keymap */,
+				DA8955F9A167A63F9A7CE52F /* keymap_factory */,
+				6CD9BA785CC2C4F741F0AC71 /* ime_switch_util */,
+				797DAE31EE2B11532994599F /* key_event_util */,
+				4A671E19A447CC303B5F6568 /* key_info_util */,
+				213DDE7082449E15DCDAECE8 /* output_util */,
+				704E0E54CE79CAD288E5A1B5 /* session_usage_stats_util */,
+				5BE2B7793ACC94A5366ED20D /* generic_storage_manager */,
+				AC7E538390F90F1E066259FE /* genproto_session */,
+				35A338BDEE179ABF53B41B0C /* session_protocol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1106F6F797EC3E98281626BC /* libuser_dictionary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libuser_dictionary.a;
+			remoteRef = 7EB0D2AE728A8CAA04E0C2B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37D076D50590B078A502606F /* libsuppression_dictionary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsuppression_dictionary.a;
+			remoteRef = F0810F95AF7B7D85A79B9622 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		405350EE0028A41A95E0C66A /* libdictionary_protocol.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdictionary_protocol.a;
+			remoteRef = D0DAF9E2988927AD69BB2556 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5952330D4E9CAC31ADF68C2C /* libprotobuf.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libprotobuf.a;
+			remoteRef = 9E11D3FC747094C7CA96A7B3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6506A8D5F33C3339B8E0EB46 /* libusage_stats_protocol.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libusage_stats_protocol.a;
+			remoteRef = 933A283728AAE904211CDE11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6ED8C46FF4D56476AEA178F0 /* libcharacter_form_manager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcharacter_form_manager.a;
+			remoteRef = 30C361FC1934D03B6E8DF1FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7E3E8C55D1DC86028D9E19E1 /* libconfig_handler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libconfig_handler.a;
+			remoteRef = 60DF134FA6A81AA34CD7B101 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7FD6C9E3E25F69B6B76A5EEB /* libuser_pos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libuser_pos.a;
+			remoteRef = A12DDA31735A7B4B68DCE2F7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03CEF68F4103A2A7C3339EB /* libstats_config_util.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libstats_config_util.a;
+			remoteRef = A57A64139CB6517ED5393F6F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BC2C2215D4E5DEBFAFBCB0BC /* libconfig_protocol.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libconfig_protocol.a;
+			remoteRef = 38C20DED62D2115BCE7210D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1889A99FDF3445942B74E15 /* libtext_dictionary_loader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtext_dictionary_loader.a;
+			remoteRef = 59A2D71AB8CFCCC5E5F9673C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E8362F706FDF2B09E9B6B29B /* libusage_stats.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libusage_stats.a;
+			remoteRef = 8B9B24E4993077A2432B5376 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71DFAA12A8EE34766937C1B5 /* Rule "genproto" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rule \"genproto\"";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "JOB_COUNT=\"$(/usr/sbin/sysctl -n hw.ncpu)\"\nif [ \"${JOB_COUNT}\" -gt 4 ]; then\n  JOB_COUNT=4\nfi\nexec xcrun make -f \"${PROJECT_FILE_PATH}/genproto_session_genproto.make\" -j \"${JOB_COUNT}\"\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FABA0070D4841109743E7A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E8E48F707083DB512010721 /* output_util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FFC0324F00DD0B724EA5449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745F238CE0CDF2E4C0E7C0E7 /* generic_storage_manager.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		467D678E8899178A0A8AC1B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFB0CEF5601E66FD5DA2317 /* ime_switch_util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BC6D783589C97CCC41A94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4FC52507EB3838A53386D4 /* key_parser.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C2B8FAA3D97C86A139404A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDFDEC2B7D17740238D24FC /* session_usage_stats_util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA49BB4869D6C470FC3CE0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6842C90FB9576D9A5CD4177F /* candidates.pb.cc in Sources */,
+				6FEB3193EF245413FF08664E /* commands.pb.cc in Sources */,
+				100B9CBCEF9AE90239F69398 /* state.pb.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D38DF4646545A702D50382 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DAFF24FC3F573570246120 /* keymap_factory.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87FA9BB3C03E3F4368824F15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D30778ACA4F3DEDE91E42739 /* keymap.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90FC4E5ADDF73DDB9A8FEC79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33B15BC64A632DE730149AD /* request_test_util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956BB24D48163403E2AEB81A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86ACF1FEA3BAD4935F23887B /* key_info_util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A24CE242313051C002EB8A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BF678002A1186FA4A8F8C9 /* key_event_util.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06D06299DF28256451F92840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBFD6AC86E125A8570D45E98 /* request_test_util */;
+			targetProxy = 43B05BA0C9E3AFE830874A6B /* PBXContainerItemProxy */;
+		};
+		0B7D9554130367C4FC5029BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 043A9E8901B6D23FD1C00907 /* PBXContainerItemProxy */;
+		};
+		0E332027BCDC790C07D920B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = 03A03D6641DF63056F768501 /* PBXContainerItemProxy */;
+		};
+		11C96722DD44F313CF82D60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_handler;
+			targetProxy = 283F79DE8D2D56D9F14AEAF4 /* PBXContainerItemProxy */;
+		};
+		17A93DBDD975D8A5598F56E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7E538390F90F1E066259FE /* genproto_session */;
+			targetProxy = E1D3DFE60DBB6E896F97A619 /* PBXContainerItemProxy */;
+		};
+		303E5EC3101CF669CCEE4102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 9E4DD45490BDA37FCBAE36AC /* PBXContainerItemProxy */;
+		};
+		32B3B086D49F75FC824F1974 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_handler;
+			targetProxy = 36306049320B200FBDCA31DB /* PBXContainerItemProxy */;
+		};
+		4268BA4D918B4D127BC09FA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = 4489071A13B67612381078F6 /* PBXContainerItemProxy */;
+		};
+		44E1C0EA0442DD06293CC764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 89011C15FB40FE852E0BE3CC /* PBXContainerItemProxy */;
+		};
+		4A0B5CAB8667B97377B71A30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 2FD52420A810F4E879299CDB /* PBXContainerItemProxy */;
+		};
+		4C8BC7B1819E46A81E6C51CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40A84F94737DC0CE8A7E085B /* keymap */;
+			targetProxy = 02C5446807FF7ADE25C106F2 /* PBXContainerItemProxy */;
+		};
+		5FC813B1A943C93485AF7500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dictionary_protocol;
+			targetProxy = 9BB57D96A4FBAE8B1FC8C49E /* PBXContainerItemProxy */;
+		};
+		6B805AD926EA47CE8D4D295D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BE2B7793ACC94A5366ED20D /* generic_storage_manager */;
+			targetProxy = 128DA78215C7B345D555D701 /* PBXContainerItemProxy */;
+		};
+		6E15EE7BC0262C286EDA4957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = 11BA50CD533C4170B84A0F6A /* PBXContainerItemProxy */;
+		};
+		739D79216CAE7951298BFBE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = usage_stats;
+			targetProxy = 05E01E68FFB86E2B9D730561 /* PBXContainerItemProxy */;
+		};
+		74E83B7772D32DABDD7BB66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 646EA5D4B006314F482DA36B /* PBXContainerItemProxy */;
+		};
+		75D17264980A97965830CE98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 797DAE31EE2B11532994599F /* key_event_util */;
+			targetProxy = 8098CE07F09F67BA76CB457B /* PBXContainerItemProxy */;
+		};
+		7C6843881691DBB22F16CAEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = genproto_config;
+			targetProxy = 7DDBB1B12DEC360515661550 /* PBXContainerItemProxy */;
+		};
+		8712A4E39BC9D0EA129C30DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CD9BA785CC2C4F741F0AC71 /* ime_switch_util */;
+			targetProxy = 399DBB35B68535432F76414A /* PBXContainerItemProxy */;
+		};
+		897770397C012CABC92E5143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 7CF3F5D3AC8F64EDC1B1464B /* PBXContainerItemProxy */;
+		};
+		8CBA31445B4F98EECAFA764F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = B3CCB885DFE14BE8A4F59B3D /* PBXContainerItemProxy */;
+		};
+		9729EB6D4B4B50CB4662CEDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F3E590560DAC6DB3EE3D3A /* key_parser */;
+			targetProxy = E2DEC45FEB14A8B6B262C02D /* PBXContainerItemProxy */;
+		};
+		9AC4B5976C72A7E7294F6904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA8955F9A167A63F9A7CE52F /* keymap_factory */;
+			targetProxy = B2A153956D65F7D2B4B870A8 /* PBXContainerItemProxy */;
+		};
+		A7F14F25C8E9CA13F9B877A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 450770C2DC8A846D635E3BC8 /* PBXContainerItemProxy */;
+		};
+		A809B12B45E82D6764BE7468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 704E0E54CE79CAD288E5A1B5 /* session_usage_stats_util */;
+			targetProxy = 2142FB75B1F5B4D8E68AC948 /* PBXContainerItemProxy */;
+		};
+		A893D64C85D7F00DD1E91049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_handler;
+			targetProxy = C9C6499AC2B1CE42331D302B /* PBXContainerItemProxy */;
+		};
+		BA588E43A1F2C4C55A9D8156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A671E19A447CC303B5F6568 /* key_info_util */;
+			targetProxy = 2E8633F27F4A516766C17EF0 /* PBXContainerItemProxy */;
+		};
+		CA5B9AC307F641D05D2A3BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 33AA273895AC798FAC961C5B /* PBXContainerItemProxy */;
+		};
+		CB77A41592D620C5B9DA2B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = C1A7C71E474DDE01C9E1848F /* PBXContainerItemProxy */;
+		};
+		D0C9069D57B316BD3BAA0C53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 3A81936D31FC61A4910B8661 /* PBXContainerItemProxy */;
+		};
+		D5A96FA07FE6450FEDEE94B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC7E538390F90F1E066259FE /* genproto_session */;
+			targetProxy = D92F733113F9FF7F0A642135 /* PBXContainerItemProxy */;
+		};
+		DF4B08E69D8F0211441A5C6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = 13365DCC4C8B2FA5F328D0C2 /* PBXContainerItemProxy */;
+		};
+		E748C269298D19DB0A55CED1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = protoc;
+			targetProxy = BA434CEDC7DE3A09FF176771 /* PBXContainerItemProxy */;
+		};
+		E7777F57DF76FCDC28731011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = 122104CCC969F81972421637 /* PBXContainerItemProxy */;
+		};
+		EAF58C4FA6111563ECE878C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = genproto_dictionary;
+			targetProxy = 3C136A4FEB29E0472647CC8D /* PBXContainerItemProxy */;
+		};
+		F0ABD413BDAE63E1E4FE5837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35A338BDEE179ABF53B41B0C /* session_protocol */;
+			targetProxy = C8305CAC0D8099FB8A3AC247 /* PBXContainerItemProxy */;
+		};
+		F17775B087EF6A57C90F6D79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = config_protocol;
+			targetProxy = 0CD025E72F4796CED1B5D371 /* PBXContainerItemProxy */;
+		};
+		FB0AEC3E1E7CE7D744997467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 213DDE7082449E15DCDAECE8 /* output_util */;
+			targetProxy = 15EFB102243271F4511467B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0499A5975B8C04242E1491D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = generic_storage_manager;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		04FCE98D38034DA8056BFBFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Debug;
+		};
+		060BBF22C7919FBB464115AC /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Optimize;
+		};
+		07C1813658A7559133744CD0 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = ime_switch_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		161AF1C22F074E94AD938A77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_parser;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		2DA1934163C9EF14F4A00A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = genproto_session;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		35A4F091F72B9B35E8B2F959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = output_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		3F7345E887149F53E90F9913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_parser;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		44C304C9EF4FA80EB6646498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = keymap;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		451179BC00D275179C07ADFD /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = generic_storage_manager;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		52436676CD48D68B92C8E8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = ime_switch_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		58D1B6F40A6365BEA180CE83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Release;
+		};
+		6CEC9B180D27CEFD12B33D24 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Optimize;
+		};
+		702CDE985CFEDC3B42D9D07C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = request_test_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		761DAE5B33B277B588B8E477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		7D77A2BE07D8D07FAB29E5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = session_protocol;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		7F174382C988629D748B1EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		8353773056895210951CCF0F /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = session_usage_stats_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		8A4BA883ACEA426B340ED310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = output_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		9BAC87CD7253BC9050DE4936 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_info_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		9C416728B640F63C37B52E74 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_parser;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		A025D335C9BD70F49D408C26 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = request_test_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		A31AC162BDB3D0D865EBBB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = ime_switch_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		A3592D4F0DF21A39372AC92C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = keymap_factory;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		B2A6F3EA798DB36051394D5E /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = session_protocol;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		C055E1AAEFAB2BA5CC9F0339 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = output_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		C3586F21D95B7A7317335CA0 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = keymap;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		C7BD361C435BFFE605D31AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_event_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		C812AEF004E6A676E3643ECE /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = keymap_factory;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		CB5B898A80B2D551A39A4914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = keymap;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		CCCD5AECF9640A2DFEF9BAE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = session_protocol;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		CFEBD33C29A099803533F327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = session_usage_stats_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		D0FEAC77A5801BE6B7B87062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_info_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		D301B20896F4C987A0CE9FA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = keymap_factory;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		D4F79C9802632900DE8533E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = generic_storage_manager;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		D8211601D16A456D153141B1 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_info_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		E2DDC84470E540FA7F7D3B6B /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = genproto_session;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		E86D555E0A1409207DCE42BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = genproto_session;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		EE35722D37B29A51665D7B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = session_usage_stats_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		F374397B49601AADE614AAC3 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_event_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		F77CF30B41CA9EC09430C3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = request_test_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		FC415FD75CEB9657935BFE23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = key_event_util;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E605F48FA67CA1CC8B8C18 /* Build configuration list for PBXNativeTarget "request_test_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77CF30B41CA9EC09430C3AD /* Debug */,
+				A025D335C9BD70F49D408C26 /* Optimize */,
+				702CDE985CFEDC3B42D9D07C /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		1EF389B3C43B55A08F9FE519 /* Build configuration list for PBXNativeTarget "session_protocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCD5AECF9640A2DFEF9BAE0 /* Debug */,
+				B2A6F3EA798DB36051394D5E /* Optimize */,
+				7D77A2BE07D8D07FAB29E5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		22C30A4271FD8A664FA73D42 /* Build configuration list for PBXNativeTarget "key_event_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC415FD75CEB9657935BFE23 /* Debug */,
+				F374397B49601AADE614AAC3 /* Optimize */,
+				C7BD361C435BFFE605D31AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		3036F6913443DDB93D5D4002 /* Build configuration list for PBXNativeTarget "keymap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB5B898A80B2D551A39A4914 /* Debug */,
+				C3586F21D95B7A7317335CA0 /* Optimize */,
+				44C304C9EF4FA80EB6646498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		45E5A370D4C85C2DE057495D /* Build configuration list for PBXProject "session_base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04FCE98D38034DA8056BFBFE /* Debug */,
+				6CEC9B180D27CEFD12B33D24 /* Optimize */,
+				58D1B6F40A6365BEA180CE83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		50F2B4AE5BEDBBDFB81B6BEF /* Build configuration list for PBXNativeTarget "generic_storage_manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F79C9802632900DE8533E4 /* Debug */,
+				451179BC00D275179C07ADFD /* Optimize */,
+				0499A5975B8C04242E1491D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		6B3934EE4003968423CB6A77 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761DAE5B33B277B588B8E477 /* Debug */,
+				060BBF22C7919FBB464115AC /* Optimize */,
+				7F174382C988629D748B1EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		806C55441420B5B790FFC114 /* Build configuration list for PBXNativeTarget "keymap_factory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3592D4F0DF21A39372AC92C /* Debug */,
+				C812AEF004E6A676E3643ECE /* Optimize */,
+				D301B20896F4C987A0CE9FA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		958F09E1D9B6C91A2470BF03 /* Build configuration list for PBXNativeTarget "ime_switch_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31AC162BDB3D0D865EBBB2C /* Debug */,
+				07C1813658A7559133744CD0 /* Optimize */,
+				52436676CD48D68B92C8E8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		9F363FB81B67E7D10FBDCA44 /* Build configuration list for PBXNativeTarget "key_info_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FEAC77A5801BE6B7B87062 /* Debug */,
+				D8211601D16A456D153141B1 /* Optimize */,
+				9BAC87CD7253BC9050DE4936 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		B4C3B1BBD316400BF6CE3A29 /* Build configuration list for PBXNativeTarget "key_parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F7345E887149F53E90F9913 /* Debug */,
+				9C416728B640F63C37B52E74 /* Optimize */,
+				161AF1C22F074E94AD938A77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		C3BA03FD4113037E97F5EC18 /* Build configuration list for PBXNativeTarget "session_usage_stats_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE35722D37B29A51665D7B9D /* Debug */,
+				8353773056895210951CCF0F /* Optimize */,
+				CFEBD33C29A099803533F327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		DCFB1768B0B63C8B75A54EF4 /* Build configuration list for PBXAggregateTarget "genproto_session" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA1934163C9EF14F4A00A83 /* Debug */,
+				E2DDC84470E540FA7F7D3B6B /* Optimize */,
+				E86D555E0A1409207DCE42BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		F4126A633EC58AB28D970C95 /* Build configuration list for PBXNativeTarget "output_util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4BA883ACEA426B340ED310 /* Debug */,
+				C055E1AAEFAB2BA5CC9F0339 /* Optimize */,
+				35A4F091F72B9B35E8B2F959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B68D8AD6271F04CAA8EF1007 /* Project object */;
+}

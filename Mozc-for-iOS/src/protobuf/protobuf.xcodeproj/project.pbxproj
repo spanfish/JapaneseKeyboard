@@ -1,0 +1,1041 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		17D5580949FDA8CAC7C2CAF8 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 22A8079D09FCEE5CEA3EDD86 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				6326A1A36BC72FE025995D1B /* PBXTargetDependency */,
+				075EBD0D91FA5C6E25EFD909 /* PBXTargetDependency */,
+				5A604A89A5D89D5792A3CAA6 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+		6C57655758B3D14EDA8C1374 /* install_protoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6353284242344E8CF218D445 /* Build configuration list for PBXAggregateTarget "install_protoc" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = install_protoc;
+			productName = install_protoc;
+		};
+		ADB2CBEE35B856C3C000C4EB /* protoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 265D5A1F64B442851BEB24B9 /* Build configuration list for PBXAggregateTarget "protoc" */;
+			buildPhases = (
+			);
+			dependencies = (
+				0BA2F6615A63F6A814E436B0 /* PBXTargetDependency */,
+			);
+			name = protoc;
+			productName = protoc;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01608E40A728FF18ADB787E6 /* zero_copy_stream_impl.cc in Sources */ = {isa = PBXBuildFile; fileRef = 68674BD36582CC3B83E75BD3 /* zero_copy_stream_impl.cc */; };
+		0342126C022E357186D00500 /* descriptor.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 707AFA97DE8D4F0615F17D4E /* descriptor.pb.cc */; };
+		03A5729B87F6991FF8FB2C13 /* coded_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2D7FC0126E59363840181C36 /* coded_stream.cc */; };
+		0D7750A633BB2A76B6D119F5 /* parser.cc in Sources */ = {isa = PBXBuildFile; fileRef = 21E59B0F135B6849C15DEF2A /* parser.cc */; };
+		12FFC3E76EA0FE6865DD96A6 /* reflection_ops.cc in Sources */ = {isa = PBXBuildFile; fileRef = E01B9FD2CBCD8725270F1EFA /* reflection_ops.cc */; };
+		15C358E652FCCFC2E228BF20 /* structurally_valid.cc in Sources */ = {isa = PBXBuildFile; fileRef = 09648898F3FD264F9134B17A /* structurally_valid.cc */; };
+		2D5D9A9A6E36EE7187CB8819 /* generated_message_reflection.cc in Sources */ = {isa = PBXBuildFile; fileRef = D40700A634D896E0199D3BA5 /* generated_message_reflection.cc */; };
+		35B971921CE514489C320823 /* common.cc in Sources */ = {isa = PBXBuildFile; fileRef = F26B3581A1D6AE28923D6572 /* common.cc */; };
+		3600C1EDF93AE65CFA1BDD1C /* dynamic_message.cc in Sources */ = {isa = PBXBuildFile; fileRef = 46E54C984814D0979D517576 /* dynamic_message.cc */; };
+		36080BE49A42E9633AB08EE2 /* text_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F9DCB67A44EBCC98DAB84 /* text_format.cc */; };
+		39FA30C55D40E16AEDB6F20A /* substitute.cc in Sources */ = {isa = PBXBuildFile; fileRef = C07970B8AF85AEA5A231CD09 /* substitute.cc */; };
+		3BC67CE71246E924EB869287 /* descriptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D7EDAA0541497EA5DDC67D2 /* descriptor.cc */; };
+		421B0F96FEF24FB59B862141 /* message.cc in Sources */ = {isa = PBXBuildFile; fileRef = C33C7775011142B16A98156B /* message.cc */; };
+		46B916B453E5098F720CB965 /* once.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1FEDFB768AB3A9409ACEF /* once.cc */; };
+		47D7038EC488F595F8EB5E02 /* extension_set_heavy.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB2B86CD2C1B6DD4617C8 /* extension_set_heavy.cc */; };
+		48E7470B32799B72F45AB52C /* importer.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD6BFBB5845D25191F8005E7 /* importer.cc */; };
+		58CBEC119D0357B93BEF5A37 /* wire_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0ACDEC1F944D069FDF2F14EC /* wire_format.cc */; };
+		58DA74D1DE4BEFBB5ADA7C4C /* extension_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = ECF1BF39B0693A9C903B2D45 /* extension_set.cc */; };
+		690F24CD5210E619FDCFC7CD /* tokenizer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3774BB88042289DA44C78E1E /* tokenizer.cc */; };
+		6D6B063D15A462BDF2FDE37C /* zero_copy_stream_impl_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = 97EA0E0D50FECA6495203EE0 /* zero_copy_stream_impl_lite.cc */; };
+		8033020D9199960D3B450F41 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = E5C5ADB098C50964EB2F44B7 /* wire_format_lite.cc */; };
+		8666D4B9D5C0F78D321AF0C3 /* strutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = AFDC83CE212F41B147F75F40 /* strutil.cc */; };
+		8736B4D304D6AE01AA2B7970 /* atomicops_internals_x86_gcc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 749DDD25A23E61B080E8FA02 /* atomicops_internals_x86_gcc.cc */; };
+		8A21EBAB30D97CC505B63C63 /* unknown_field_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 015DA0AFA5A9001F09E27991 /* unknown_field_set.cc */; };
+		A27D5248CC100FD54FC60025 /* printer.cc in Sources */ = {isa = PBXBuildFile; fileRef = D4970D7FED4A23D61347EB4D /* printer.cc */; };
+		A8E6BBD30371AA293D81F8B5 /* service.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A5F6322AFAF99E95BD501 /* service.cc */; };
+		AF097B4A34EFA16062C898DD /* generated_message_util.cc in Sources */ = {isa = PBXBuildFile; fileRef = C45120D61F6EBFB1CB66C7DE /* generated_message_util.cc */; };
+		C7A423587D5416172D15774E /* gzip_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = 446A844EF5ED5052FAA19292 /* gzip_stream.cc */; };
+		D2EBAE72BDE37FBABDA5A11B /* stringprintf.cc in Sources */ = {isa = PBXBuildFile; fileRef = D18C4E0100C216E3D20D390C /* stringprintf.cc */; };
+		D7203EBAF502BD09C95B9B27 /* atomicops_internals_x86_msvc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D5EFE0E40693B948EBA1F /* atomicops_internals_x86_msvc.cc */; };
+		EA22560BF07DF01F79FADBB3 /* zero_copy_stream.cc in Sources */ = {isa = PBXBuildFile; fileRef = CD80703BA8D6D0F9EA4C7AAA /* zero_copy_stream.cc */; };
+		EA63F6E517339A488155E787 /* message_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = AF8CC6D3340A1237626FBA32 /* message_lite.cc */; };
+		EB88D813F3B4C200F7176787 /* repeated_field.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7A88B5B96D5353A6AA1DEF12 /* repeated_field.cc */; };
+		FE4736F04EED3B5FEAA0F911 /* descriptor_database.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5B8A6C018423B2DA2BA67330 /* descriptor_database.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5504EE40D31E8BE3378AF680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 297FA540BECBEBEEBD97C3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C57655758B3D14EDA8C1374;
+			remoteInfo = install_protoc;
+		};
+		C11E708FD79308773F1AF3FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 297FA540BECBEBEEBD97C3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47C23D6F1462D7579D26B024;
+			remoteInfo = protobuf;
+		};
+		C20B7C320C82260070310147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 297FA540BECBEBEEBD97C3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47C23D6F1462D7579D26B024;
+			remoteInfo = protobuf;
+		};
+		F9974DC50E1CD9369784B9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 297FA540BECBEBEEBD97C3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB2CBEE35B856C3C000C4EB;
+			remoteInfo = protoc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015DA0AFA5A9001F09E27991 /* unknown_field_set.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unknown_field_set.cc; sourceTree = "<group>"; };
+		046CE4B0C8D3762538194559 /* cpp_string_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_string_field.cc; sourceTree = "<group>"; };
+		09648898F3FD264F9134B17A /* structurally_valid.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = structurally_valid.cc; sourceTree = "<group>"; };
+		09CEEDB54E58715A83D4076A /* cpp_service.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_service.cc; sourceTree = "<group>"; };
+		0ACDEC1F944D069FDF2F14EC /* wire_format.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format.cc; sourceTree = "<group>"; };
+		1E741DCAE5CF120947AC443E /* cpp_enum.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_enum.cc; sourceTree = "<group>"; };
+		21E59B0F135B6849C15DEF2A /* parser.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cc; sourceTree = "<group>"; };
+		27BBBA5C767DDDF6C79AABC8 /* java_service.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_service.cc; sourceTree = "<group>"; };
+		2A7179272C00C89BCFF556E1 /* cpp_message.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_message.cc; sourceTree = "<group>"; };
+		2D7FC0126E59363840181C36 /* coded_stream.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = coded_stream.cc; sourceTree = "<group>"; };
+		326B1FCECC0E8D4F25981F08 /* java_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_field.cc; sourceTree = "<group>"; };
+		3774BB88042289DA44C78E1E /* tokenizer.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tokenizer.cc; sourceTree = "<group>"; };
+		3C501C9A670BB3F1F12FDBD3 /* command_line_interface.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = command_line_interface.cc; sourceTree = "<group>"; };
+		3F7D5EFE0E40693B948EBA1F /* atomicops_internals_x86_msvc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = atomicops_internals_x86_msvc.cc; sourceTree = "<group>"; };
+		410991879BC94E9BE9E031C5 /* cpp_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_field.cc; sourceTree = "<group>"; };
+		4163D4BCBB8BDC1C3F0CD6F1 /* java_primitive_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_primitive_field.cc; sourceTree = "<group>"; };
+		41ADC0EA3E321B45EF26489A /* cpp_enum_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_enum_field.cc; sourceTree = "<group>"; };
+		446A844EF5ED5052FAA19292 /* gzip_stream.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gzip_stream.cc; sourceTree = "<group>"; };
+		46E54C984814D0979D517576 /* dynamic_message.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dynamic_message.cc; sourceTree = "<group>"; };
+		488BB16F33BB52929D4EF652 /* main.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cc; sourceTree = "<group>"; };
+		49E46E5B47840F87EE589274 /* java_file.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_file.cc; sourceTree = "<group>"; };
+		4D7EDAA0541497EA5DDC67D2 /* descriptor.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.cc; sourceTree = "<group>"; };
+		4DC51F1F8F322F249D33227B /* plugin.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.cc; sourceTree = "<group>"; };
+		55C0D9C94D0EB338F083469B /* cpp_file.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_file.cc; sourceTree = "<group>"; };
+		56207DC26CE4D8D3377E289C /* subprocess.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = subprocess.cc; sourceTree = "<group>"; };
+		5B8A6C018423B2DA2BA67330 /* descriptor_database.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor_database.cc; sourceTree = "<group>"; };
+		5E9F9DCB67A44EBCC98DAB84 /* text_format.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = text_format.cc; sourceTree = "<group>"; };
+		5F37E9B5146427AD9D48C7A4 /* cpp_helpers.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_helpers.cc; sourceTree = "<group>"; };
+		68674BD36582CC3B83E75BD3 /* zero_copy_stream_impl.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl.cc; sourceTree = "<group>"; };
+		6AE1FEDFB768AB3A9409ACEF /* once.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = once.cc; sourceTree = "<group>"; };
+		707AFA97DE8D4F0615F17D4E /* descriptor.pb.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.pb.cc; sourceTree = "<group>"; };
+		71767A1D401A61EBEDFACF3B /* java_enum.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_enum.cc; sourceTree = "<group>"; };
+		719316D753254A0860356BA4 /* protobuf.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = protobuf.gyp; sourceTree = "<group>"; };
+		723F49B1742D4C7C48AA6FE4 /* java_string_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_string_field.cc; sourceTree = "<group>"; };
+		749DDD25A23E61B080E8FA02 /* atomicops_internals_x86_gcc.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = atomicops_internals_x86_gcc.cc; sourceTree = "<group>"; };
+		7A88B5B96D5353A6AA1DEF12 /* repeated_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = repeated_field.cc; sourceTree = "<group>"; };
+		7C4A5F6322AFAF99E95BD501 /* service.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = service.cc; sourceTree = "<group>"; };
+		7C8CAA1E0D9A6D14EE02337B /* java_extension.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_extension.cc; sourceTree = "<group>"; };
+		7E512419B5DBDE9912046819 /* java_doc_comment.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_doc_comment.cc; sourceTree = "<group>"; };
+		8605DD8A68E8B3D58FDECDCB /* cpp_extension.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_extension.cc; sourceTree = "<group>"; };
+		868337388CC3A13282E4B09C /* libprotobuf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libprotobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9284A954EB95F0C89D90A129 /* cpp_generator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_generator.cc; sourceTree = "<group>"; };
+		97EA0E0D50FECA6495203EE0 /* zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream_impl_lite.cc; sourceTree = "<group>"; };
+		9D54D9CA851B52F852AFF5C8 /* java_message.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_message.cc; sourceTree = "<group>"; };
+		9FAAB2B86CD2C1B6DD4617C8 /* extension_set_heavy.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set_heavy.cc; sourceTree = "<group>"; };
+		A8FC32901ADE377BD8F73529 /* code_generator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_generator.cc; sourceTree = "<group>"; };
+		AA9C85AFAFA6266332C2C27F /* python_generator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = python_generator.cc; sourceTree = "<group>"; };
+		AD6BFBB5845D25191F8005E7 /* importer.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = importer.cc; sourceTree = "<group>"; };
+		AD98C25BAB6E26C3AE70B892 /* java_enum_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_enum_field.cc; sourceTree = "<group>"; };
+		AF8CC6D3340A1237626FBA32 /* message_lite.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = message_lite.cc; sourceTree = "<group>"; };
+		AFDC83CE212F41B147F75F40 /* strutil.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = strutil.cc; sourceTree = "<group>"; };
+		B85EBC5E3CB8EC7644E18448 /* java_helpers.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_helpers.cc; sourceTree = "<group>"; };
+		B8D763581159B308E3DE98A9 /* plugin.pb.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = plugin.pb.cc; sourceTree = "<group>"; };
+		B90D82BC3FD4CAE36380F9E0 /* java_message_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_message_field.cc; sourceTree = "<group>"; };
+		BEC959635E7D1AB0CB4D07D7 /* zip_writer.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zip_writer.cc; sourceTree = "<group>"; };
+		BF3BCB0F8E8CC2073A6934EF /* cpp_primitive_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_primitive_field.cc; sourceTree = "<group>"; };
+		C07970B8AF85AEA5A231CD09 /* substitute.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = substitute.cc; sourceTree = "<group>"; };
+		C33C7775011142B16A98156B /* message.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = message.cc; sourceTree = "<group>"; };
+		C45120D61F6EBFB1CB66C7DE /* generated_message_util.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_util.cc; sourceTree = "<group>"; };
+		CD80703BA8D6D0F9EA4C7AAA /* zero_copy_stream.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zero_copy_stream.cc; sourceTree = "<group>"; };
+		CE40AA19889AFDA939AB9552 /* java_generator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = java_generator.cc; sourceTree = "<group>"; };
+		D18C4E0100C216E3D20D390C /* stringprintf.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stringprintf.cc; sourceTree = "<group>"; };
+		D1AA42699BAF3734B0E8F106 /* cpp_message_field.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpp_message_field.cc; sourceTree = "<group>"; };
+		D40700A634D896E0199D3BA5 /* generated_message_reflection.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = generated_message_reflection.cc; sourceTree = "<group>"; };
+		D4970D7FED4A23D61347EB4D /* printer.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = printer.cc; sourceTree = "<group>"; };
+		E01B9FD2CBCD8725270F1EFA /* reflection_ops.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reflection_ops.cc; sourceTree = "<group>"; };
+		E5C5ADB098C50964EB2F44B7 /* wire_format_lite.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wire_format_lite.cc; sourceTree = "<group>"; };
+		EBEDDB78EDDA51E1AC79FDD8 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../gyp/common.gypi; sourceTree = "<group>"; };
+		ECF1BF39B0693A9C903B2D45 /* extension_set.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = extension_set.cc; sourceTree = "<group>"; };
+		F26B3581A1D6AE28923D6572 /* common.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = common.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40EF32D7F295E27FE5D317CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2516860159F08FA185BFAEE8 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				1E741DCAE5CF120947AC443E /* cpp_enum.cc */,
+				41ADC0EA3E321B45EF26489A /* cpp_enum_field.cc */,
+				8605DD8A68E8B3D58FDECDCB /* cpp_extension.cc */,
+				410991879BC94E9BE9E031C5 /* cpp_field.cc */,
+				55C0D9C94D0EB338F083469B /* cpp_file.cc */,
+				9284A954EB95F0C89D90A129 /* cpp_generator.cc */,
+				5F37E9B5146427AD9D48C7A4 /* cpp_helpers.cc */,
+				2A7179272C00C89BCFF556E1 /* cpp_message.cc */,
+				D1AA42699BAF3734B0E8F106 /* cpp_message_field.cc */,
+				BF3BCB0F8E8CC2073A6934EF /* cpp_primitive_field.cc */,
+				09CEEDB54E58715A83D4076A /* cpp_service.cc */,
+				046CE4B0C8D3762538194559 /* cpp_string_field.cc */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		3FC0F3697B89441B7878BFEA /* python */ = {
+			isa = PBXGroup;
+			children = (
+				AA9C85AFAFA6266332C2C27F /* python_generator.cc */,
+			);
+			path = python;
+			sourceTree = "<group>";
+		};
+		59AB4311A51DE274DA3AFE46 = {
+			isa = PBXGroup;
+			children = (
+				B19CE6CFAC523D9E80FDC5C9 /* Source */,
+				86EC812D7B4BEB892B4A7EB8 /* Products */,
+				7F1C407F71772A33B0AE171F /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		7D59F581A7988D5D8C6E2D27 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				749DDD25A23E61B080E8FA02 /* atomicops_internals_x86_gcc.cc */,
+				3F7D5EFE0E40693B948EBA1F /* atomicops_internals_x86_msvc.cc */,
+				F26B3581A1D6AE28923D6572 /* common.cc */,
+				6AE1FEDFB768AB3A9409ACEF /* once.cc */,
+				D18C4E0100C216E3D20D390C /* stringprintf.cc */,
+				09648898F3FD264F9134B17A /* structurally_valid.cc */,
+				AFDC83CE212F41B147F75F40 /* strutil.cc */,
+				C07970B8AF85AEA5A231CD09 /* substitute.cc */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		7F1C407F71772A33B0AE171F /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDDB78EDDA51E1AC79FDD8 /* common.gypi */,
+				719316D753254A0860356BA4 /* protobuf.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		86EC812D7B4BEB892B4A7EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				868337388CC3A13282E4B09C /* libprotobuf.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B19CE6CFAC523D9E80FDC5C9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FF675D32A2D8972A73E21181 /* compiler */,
+				E415B26C466AF4EB97E821D2 /* io */,
+				7D59F581A7988D5D8C6E2D27 /* stubs */,
+				4D7EDAA0541497EA5DDC67D2 /* descriptor.cc */,
+				707AFA97DE8D4F0615F17D4E /* descriptor.pb.cc */,
+				5B8A6C018423B2DA2BA67330 /* descriptor_database.cc */,
+				46E54C984814D0979D517576 /* dynamic_message.cc */,
+				ECF1BF39B0693A9C903B2D45 /* extension_set.cc */,
+				9FAAB2B86CD2C1B6DD4617C8 /* extension_set_heavy.cc */,
+				D40700A634D896E0199D3BA5 /* generated_message_reflection.cc */,
+				C45120D61F6EBFB1CB66C7DE /* generated_message_util.cc */,
+				C33C7775011142B16A98156B /* message.cc */,
+				AF8CC6D3340A1237626FBA32 /* message_lite.cc */,
+				E01B9FD2CBCD8725270F1EFA /* reflection_ops.cc */,
+				7A88B5B96D5353A6AA1DEF12 /* repeated_field.cc */,
+				7C4A5F6322AFAF99E95BD501 /* service.cc */,
+				5E9F9DCB67A44EBCC98DAB84 /* text_format.cc */,
+				015DA0AFA5A9001F09E27991 /* unknown_field_set.cc */,
+				0ACDEC1F944D069FDF2F14EC /* wire_format.cc */,
+				E5C5ADB098C50964EB2F44B7 /* wire_format_lite.cc */,
+			);
+			name = Source;
+			path = ../third_party/protobuf/src/google/protobuf;
+			sourceTree = "<group>";
+		};
+		C34E639EAAA85EC7D0F7F425 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				7E512419B5DBDE9912046819 /* java_doc_comment.cc */,
+				71767A1D401A61EBEDFACF3B /* java_enum.cc */,
+				AD98C25BAB6E26C3AE70B892 /* java_enum_field.cc */,
+				7C8CAA1E0D9A6D14EE02337B /* java_extension.cc */,
+				326B1FCECC0E8D4F25981F08 /* java_field.cc */,
+				49E46E5B47840F87EE589274 /* java_file.cc */,
+				CE40AA19889AFDA939AB9552 /* java_generator.cc */,
+				B85EBC5E3CB8EC7644E18448 /* java_helpers.cc */,
+				9D54D9CA851B52F852AFF5C8 /* java_message.cc */,
+				B90D82BC3FD4CAE36380F9E0 /* java_message_field.cc */,
+				4163D4BCBB8BDC1C3F0CD6F1 /* java_primitive_field.cc */,
+				27BBBA5C767DDDF6C79AABC8 /* java_service.cc */,
+				723F49B1742D4C7C48AA6FE4 /* java_string_field.cc */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		E415B26C466AF4EB97E821D2 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FC0126E59363840181C36 /* coded_stream.cc */,
+				446A844EF5ED5052FAA19292 /* gzip_stream.cc */,
+				D4970D7FED4A23D61347EB4D /* printer.cc */,
+				3774BB88042289DA44C78E1E /* tokenizer.cc */,
+				CD80703BA8D6D0F9EA4C7AAA /* zero_copy_stream.cc */,
+				68674BD36582CC3B83E75BD3 /* zero_copy_stream_impl.cc */,
+				97EA0E0D50FECA6495203EE0 /* zero_copy_stream_impl_lite.cc */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		FF675D32A2D8972A73E21181 /* compiler */ = {
+			isa = PBXGroup;
+			children = (
+				2516860159F08FA185BFAEE8 /* cpp */,
+				C34E639EAAA85EC7D0F7F425 /* java */,
+				3FC0F3697B89441B7878BFEA /* python */,
+				A8FC32901ADE377BD8F73529 /* code_generator.cc */,
+				3C501C9A670BB3F1F12FDBD3 /* command_line_interface.cc */,
+				AD6BFBB5845D25191F8005E7 /* importer.cc */,
+				488BB16F33BB52929D4EF652 /* main.cc */,
+				21E59B0F135B6849C15DEF2A /* parser.cc */,
+				4DC51F1F8F322F249D33227B /* plugin.cc */,
+				B8D763581159B308E3DE98A9 /* plugin.pb.cc */,
+				56207DC26CE4D8D3377E289C /* subprocess.cc */,
+				BEC959635E7D1AB0CB4D07D7 /* zip_writer.cc */,
+			);
+			path = compiler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47C23D6F1462D7579D26B024 /* protobuf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EFE234AC0A49C05116D7C8D /* Build configuration list for PBXNativeTarget "protobuf" */;
+			buildPhases = (
+				EF596A22B35472BA5FDD279D /* Sources */,
+				40EF32D7F295E27FE5D317CF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = protobuf;
+			productName = protobuf;
+			productReference = 868337388CC3A13282E4B09C /* libprotobuf.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		297FA540BECBEBEEBD97C3C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 5C8CCB5E799441C7FC5DF321 /* Build configuration list for PBXProject "protobuf" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 59AB4311A51DE274DA3AFE46;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17D5580949FDA8CAC7C2CAF8 /* All */,
+				47C23D6F1462D7579D26B024 /* protobuf */,
+				ADB2CBEE35B856C3C000C4EB /* protoc */,
+				6C57655758B3D14EDA8C1374 /* install_protoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF596A22B35472BA5FDD279D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E7470B32799B72F45AB52C /* importer.cc in Sources */,
+				0D7750A633BB2A76B6D119F5 /* parser.cc in Sources */,
+				3BC67CE71246E924EB869287 /* descriptor.cc in Sources */,
+				0342126C022E357186D00500 /* descriptor.pb.cc in Sources */,
+				FE4736F04EED3B5FEAA0F911 /* descriptor_database.cc in Sources */,
+				3600C1EDF93AE65CFA1BDD1C /* dynamic_message.cc in Sources */,
+				58DA74D1DE4BEFBB5ADA7C4C /* extension_set.cc in Sources */,
+				47D7038EC488F595F8EB5E02 /* extension_set_heavy.cc in Sources */,
+				2D5D9A9A6E36EE7187CB8819 /* generated_message_reflection.cc in Sources */,
+				AF097B4A34EFA16062C898DD /* generated_message_util.cc in Sources */,
+				03A5729B87F6991FF8FB2C13 /* coded_stream.cc in Sources */,
+				C7A423587D5416172D15774E /* gzip_stream.cc in Sources */,
+				A27D5248CC100FD54FC60025 /* printer.cc in Sources */,
+				690F24CD5210E619FDCFC7CD /* tokenizer.cc in Sources */,
+				EA22560BF07DF01F79FADBB3 /* zero_copy_stream.cc in Sources */,
+				01608E40A728FF18ADB787E6 /* zero_copy_stream_impl.cc in Sources */,
+				6D6B063D15A462BDF2FDE37C /* zero_copy_stream_impl_lite.cc in Sources */,
+				421B0F96FEF24FB59B862141 /* message.cc in Sources */,
+				EA63F6E517339A488155E787 /* message_lite.cc in Sources */,
+				12FFC3E76EA0FE6865DD96A6 /* reflection_ops.cc in Sources */,
+				EB88D813F3B4C200F7176787 /* repeated_field.cc in Sources */,
+				A8E6BBD30371AA293D81F8B5 /* service.cc in Sources */,
+				8736B4D304D6AE01AA2B7970 /* atomicops_internals_x86_gcc.cc in Sources */,
+				D7203EBAF502BD09C95B9B27 /* atomicops_internals_x86_msvc.cc in Sources */,
+				35B971921CE514489C320823 /* common.cc in Sources */,
+				46B916B453E5098F720CB965 /* once.cc in Sources */,
+				D2EBAE72BDE37FBABDA5A11B /* stringprintf.cc in Sources */,
+				15C358E652FCCFC2E228BF20 /* structurally_valid.cc in Sources */,
+				8666D4B9D5C0F78D321AF0C3 /* strutil.cc in Sources */,
+				39FA30C55D40E16AEDB6F20A /* substitute.cc in Sources */,
+				36080BE49A42E9633AB08EE2 /* text_format.cc in Sources */,
+				8A21EBAB30D97CC505B63C63 /* unknown_field_set.cc in Sources */,
+				58CBEC119D0357B93BEF5A37 /* wire_format.cc in Sources */,
+				8033020D9199960D3B450F41 /* wire_format_lite.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		075EBD0D91FA5C6E25EFD909 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB2CBEE35B856C3C000C4EB /* protoc */;
+			targetProxy = F9974DC50E1CD9369784B9FE /* PBXContainerItemProxy */;
+		};
+		0BA2F6615A63F6A814E436B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47C23D6F1462D7579D26B024 /* protobuf */;
+			targetProxy = C11E708FD79308773F1AF3FC /* PBXContainerItemProxy */;
+		};
+		5A604A89A5D89D5792A3CAA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C57655758B3D14EDA8C1374 /* install_protoc */;
+			targetProxy = 5504EE40D31E8BE3378AF680 /* PBXContainerItemProxy */;
+		};
+		6326A1A36BC72FE025995D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47C23D6F1462D7579D26B024 /* protobuf */;
+			targetProxy = C20B7C320C82260070310147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11E47D79646D629EB199E24B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = install_protoc;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		238A2E1F6509A8A5091C34F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					.,
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = protobuf;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-error",
+					"-Wno-unused-function",
+				);
+			};
+			name = Debug;
+		};
+		2798A39D2EA9E107ADF1D428 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Optimize;
+		};
+		286252A5038E907834BED8D0 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					.,
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = protobuf;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-error",
+					"-Wno-unused-function",
+				);
+			};
+			name = Optimize;
+		};
+		32AFCC21CE3CD3A2BF4CCA41 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = install_protoc;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		381F83B14CAD3286CF3EAD1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = install_protoc;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		4412C004D970D11463BED858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		487D3B84E2A4EE19E414982E /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					.,
+					../third_party/protobuf/src,
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = protoc;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-error",
+				);
+			};
+			name = Optimize;
+		};
+		5A6FD5FE5CC716167E5CFB2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Release;
+		};
+		62FF2387DD3E5D1E7BB6C667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					.,
+					../third_party/protobuf/src,
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = protoc;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-error",
+				);
+			};
+			name = Debug;
+		};
+		7AB629C6A7EE7620B8D29175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Debug;
+		};
+		8FF7D2B6977194CCD49CDE3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					.,
+					../third_party/protobuf/src,
+					"$(SHARED_INTERMEDIATE_DIR)/proto_out",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = protoc;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-error",
+				);
+			};
+			name = Release;
+		};
+		A630277627B7AF47FE10E460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					.,
+					../third_party/protobuf/src,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = protobuf;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+					"-Wno-error",
+					"-Wno-unused-function",
+				);
+			};
+			name = Release;
+		};
+		B17D9B19363249E653D7A52A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		D5F380D4E9443575129F5471 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Optimize;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A8079D09FCEE5CEA3EDD86 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4412C004D970D11463BED858 /* Debug */,
+				2798A39D2EA9E107ADF1D428 /* Optimize */,
+				B17D9B19363249E653D7A52A /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		265D5A1F64B442851BEB24B9 /* Build configuration list for PBXAggregateTarget "protoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FF2387DD3E5D1E7BB6C667 /* Debug */,
+				487D3B84E2A4EE19E414982E /* Optimize */,
+				8FF7D2B6977194CCD49CDE3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		5C8CCB5E799441C7FC5DF321 /* Build configuration list for PBXProject "protobuf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB629C6A7EE7620B8D29175 /* Debug */,
+				D5F380D4E9443575129F5471 /* Optimize */,
+				5A6FD5FE5CC716167E5CFB2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		6353284242344E8CF218D445 /* Build configuration list for PBXAggregateTarget "install_protoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E47D79646D629EB199E24B /* Debug */,
+				32AFCC21CE3CD3A2BF4CCA41 /* Optimize */,
+				381F83B14CAD3286CF3EAD1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		7EFE234AC0A49C05116D7C8D /* Build configuration list for PBXNativeTarget "protobuf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				238A2E1F6509A8A5091C34F0 /* Debug */,
+				286252A5038E907834BED8D0 /* Optimize */,
+				A630277627B7AF47FE10E460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 297FA540BECBEBEEBD97C3C0 /* Project object */;
+}

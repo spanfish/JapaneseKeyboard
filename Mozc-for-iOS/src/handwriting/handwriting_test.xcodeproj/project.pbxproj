@@ -1,0 +1,1099 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4E698C2CC12E3DFD9C7ED07B /* Run handwriting_manager_test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C26A1220E97F15D2B29890B6 /* Build configuration list for PBXAggregateTarget "Run handwriting_manager_test" */;
+			buildPhases = (
+				BB31C4D3EB13885C3AF89EAB /* ShellScript */,
+			);
+			dependencies = (
+				4E5A40C2F4A62F3AC7737786 /* PBXTargetDependency */,
+			);
+			name = "Run handwriting_manager_test";
+			productName = handwriting_manager_test;
+		};
+		A8B6A62CAEA3CF1911F96150 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CF0238C8F69030B4CA5FE052 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				48A863F5328E03ED46500BF6 /* PBXTargetDependency */,
+				3C700768A593ED618EE798F6 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+		D4577543093920C8DC8322C4 /* handwriting_all_test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0E9D77511CA27F41A1F80E33 /* Build configuration list for PBXAggregateTarget "handwriting_all_test" */;
+			buildPhases = (
+			);
+			dependencies = (
+				748675B8E5854CAAC31E8753 /* PBXTargetDependency */,
+			);
+			name = handwriting_all_test;
+			productName = handwriting_all_test;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02CE6D213B5867370F4ECDA5 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 620C19F5E921FB25C0AF2952 /* libiconv.dylib */; };
+		032CB14CB9C731CA0805C6B0 /* libhandwriting_manager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55033783DE01A5D5C89AEC4E /* libhandwriting_manager.a */; };
+		03DB9D7471F6E230C50A7B49 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E118FC6033AD159A1C8E1EE /* IOKit.framework */; };
+		18E558FCF1D9BAC578FAA4EB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B1E1583D89B5F8A1E43DCB /* CoreFoundation.framework */; };
+		2B00D1128B3ABCE31A98ACC9 /* libgoogletest_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B013559AC4642760831F839 /* libgoogletest_lib.a */; };
+		4AE65589F9338E71904678EF /* libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D14BB48BDB7581A4D983E9 /* libbase.a */; };
+		50ED3032A4915238B28267E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4DB87321207A300F424F77F /* Cocoa.framework */; };
+		5791C0BEEA8C8E135115837F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3610FFE473E7319C0E8D2FB /* SystemConfiguration.framework */; };
+		711489588F6A034A05C635D8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D9DBF397528E1BE5658A577 /* Security.framework */; };
+		9880686796741D09F4FCD397 /* libtesting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB632636771E03E54D0A0F0 /* libtesting.a */; };
+		A95717DDA33401D00301B105 /* handwriting_manager_test.cc in Sources */ = {isa = PBXBuildFile; fileRef = F6BF42913DE5A8B8694056CE /* handwriting_manager_test.cc */; };
+		E458943920702D3B993BF336 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4FB6F1675E1D42887D4367 /* libgtest_main.a */; };
+		EF002FF218FF5B1A72E90348 /* libbase_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F00FD984918F3E603234F378 /* libbase_core.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD82D3987DF20CE1EF2DCE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE3EFA4F272755B0F3A47E42;
+			remoteInfo = googletest_lib;
+		};
+		2A447042C2242C331D3F035A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BDC472B01EAA1CE2064256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4577543093920C8DC8322C4;
+			remoteInfo = handwriting_all_test;
+		};
+		2DACB212FDED1E01ACA5DBF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BDC472B01EAA1CE2064256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8558E436885D12820A74C761;
+			remoteInfo = handwriting_manager_test;
+		};
+		3C7E7FAFF11B59C968D09A3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B307B376DD781015DB17DBB8;
+			remoteInfo = multifile;
+		};
+		3DDC3D301AD371744CE070F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BBB65939B2398266181DBB2;
+			remoteInfo = encryptor;
+		};
+		43083EFF68466D66492AF5E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A24F8E8AF59B46B92FF23F23;
+			remoteInfo = base;
+		};
+		49B5B40FA466717E81CABDBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 45F5C4A3CEBB850F362427AC;
+			remoteInfo = gen_version_def;
+		};
+		5C26A80F8B2AEC45F51405E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E96033C3D52389D0CAE05E;
+			remoteInfo = testing;
+		};
+		5F84FDF302503C551D61C4E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D33F4EEDE3D9DD18D0C26F6;
+			remoteInfo = crash_report_handler;
+		};
+		67B41CFF792A10DD452E2ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 419670290B8E119E12D66005;
+			remoteInfo = testing_util;
+		};
+		6F00322F3E332E5666D11F52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4787E9F54A1BCE54D9342F88;
+			remoteInfo = gtest_main;
+		};
+		856E015B5F6E194AB8AC2E1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 055919E651B1F58E58CD7AA0;
+			remoteInfo = googletest_lib;
+		};
+		875D53ADFF416DAD6B30FC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 09EF7B56E35BC69F5ADE0163;
+			remoteInfo = gen_mozc_data_dir_header;
+		};
+		8D0CE7E58634CAF2E8275270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5272CB5A73F54B4A0E227C3D;
+			remoteInfo = base;
+		};
+		928E21D950CC71B0B4D2F0BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BDC472B01EAA1CE2064256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8558E436885D12820A74C761;
+			remoteInfo = handwriting_manager_test;
+		};
+		9449A95D64E58640F64693F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4A0F507450549AA9D5DAA39;
+			remoteInfo = base_core;
+		};
+		9C959511AE1B1037F0E7D61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BDC472B01EAA1CE2064256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8558E436885D12820A74C761;
+			remoteInfo = handwriting_manager_test;
+		};
+		A01C3574CCC2EE9752DFB606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 91AFBEC4E640D91990E91EEF;
+			remoteInfo = config_file_stream;
+		};
+		B23C1F07EEECEBCDFE2094FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F7A0511D4400EBD66810731;
+			remoteInfo = base_core;
+		};
+		B455E813965D78D431C70D55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D392ED9D69D3E8B7EB119E /* handwriting.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A75497160FB99B605A907479;
+			remoteInfo = handwriting_manager;
+		};
+		BC87AED57B86E17D0307F015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 20210006035D36CBAF204FBF;
+			remoteInfo = gen_character_set;
+		};
+		CDFE0F8A89D198629B08D213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EDEA539C26A3C0ED4E65BC6C;
+			remoteInfo = gtest_main;
+		};
+		E038D958180A357120910287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D392ED9D69D3E8B7EB119E /* handwriting.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF11B65EE3489CDB16D58DB;
+			remoteInfo = handwriting_manager;
+		};
+		E09BF86499D76C219FC0707E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DEFA772078FE1922D5C6567A;
+			remoteInfo = obfuscator_support;
+		};
+		F741C4D9E98BD1B77013BCC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2D392ED9D69D3E8B7EB119E /* handwriting.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 87BF4953467B2FD00A1E13E7;
+			remoteInfo = zinnia_handwriting;
+		};
+		FD044D7B51D43BA01B7C8625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF20F92BFF52B24A12524B43;
+			remoteInfo = testing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08175AB9CB22399D00C2514D /* base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = base.xcodeproj; path = ../base/base.xcodeproj; sourceTree = SOURCE_ROOT; };
+		09B1E1583D89B5F8A1E43DCB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0D9DBF397528E1BE5658A577 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0E118FC6033AD159A1C8E1EE /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = testing.xcodeproj; path = ../testing/testing.xcodeproj; sourceTree = SOURCE_ROOT; };
+		20E4604C9FC8B0819FCBD8FD /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../gyp/common.gypi; sourceTree = "<group>"; };
+		3B8244FB96426BF93B348BDF /* handwriting_test.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = handwriting_test.gyp; sourceTree = "<group>"; };
+		620C19F5E921FB25C0AF2952 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = /usr/lib/libiconv.dylib; sourceTree = "<group>"; };
+		9CE125ECCBAF1F74872203AB /* handwriting_manager_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = handwriting_manager_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D392ED9D69D3E8B7EB119E /* handwriting.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = handwriting.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A4DB87321207A300F424F77F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C3610FFE473E7319C0E8D2FB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6BF42913DE5A8B8694056CE /* handwriting_manager_test.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = handwriting_manager_test.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC05807E1E89EDFCD2D7BA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE65589F9338E71904678EF /* libbase.a in Frameworks */,
+				E458943920702D3B993BF336 /* libgtest_main.a in Frameworks */,
+				032CB14CB9C731CA0805C6B0 /* libhandwriting_manager.a in Frameworks */,
+				EF002FF218FF5B1A72E90348 /* libbase_core.a in Frameworks */,
+				2B00D1128B3ABCE31A98ACC9 /* libgoogletest_lib.a in Frameworks */,
+				9880686796741D09F4FCD397 /* libtesting.a in Frameworks */,
+				50ED3032A4915238B28267E4 /* Cocoa.framework in Frameworks */,
+				18E558FCF1D9BAC578FAA4EB /* CoreFoundation.framework in Frameworks */,
+				03DB9D7471F6E230C50A7B49 /* IOKit.framework in Frameworks */,
+				711489588F6A034A05C635D8 /* Security.framework in Frameworks */,
+				5791C0BEEA8C8E135115837F /* SystemConfiguration.framework in Frameworks */,
+				02CE6D213B5867370F4ECDA5 /* libiconv.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EF0D101E653927002C6C98D /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				08175AB9CB22399D00C2514D /* base.xcodeproj */,
+				A2D392ED9D69D3E8B7EB119E /* handwriting.xcodeproj */,
+				13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		14A13714B553A6BB3DAF826C /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				20E4604C9FC8B0819FCBD8FD /* common.gypi */,
+				3B8244FB96426BF93B348BDF /* handwriting_test.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		1D28B83BC61B2DDA6EB98ABD = {
+			isa = PBXGroup;
+			children = (
+				FCCC42797780A4E409FCF8F6 /* Source */,
+				0EF0D101E653927002C6C98D /* Projects */,
+				4A63D7E4894371222C77C7E7 /* Frameworks */,
+				9FFF548526ADA129991F2C5F /* Products */,
+				14A13714B553A6BB3DAF826C /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		2CE055FC0651529AA10DE59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB632636771E03E54D0A0F0 /* libtesting.a */,
+				5B013559AC4642760831F839 /* libgoogletest_lib.a */,
+				0A4FB6F1675E1D42887D4367 /* libgtest_main.a */,
+				F5789378AB32CA2325D12B90 /* libtesting_util.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A826ECC02EDD66A3BDC9F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB2085F9354F2984768CD21F /* libzinnia_handwriting.a */,
+				55033783DE01A5D5C89AEC4E /* libhandwriting_manager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A63D7E4894371222C77C7E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB87321207A300F424F77F /* Cocoa.framework */,
+				09B1E1583D89B5F8A1E43DCB /* CoreFoundation.framework */,
+				0E118FC6033AD159A1C8E1EE /* IOKit.framework */,
+				0D9DBF397528E1BE5658A577 /* Security.framework */,
+				C3610FFE473E7319C0E8D2FB /* SystemConfiguration.framework */,
+				620C19F5E921FB25C0AF2952 /* libiconv.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FFF548526ADA129991F2C5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CE125ECCBAF1F74872203AB /* handwriting_manager_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B092119465FFBD00B727CCC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D14BB48BDB7581A4D983E9 /* libbase.a */,
+				F00FD984918F3E603234F378 /* libbase_core.a */,
+				5FFF9F4A4D94E3E88EAECCC6 /* libobfuscator_support.a */,
+				27A4D7EBC41FD4564243E3BE /* libencryptor.a */,
+				D1B2C6BF036EA527E3051961 /* libconfig_file_stream.a */,
+				319DB27F0B35FC927DD2AA0A /* libmultifile.a */,
+				F3BC625DDFE29AD03907F6DB /* libcrash_report_handler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCC42797780A4E409FCF8F6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF42913DE5A8B8694056CE /* handwriting_manager_test.cc */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8558E436885D12820A74C761 /* handwriting_manager_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CE3B5057A608B804676C48 /* Build configuration list for PBXNativeTarget "handwriting_manager_test" */;
+			buildPhases = (
+				EBD80D4753B0132416D1ECA7 /* Sources */,
+				DC05807E1E89EDFCD2D7BA4C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E789CD87D166DC971BE518 /* PBXTargetDependency */,
+				20008B037AF49BFA0DC5BC9D /* PBXTargetDependency */,
+				B7E81C8103FCD91FBBA203F8 /* PBXTargetDependency */,
+				E08209E7E92516B22AE402CB /* PBXTargetDependency */,
+				BBE4C8F81E7A1DD52984ED49 /* PBXTargetDependency */,
+				FF1C324854B6D6DC91687624 /* PBXTargetDependency */,
+				5618138D1495CD3D510F87A4 /* PBXTargetDependency */,
+				A041262A26D3F8235A4D2324 /* PBXTargetDependency */,
+				9C8F0D4A9B4D29FFDBE163F2 /* PBXTargetDependency */,
+			);
+			name = handwriting_manager_test;
+			productName = handwriting_manager_test;
+			productReference = 9CE125ECCBAF1F74872203AB /* handwriting_manager_test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BDC472B01EAA1CE2064256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 9840103A18E696AFC44C4A4C /* Build configuration list for PBXProject "handwriting_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 1D28B83BC61B2DDA6EB98ABD;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B092119465FFBD00B727CCC0 /* Products */;
+					ProjectRef = 08175AB9CB22399D00C2514D /* base.xcodeproj */;
+				},
+				{
+					ProductGroup = 35A826ECC02EDD66A3BDC9F0 /* Products */;
+					ProjectRef = A2D392ED9D69D3E8B7EB119E /* handwriting.xcodeproj */;
+				},
+				{
+					ProductGroup = 2CE055FC0651529AA10DE59A /* Products */;
+					ProjectRef = 13F3F93AFDDED227E09C9A83 /* testing.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A8B6A62CAEA3CF1911F96150 /* All */,
+				8558E436885D12820A74C761 /* handwriting_manager_test */,
+				4E698C2CC12E3DFD9C7ED07B /* Run handwriting_manager_test */,
+				D4577543093920C8DC8322C4 /* handwriting_all_test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0A4FB6F1675E1D42887D4367 /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = 6F00322F3E332E5666D11F52 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		24D14BB48BDB7581A4D983E9 /* libbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase.a;
+			remoteRef = 43083EFF68466D66492AF5E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27A4D7EBC41FD4564243E3BE /* libencryptor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libencryptor.a;
+			remoteRef = 3DDC3D301AD371744CE070F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		319DB27F0B35FC927DD2AA0A /* libmultifile.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmultifile.a;
+			remoteRef = 3C7E7FAFF11B59C968D09A3D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55033783DE01A5D5C89AEC4E /* libhandwriting_manager.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libhandwriting_manager.a;
+			remoteRef = B455E813965D78D431C70D55 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5B013559AC4642760831F839 /* libgoogletest_lib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgoogletest_lib.a;
+			remoteRef = 1DD82D3987DF20CE1EF2DCE6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5FFF9F4A4D94E3E88EAECCC6 /* libobfuscator_support.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libobfuscator_support.a;
+			remoteRef = E09BF86499D76C219FC0707E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1B2C6BF036EA527E3051961 /* libconfig_file_stream.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libconfig_file_stream.a;
+			remoteRef = A01C3574CCC2EE9752DFB606 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DB2085F9354F2984768CD21F /* libzinnia_handwriting.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libzinnia_handwriting.a;
+			remoteRef = F741C4D9E98BD1B77013BCC5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EBB632636771E03E54D0A0F0 /* libtesting.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtesting.a;
+			remoteRef = FD044D7B51D43BA01B7C8625 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F00FD984918F3E603234F378 /* libbase_core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase_core.a;
+			remoteRef = 9449A95D64E58640F64693F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3BC625DDFE29AD03907F6DB /* libcrash_report_handler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrash_report_handler.a;
+			remoteRef = 5F84FDF302503C551D61C4E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F5789378AB32CA2325D12B90 /* libtesting_util.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtesting_util.a;
+			remoteRef = 67B41CFF792A10DD452E2ECD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB31C4D3EB13885C3AF89EAB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${BUILT_PRODUCTS_DIR}\"\nexec python -c \"import fcntl, subprocess, sys\nfile = open('$TMPDIR/GYP_serialize_test_runs', 'a')\nfcntl.flock(file.fileno(), fcntl.LOCK_EX)\nsys.exit(subprocess.call(sys.argv[1:]))\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}\"\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBD80D4753B0132416D1ECA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95717DDA33401D00301B105 /* handwriting_manager_test.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20008B037AF49BFA0DC5BC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest_main;
+			targetProxy = CDFE0F8A89D198629B08D213 /* PBXContainerItemProxy */;
+		};
+		3C700768A593ED618EE798F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4577543093920C8DC8322C4 /* handwriting_all_test */;
+			targetProxy = 2A447042C2242C331D3F035A /* PBXContainerItemProxy */;
+		};
+		48A863F5328E03ED46500BF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8558E436885D12820A74C761 /* handwriting_manager_test */;
+			targetProxy = 9C959511AE1B1037F0E7D61A /* PBXContainerItemProxy */;
+		};
+		4E5A40C2F4A62F3AC7737786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8558E436885D12820A74C761 /* handwriting_manager_test */;
+			targetProxy = 928E21D950CC71B0B4D2F0BC /* PBXContainerItemProxy */;
+		};
+		5618138D1495CD3D510F87A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gen_mozc_data_dir_header;
+			targetProxy = 875D53ADFF416DAD6B30FC9D /* PBXContainerItemProxy */;
+		};
+		71E789CD87D166DC971BE518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = base;
+			targetProxy = 8D0CE7E58634CAF2E8275270 /* PBXContainerItemProxy */;
+		};
+		748675B8E5854CAAC31E8753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8558E436885D12820A74C761 /* handwriting_manager_test */;
+			targetProxy = 2DACB212FDED1E01ACA5DBF0 /* PBXContainerItemProxy */;
+		};
+		9C8F0D4A9B4D29FFDBE163F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = testing;
+			targetProxy = 5C26A80F8B2AEC45F51405E7 /* PBXContainerItemProxy */;
+		};
+		A041262A26D3F8235A4D2324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = googletest_lib;
+			targetProxy = 856E015B5F6E194AB8AC2E1D /* PBXContainerItemProxy */;
+		};
+		B7E81C8103FCD91FBBA203F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = handwriting_manager;
+			targetProxy = E038D958180A357120910287 /* PBXContainerItemProxy */;
+		};
+		BBE4C8F81E7A1DD52984ED49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gen_character_set;
+			targetProxy = BC87AED57B86E17D0307F015 /* PBXContainerItemProxy */;
+		};
+		E08209E7E92516B22AE402CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = base_core;
+			targetProxy = B23C1F07EEECEBCDFE2094FB /* PBXContainerItemProxy */;
+		};
+		FF1C324854B6D6DC91687624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gen_version_def;
+			targetProxy = 49B5B40FA466717E81CABDBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07461B344711CD871B2A04FF /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = handwriting_manager_test;
+			};
+			name = Optimize;
+		};
+		1DB32D6305317A3CB35E9C3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					"GTEST_HAS_TR1_TUPLE=1",
+					"GTEST_LANG_CXX11=0",
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					../third_party/gmock/include,
+					../third_party/gtest/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = handwriting_manager_test;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		264DB9B614DDE894F2629305 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					"GTEST_HAS_TR1_TUPLE=1",
+					"GTEST_LANG_CXX11=0",
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					../third_party/gmock/include,
+					../third_party/gtest/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = handwriting_all_test;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		6073D0D5C6FAFB6DBEBFE9D6 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Optimize;
+		};
+		6DF1BD7E93CAF90BC1FB91B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Release;
+		};
+		6FCE822525E923439E72BB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					"GTEST_HAS_TR1_TUPLE=1",
+					"GTEST_LANG_CXX11=0",
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					../third_party/gmock/include,
+					../third_party/gtest/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = handwriting_all_test;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		8271064A5F4F36DDEC4A9B1A /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Optimize;
+		};
+		87DD81B1D3A523BE9E4DB646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = handwriting_manager_test;
+			};
+			name = Debug;
+		};
+		9EBADFDC09FB88B9C72D6E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Debug;
+		};
+		A234399C4813CCEE69BEE3BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					"GTEST_HAS_TR1_TUPLE=1",
+					"GTEST_LANG_CXX11=0",
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					../third_party/gmock/include,
+					../third_party/gtest/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = handwriting_manager_test;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		ADA5E5AAD0ABFBD4AA9EAE9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		D0F0CB9D96D641229E5491CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = handwriting_manager_test;
+			};
+			name = Release;
+		};
+		E37CFE8ECFC408C2AA8ECD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					"GTEST_HAS_TR1_TUPLE=1",
+					"GTEST_LANG_CXX11=0",
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					../third_party/gmock/include,
+					../third_party/gtest/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = handwriting_all_test;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		EBFC1B082AC21EA71055F218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		F2AE6F7F0DC432D0658A0B23 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					"GTEST_HAS_TR1_TUPLE=1",
+					"GTEST_LANG_CXX11=0",
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+					../third_party/gmock/include,
+					../third_party/gtest/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					/usr/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = handwriting_manager_test;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E9D77511CA27F41A1F80E33 /* Build configuration list for PBXAggregateTarget "handwriting_all_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FCE822525E923439E72BB24 /* Debug */,
+				264DB9B614DDE894F2629305 /* Optimize */,
+				E37CFE8ECFC408C2AA8ECD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		9840103A18E696AFC44C4A4C /* Build configuration list for PBXProject "handwriting_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EBADFDC09FB88B9C72D6E86 /* Debug */,
+				8271064A5F4F36DDEC4A9B1A /* Optimize */,
+				6DF1BD7E93CAF90BC1FB91B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		C26A1220E97F15D2B29890B6 /* Build configuration list for PBXAggregateTarget "Run handwriting_manager_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DD81B1D3A523BE9E4DB646 /* Debug */,
+				07461B344711CD871B2A04FF /* Optimize */,
+				D0F0CB9D96D641229E5491CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		CF0238C8F69030B4CA5FE052 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA5E5AAD0ABFBD4AA9EAE9E /* Debug */,
+				6073D0D5C6FAFB6DBEBFE9D6 /* Optimize */,
+				EBFC1B082AC21EA71055F218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		F2CE3B5057A608B804676C48 /* Build configuration list for PBXNativeTarget "handwriting_manager_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB32D6305317A3CB35E9C3B /* Debug */,
+				F2AE6F7F0DC432D0658A0B23 /* Optimize */,
+				A234399C4813CCEE69BEE3BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BDC472B01EAA1CE2064256 /* Project object */;
+}

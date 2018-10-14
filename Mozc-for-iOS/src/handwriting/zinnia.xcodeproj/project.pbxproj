@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C977D10FDED6A2A80F8EFDE /* recognizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50FEEAF3437786EBB22679EE /* recognizer.cpp */; };
+		2A15DA4852FB306C30C6B920 /* character.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8A81C7AABD81270231ECA14 /* character.cpp */; };
+		3FB39B8D21AFCDB17CEA526E /* svm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA871CC72A07480E9CFAC517 /* svm.cpp */; };
+		547E051D10BBBDD01AF191B8 /* sexp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B06C449682D51C7790369BF /* sexp.cpp */; };
+		7ED0D42DFFEAAB3EABACF18C /* feature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BE86498069295B0A2F4418F /* feature.cpp */; };
+		A2F317B7F6CCCDFA7A2FF754 /* trainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD8B1DB2FACA339E72D9F3F7 /* trainer.cpp */; };
+		AB9FFCC721F72830B594AF44 /* libzinnia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C075FF647CC79A593C270C67 /* libzinnia.cpp */; };
+		C1190B3E26ACDDFED451AA70 /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C79A4752EB2AAB320E026D /* param.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		103170981C76C8EF5A92E468 /* zinnia.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = zinnia.gyp; sourceTree = "<group>"; };
+		2B06C449682D51C7790369BF /* sexp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sexp.cpp; sourceTree = "<group>"; };
+		50FEEAF3437786EBB22679EE /* recognizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = recognizer.cpp; sourceTree = "<group>"; };
+		6BE86498069295B0A2F4418F /* feature.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = feature.cpp; sourceTree = "<group>"; };
+		7D985491A7FD3A166EFD787B /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../gyp/common.gypi; sourceTree = "<group>"; };
+		80C79A4752EB2AAB320E026D /* param.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = param.cpp; sourceTree = "<group>"; };
+		BB0DE24ED036F8FA141425DF /* libzinnia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzinnia.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C075FF647CC79A593C270C67 /* libzinnia.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libzinnia.cpp; sourceTree = "<group>"; };
+		DD8B1DB2FACA339E72D9F3F7 /* trainer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trainer.cpp; sourceTree = "<group>"; };
+		E8A81C7AABD81270231ECA14 /* character.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = character.cpp; sourceTree = "<group>"; };
+		EA871CC72A07480E9CFAC517 /* svm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = svm.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		282E3BFA0EA9BC74304C5831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3042DBE12BEE95E1EE62BBE0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E8A81C7AABD81270231ECA14 /* character.cpp */,
+				6BE86498069295B0A2F4418F /* feature.cpp */,
+				C075FF647CC79A593C270C67 /* libzinnia.cpp */,
+				80C79A4752EB2AAB320E026D /* param.cpp */,
+				50FEEAF3437786EBB22679EE /* recognizer.cpp */,
+				2B06C449682D51C7790369BF /* sexp.cpp */,
+				EA871CC72A07480E9CFAC517 /* svm.cpp */,
+				DD8B1DB2FACA339E72D9F3F7 /* trainer.cpp */,
+			);
+			name = Source;
+			path = ../third_party/zinnia/v0_04;
+			sourceTree = "<group>";
+		};
+		83362FAA6E8FE4E6A94DE450 = {
+			isa = PBXGroup;
+			children = (
+				3042DBE12BEE95E1EE62BBE0 /* Source */,
+				E07679C84FBCF59F1AA40284 /* Products */,
+				85820190C8723EA10267697D /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		85820190C8723EA10267697D /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				7D985491A7FD3A166EFD787B /* common.gypi */,
+				103170981C76C8EF5A92E468 /* zinnia.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		E07679C84FBCF59F1AA40284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB0DE24ED036F8FA141425DF /* libzinnia.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A13D17CAC326823D452B57FA /* zinnia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDDF0AFB7DCD3261D07A7EF /* Build configuration list for PBXNativeTarget "zinnia" */;
+			buildPhases = (
+				1855D6B0D5FA4FF9CD1227D4 /* Sources */,
+				282E3BFA0EA9BC74304C5831 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zinnia;
+			productName = zinnia;
+			productReference = BB0DE24ED036F8FA141425DF /* libzinnia.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F77B04F5336282798A0AA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 26B2D141D373FD2B452FEC61 /* Build configuration list for PBXProject "zinnia" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 83362FAA6E8FE4E6A94DE450;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A13D17CAC326823D452B57FA /* zinnia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1855D6B0D5FA4FF9CD1227D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A15DA4852FB306C30C6B920 /* character.cpp in Sources */,
+				C1190B3E26ACDDFED451AA70 /* param.cpp in Sources */,
+				3FB39B8D21AFCDB17CEA526E /* svm.cpp in Sources */,
+				7ED0D42DFFEAAB3EABACF18C /* feature.cpp in Sources */,
+				1C977D10FDED6A2A80F8EFDE /* recognizer.cpp in Sources */,
+				A2F317B7F6CCCDFA7A2FF754 /* trainer.cpp in Sources */,
+				AB9FFCC721F72830B594AF44 /* libzinnia.cpp in Sources */,
+				547E051D10BBBDD01AF191B8 /* sexp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AC8FB0084786AF7FF2AF71B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Debug;
+		};
+		44321BEA598C89EE07C4B731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					HAVE_CONFIG_H,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = zinnia;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		4E660367B9FCB0CED6D4BF15 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					HAVE_CONFIG_H,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = zinnia;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		571A4815444EE27EACB77025 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Optimize;
+		};
+		93E44BA809F4A5BBAA030EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					HAVE_CONFIG_H,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = zinnia;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		AC8168ADD898A30EA05045F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26B2D141D373FD2B452FEC61 /* Build configuration list for PBXProject "zinnia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC8FB0084786AF7FF2AF71B /* Debug */,
+				571A4815444EE27EACB77025 /* Optimize */,
+				AC8168ADD898A30EA05045F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		3BDDF0AFB7DCD3261D07A7EF /* Build configuration list for PBXNativeTarget "zinnia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93E44BA809F4A5BBAA030EA4 /* Debug */,
+				4E660367B9FCB0CED6D4BF15 /* Optimize */,
+				44321BEA598C89EE07C4B731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F77B04F5336282798A0AA0 /* Project object */;
+}

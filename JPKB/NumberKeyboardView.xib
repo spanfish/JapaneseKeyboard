@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NumberKeyboardView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="746"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-TU-ZOE" customClass="KeyboardButton">
+                    <rect key="frame" x="94" y="416" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Zja-Tv-u5d"/>
+                        <constraint firstAttribute="width" constant="76" id="j2N-QC-zly"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="1" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY5-3s-qjb" customClass="KeyboardButton">
+                    <rect key="frame" x="178" y="416" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Pzf-I0-uuf"/>
+                        <constraint firstAttribute="width" constant="76" id="Y4l-Jk-lm3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="2" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-ip-W7z" customClass="KeyboardButton">
+                    <rect key="frame" x="262" y="416" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="b3M-VI-Dbh"/>
+                        <constraint firstAttribute="height" constant="76" id="qOo-7O-6t2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="3" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVv-G6-0k0" customClass="KeyboardButton">
+                    <rect key="frame" x="94" y="500" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="s5e-Me-Mdx"/>
+                        <constraint firstAttribute="width" constant="76" id="tqN-Jx-kiA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="4" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-0g-tMZ" customClass="KeyboardButton">
+                    <rect key="frame" x="178" y="500" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="THu-Kn-sfY"/>
+                        <constraint firstAttribute="width" constant="76" id="gTN-7w-dfp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="5" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ct-61-wjg" customClass="KeyboardButton">
+                    <rect key="frame" x="262" y="500" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="PRg-V4-azO"/>
+                        <constraint firstAttribute="width" constant="76" id="oig-Sq-uAF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="6" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWj-XU-UAz" customClass="KeyboardButton">
+                    <rect key="frame" x="94" y="584" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="N36-Wk-6Ts"/>
+                        <constraint firstAttribute="height" constant="76" id="Sbd-7J-otv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="7" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-W7-xGg" customClass="KeyboardButton">
+                    <rect key="frame" x="178" y="584" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="Mve-42-tZP"/>
+                        <constraint firstAttribute="height" constant="76" id="cJe-vS-KI6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="8" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rj-3h-FGc" customClass="KeyboardButton">
+                    <rect key="frame" x="262" y="584" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="Z2w-Uq-eoB"/>
+                        <constraint firstAttribute="height" constant="76" id="jPN-nD-3Iz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="9" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyc-k2-4Fe" customClass="KeyboardButton">
+                    <rect key="frame" x="178.5" y="668" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="fpO-N9-jbF"/>
+                        <constraint firstAttribute="height" constant="76" id="qq5-NR-EuI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" title="0" backgroundImage="key_white">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of2-tu-L1w" customClass="KeyboardButton">
+                    <rect key="frame" x="262.5" y="668" width="76" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="IRu-2J-f5T"/>
+                        <constraint firstAttribute="width" constant="76" id="bu6-K4-cBX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                    <state key="normal" backgroundImage="delete_portrait_pad">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected" backgroundImage="key_darkgray"/>
+                    <state key="highlighted" backgroundImage="key_darkgray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FWf-ip-W7z" firstAttribute="centerY" secondItem="nY5-3s-qjb" secondAttribute="centerY" id="0bE-6O-6XG"/>
+                <constraint firstItem="qEQ-0g-tMZ" firstAttribute="top" secondItem="nY5-3s-qjb" secondAttribute="bottom" constant="8" id="5hF-FV-PG5"/>
+                <constraint firstItem="kWj-XU-UAz" firstAttribute="centerY" secondItem="ZS8-W7-xGg" secondAttribute="centerY" id="8sP-UX-7eL"/>
+                <constraint firstItem="nyc-k2-4Fe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Brb-wf-uqc"/>
+                <constraint firstItem="7Rj-3h-FGc" firstAttribute="centerY" secondItem="ZS8-W7-xGg" secondAttribute="centerY" id="C2w-JH-Q7a"/>
+                <constraint firstItem="ZS8-W7-xGg" firstAttribute="centerX" secondItem="nyc-k2-4Fe" secondAttribute="centerX" id="D49-fg-Uza"/>
+                <constraint firstItem="JVv-G6-0k0" firstAttribute="centerY" secondItem="qEQ-0g-tMZ" secondAttribute="centerY" id="Eqc-L8-rJn"/>
+                <constraint firstItem="nY5-3s-qjb" firstAttribute="centerX" secondItem="qEQ-0g-tMZ" secondAttribute="centerX" id="GdE-X4-chx"/>
+                <constraint firstItem="ZS8-W7-xGg" firstAttribute="top" secondItem="qEQ-0g-tMZ" secondAttribute="bottom" constant="8" id="HXw-Fj-vsg"/>
+                <constraint firstItem="7Rj-3h-FGc" firstAttribute="leading" secondItem="ZS8-W7-xGg" secondAttribute="trailing" constant="8" id="HsL-IB-e8D"/>
+                <constraint firstItem="qEQ-0g-tMZ" firstAttribute="leading" secondItem="JVv-G6-0k0" secondAttribute="trailing" constant="8" id="Kds-hI-mas"/>
+                <constraint firstItem="0ct-61-wjg" firstAttribute="centerY" secondItem="qEQ-0g-tMZ" secondAttribute="centerY" id="OFN-Rm-n3j"/>
+                <constraint firstItem="nyc-k2-4Fe" firstAttribute="top" secondItem="ZS8-W7-xGg" secondAttribute="bottom" constant="8" id="Qg4-Y0-fn0"/>
+                <constraint firstItem="nY5-3s-qjb" firstAttribute="leading" secondItem="Upe-TU-ZOE" secondAttribute="trailing" constant="8" id="Uy0-Nc-TyS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="nyc-k2-4Fe" secondAttribute="bottom" constant="2" id="YpX-hK-Rhk"/>
+                <constraint firstItem="FWf-ip-W7z" firstAttribute="leading" secondItem="nY5-3s-qjb" secondAttribute="trailing" constant="8" id="ea0-v1-XgU"/>
+                <constraint firstItem="Upe-TU-ZOE" firstAttribute="centerY" secondItem="nY5-3s-qjb" secondAttribute="centerY" id="eat-bM-WlO"/>
+                <constraint firstItem="ZS8-W7-xGg" firstAttribute="leading" secondItem="kWj-XU-UAz" secondAttribute="trailing" constant="8" id="fOO-v9-OdH"/>
+                <constraint firstItem="qEQ-0g-tMZ" firstAttribute="centerX" secondItem="ZS8-W7-xGg" secondAttribute="centerX" id="jNR-tY-X4l"/>
+                <constraint firstItem="0ct-61-wjg" firstAttribute="leading" secondItem="qEQ-0g-tMZ" secondAttribute="trailing" constant="8" id="jVm-B3-qDO"/>
+                <constraint firstItem="Of2-tu-L1w" firstAttribute="centerY" secondItem="nyc-k2-4Fe" secondAttribute="centerY" id="lU4-8h-aER"/>
+                <constraint firstItem="Of2-tu-L1w" firstAttribute="leading" secondItem="nyc-k2-4Fe" secondAttribute="trailing" constant="8" id="zV0-CR-5l2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.5" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_portrait_pad" width="16" height="16"/>
+        <image name="key_darkgray" width="8" height="9"/>
+        <image name="key_white" width="8" height="9"/>
+    </resources>
+</document>

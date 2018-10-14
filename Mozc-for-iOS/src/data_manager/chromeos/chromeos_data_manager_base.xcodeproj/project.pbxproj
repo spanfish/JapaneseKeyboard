@@ -1,0 +1,1264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		32B99C14BAB131F875F657B4 /* gen_embedded_user_pos_data_for_chromeos */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 60C2771452930C15E58BDF87 /* Build configuration list for PBXAggregateTarget "gen_embedded_user_pos_data_for_chromeos" */;
+			buildPhases = (
+				7BD925DD9F06014BFB8D9552 /* Action "gen_embedded_user_pos_data_for_chromeos" */,
+			);
+			dependencies = (
+				4F42414AE8F318960CD4B2C4 /* PBXTargetDependency */,
+			);
+			name = gen_embedded_user_pos_data_for_chromeos;
+			productName = gen_embedded_user_pos_data_for_chromeos;
+		};
+		AE7AEC5A303A7B9525210B91 /* gen_embedded_pos_matcher_data_for_chromeos */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD39867417920E86E0E7B52E /* Build configuration list for PBXAggregateTarget "gen_embedded_pos_matcher_data_for_chromeos" */;
+			buildPhases = (
+				879C6177B9FEE1A764A22B64 /* Action "gen_embedded_pos_matcher_data_for_chromeos" */,
+			);
+			dependencies = (
+				2594B6DBDF0A89798EB8A60C /* PBXTargetDependency */,
+			);
+			name = gen_embedded_pos_matcher_data_for_chromeos;
+			productName = gen_embedded_pos_matcher_data_for_chromeos;
+		};
+		E8F561450B2600169AEF46A8 /* gen_chromeos_embedded_data_light */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A01512FABE1B4E85F90E33FD /* Build configuration list for PBXAggregateTarget "gen_chromeos_embedded_data_light" */;
+			buildPhases = (
+			);
+			dependencies = (
+				03CF5CF7CB198C85DC92748B /* PBXTargetDependency */,
+				6ECA3EA898F580D3A3945B75 /* PBXTargetDependency */,
+			);
+			name = gen_chromeos_embedded_data_light;
+			productName = gen_chromeos_embedded_data_light;
+		};
+		FE2B2C3E0CAF6181C0753E99 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD68B0FCE9E5FA91E3D8F9D4 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				DAD72137720F22D16B536026 /* PBXTargetDependency */,
+				FD9891EA649BF2C49E1C00F7 /* PBXTargetDependency */,
+				693B4C513C7B7F6A9EA9801C /* PBXTargetDependency */,
+				EFD0821D5E745FBA68D745B2 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D4FF2342AE598B760DEB7A1 /* chromeos_user_pos_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = E7C36CC98BF895FAE9C3DD6A /* chromeos_user_pos_manager.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05668208529D3D02336EE18E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C8FEA146CC5D724E6D79E5;
+			remoteInfo = pos_util;
+		};
+		0E40BE8C8DAEFCC79E818909 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE7AEC5A303A7B9525210B91;
+			remoteInfo = gen_embedded_pos_matcher_data_for_chromeos;
+		};
+		2A46198AA7F7AA011E82E59B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B99C14BAB131F875F657B4;
+			remoteInfo = gen_embedded_user_pos_data_for_chromeos;
+		};
+		36FBE605CC8157761E6C8699 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6695C5D93B3F220E330BF7B1;
+			remoteInfo = pos_matcher;
+		};
+		4937A7451DF48A34DC8082AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0AC5D065270A5D7B061E4BA2;
+			remoteInfo = dictionary_protocol;
+		};
+		4A5762659656F726EE7709EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EC1E8D83859055F01C94D8A7;
+			remoteInfo = text_dictionary_loader;
+		};
+		5681273BF82546173CEEF13E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5A425105718AFF4A1C2AA98;
+			remoteInfo = user_pos;
+		};
+		6CA27781091F9B4EF30F50B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 82220025DCE6C5D304C8B701;
+			remoteInfo = user_dictionary;
+		};
+		755A93BF09F9A3EEB8788194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F561450B2600169AEF46A8;
+			remoteInfo = gen_chromeos_embedded_data_light;
+		};
+		79EE5801B13A67B2277AC452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B99C14BAB131F875F657B4;
+			remoteInfo = gen_embedded_user_pos_data_for_chromeos;
+		};
+		7BFAEB6375A7209B6A64D058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B99C14BAB131F875F657B4;
+			remoteInfo = gen_embedded_user_pos_data_for_chromeos;
+		};
+		7DCBF5D0109B200362B5F27D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4A59CE3FFE40184FAF73E8A6;
+			remoteInfo = suppression_dictionary;
+		};
+		A01E346C11375A8BDF42A467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE7AEC5A303A7B9525210B91;
+			remoteInfo = gen_embedded_pos_matcher_data_for_chromeos;
+		};
+		B17E95695F4CB8C1050876EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E80117AC2AF0690B0EFF7DF8;
+			remoteInfo = chromeos_user_pos_manager;
+		};
+		C55C8AE1D4DE39438B9C227A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C24079DCF72DFEB2A19DF96F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE7AEC5A303A7B9525210B91;
+			remoteInfo = gen_embedded_pos_matcher_data_for_chromeos;
+		};
+		D5F2DAB05E8DD8A7A6FC814F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C8FEA146CC5D724E6D79E5;
+			remoteInfo = pos_util;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D47784586F0FBA2B78DFF2 /* pos_matcher_rule.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = pos_matcher_rule.def; sourceTree = "<group>"; };
+		0945D00323DA369E61E97B55 /* user_pos.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = user_pos.def; sourceTree = "<group>"; };
+		466904CF9C5EA996C66311EF /* special_pos.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = special_pos.def; sourceTree = "<group>"; };
+		4A468842D8274B7D1D3587FA /* chromeos_data_manager_base.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = chromeos_data_manager_base.gyp; sourceTree = "<group>"; };
+		4C43F0F761A7DC23AD129BCC /* id.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = id.def; sourceTree = "<group>"; };
+		51BA319ED4F41AD2DC479076 /* pos_matcher_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pos_matcher_data.h; sourceTree = "<group>"; };
+		53323FE533168AD08FFB9395 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../../gyp/common.gypi; sourceTree = "<group>"; };
+		88D1226353E9E3CB12FEBADE /* libchromeos_user_pos_manager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libchromeos_user_pos_manager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E37ADCFBEF3C05E8E1622CC /* gen_user_pos_data.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gen_user_pos_data.py; sourceTree = "<group>"; };
+		AB0F9D36BA951ECF1FF05993 /* data_manager_base.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = data_manager_base.gypi; path = ../data_manager_base.gypi; sourceTree = "<group>"; };
+		CCFE3503E58B1DD928BB9E95 /* cforms.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = cforms.def; sourceTree = "<group>"; };
+		D5CEFB38C32E6CA4649E8DE2 /* user_pos_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user_pos_data.h; sourceTree = "<group>"; };
+		E7C36CC98BF895FAE9C3DD6A /* chromeos_user_pos_manager.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chromeos_user_pos_manager.cc; sourceTree = "<group>"; };
+		EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dictionary_base.xcodeproj; path = ../../dictionary/dictionary_base.xcodeproj; sourceTree = SOURCE_ROOT; };
+		FF7BC3A4F9E31DDEA86E27F9 /* gen_pos_matcher_code.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gen_pos_matcher_code.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F903623A7F83636DE1CF386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06427B44A2FF86669DDA4DBB = {
+			isa = PBXGroup;
+			children = (
+				9315D75D7BA17D7ED43A6581 /* Source */,
+				4389E8B8E42CBD5A2D4B2F25 /* Intermediates */,
+				1B89F4944EBA9551EAA1213D /* Projects */,
+				F0605D41CAB4D7C20A1493FB /* Products */,
+				8800835A61B2C223C3DE6D96 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		1B89F4944EBA9551EAA1213D /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		25F1E8B4D1289B6A0E5DB8B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12EFC333AEE03BDDEA17E6CF /* libtext_dictionary_loader.a */,
+				7DFD044F03169DB0FF456506 /* libuser_pos.a */,
+				3CBD4F93423CC86CE9AA6572 /* libdictionary_protocol.a */,
+				1FEFE49507814090236B9893 /* libsuppression_dictionary.a */,
+				69876C63670D33D1F46514A9 /* libuser_dictionary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4389E8B8E42CBD5A2D4B2F25 /* Intermediates */ = {
+			isa = PBXGroup;
+			children = (
+				51BA319ED4F41AD2DC479076 /* pos_matcher_data.h */,
+				D5CEFB38C32E6CA4649E8DE2 /* user_pos_data.h */,
+			);
+			name = Intermediates;
+			path = data_manager/chromeos;
+			sourceTree = SHARED_INTERMEDIATE_DIR;
+		};
+		5555AE234D249566DF1C09AA /* ../.. */ = {
+			isa = PBXGroup;
+			children = (
+				59C8840D0B0B8BADD1CCC9F9 /* data */,
+				FB8223A0DEFFE947C4152373 /* dictionary */,
+			);
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		59C8840D0B0B8BADD1CCC9F9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				AAD41E0CBF905F1C6B191F29 /* dictionary_chromeos */,
+				965A196E50A460B32F38B7BB /* rules */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		8800835A61B2C223C3DE6D96 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				4A468842D8274B7D1D3587FA /* chromeos_data_manager_base.gyp */,
+				53323FE533168AD08FFB9395 /* common.gypi */,
+				AB0F9D36BA951ECF1FF05993 /* data_manager_base.gypi */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		9315D75D7BA17D7ED43A6581 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5555AE234D249566DF1C09AA /* ../.. */,
+				E7C36CC98BF895FAE9C3DD6A /* chromeos_user_pos_manager.cc */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		965A196E50A460B32F38B7BB /* rules */ = {
+			isa = PBXGroup;
+			children = (
+				CCFE3503E58B1DD928BB9E95 /* cforms.def */,
+				00D47784586F0FBA2B78DFF2 /* pos_matcher_rule.def */,
+				466904CF9C5EA996C66311EF /* special_pos.def */,
+				0945D00323DA369E61E97B55 /* user_pos.def */,
+			);
+			path = rules;
+			sourceTree = "<group>";
+		};
+		AAD41E0CBF905F1C6B191F29 /* dictionary_chromeos */ = {
+			isa = PBXGroup;
+			children = (
+				4C43F0F761A7DC23AD129BCC /* id.def */,
+			);
+			path = dictionary_chromeos;
+			sourceTree = "<group>";
+		};
+		F0605D41CAB4D7C20A1493FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88D1226353E9E3CB12FEBADE /* libchromeos_user_pos_manager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB8223A0DEFFE947C4152373 /* dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				FF7BC3A4F9E31DDEA86E27F9 /* gen_pos_matcher_code.py */,
+				9E37ADCFBEF3C05E8E1622CC /* gen_user_pos_data.py */,
+			);
+			path = dictionary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E80117AC2AF0690B0EFF7DF8 /* chromeos_user_pos_manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A6972D6C326F0D6E78A4A96 /* Build configuration list for PBXNativeTarget "chromeos_user_pos_manager" */;
+			buildPhases = (
+				B6C9F4368B4CC33C0C611BB6 /* Sources */,
+				4F903623A7F83636DE1CF386 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E8051D6DE8260C1B334E08A /* PBXTargetDependency */,
+				96FE9A71F56C8D424BAC8471 /* PBXTargetDependency */,
+				8AD0DC04944A48EE62236908 /* PBXTargetDependency */,
+			);
+			name = chromeos_user_pos_manager;
+			productName = chromeos_user_pos_manager;
+			productReference = 88D1226353E9E3CB12FEBADE /* libchromeos_user_pos_manager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C24079DCF72DFEB2A19DF96F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 0F6511534382FF6F557938EC /* Build configuration list for PBXProject "chromeos_data_manager_base" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 06427B44A2FF86669DDA4DBB;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 25F1E8B4D1289B6A0E5DB8B3 /* Products */;
+					ProjectRef = EB06129A13035B64A8CAB314 /* dictionary_base.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FE2B2C3E0CAF6181C0753E99 /* All */,
+				E80117AC2AF0690B0EFF7DF8 /* chromeos_user_pos_manager */,
+				E8F561450B2600169AEF46A8 /* gen_chromeos_embedded_data_light */,
+				32B99C14BAB131F875F657B4 /* gen_embedded_user_pos_data_for_chromeos */,
+				AE7AEC5A303A7B9525210B91 /* gen_embedded_pos_matcher_data_for_chromeos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		12EFC333AEE03BDDEA17E6CF /* libtext_dictionary_loader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtext_dictionary_loader.a;
+			remoteRef = 4A5762659656F726EE7709EA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1FEFE49507814090236B9893 /* libsuppression_dictionary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsuppression_dictionary.a;
+			remoteRef = 7DCBF5D0109B200362B5F27D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CBD4F93423CC86CE9AA6572 /* libdictionary_protocol.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libdictionary_protocol.a;
+			remoteRef = 4937A7451DF48A34DC8082AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69876C63670D33D1F46514A9 /* libuser_dictionary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libuser_dictionary.a;
+			remoteRef = 6CA27781091F9B4EF30F50B2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7DFD044F03169DB0FF456506 /* libuser_pos.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libuser_pos.a;
+			remoteRef = 5681273BF82546173CEEF13E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BD925DD9F06014BFB8D9552 /* Action "gen_embedded_user_pos_data_for_chromeos" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				../../dictionary/gen_user_pos_data.py,
+				../../data/dictionary_chromeos/id.def,
+				../../data/rules/special_pos.def,
+				../../data/rules/user_pos.def,
+				../../data/rules/cforms.def,
+			);
+			name = "Action \"gen_embedded_user_pos_data_for_chromeos\"";
+			outputPaths = (
+				"$(SHARED_INTERMEDIATE_DIR)/data_manager/chromeos/user_pos_data.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo note: \"[chromeos] Generating ${SHARED_INTERMEDIATE_DIR}/data_manager/chromeos/user_pos_data.h.\"\nexec python ../../dictionary/gen_user_pos_data.py \"--id_file=../../data/dictionary_chromeos/id.def\" \"--special_pos_file=../../data/rules/special_pos.def\" \"--user_pos_file=../../data/rules/user_pos.def\" \"--cforms_file=../../data/rules/cforms.def\" \"--output=${SHARED_INTERMEDIATE_DIR}/data_manager/chromeos/user_pos_data.h\"\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+		879C6177B9FEE1A764A22B64 /* Action "gen_embedded_pos_matcher_data_for_chromeos" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				../../dictionary/gen_pos_matcher_code.py,
+				../../data/dictionary_chromeos/id.def,
+				../../data/rules/special_pos.def,
+				../../data/rules/pos_matcher_rule.def,
+			);
+			name = "Action \"gen_embedded_pos_matcher_data_for_chromeos\"";
+			outputPaths = (
+				"$(SHARED_INTERMEDIATE_DIR)/data_manager/chromeos/pos_matcher_data.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo note: \"[chromeos] Generating ${SHARED_INTERMEDIATE_DIR}/data_manager/chromeos/pos_matcher_data.h\"\nexec python ../../dictionary/gen_pos_matcher_code.py \"--id_file=../../data/dictionary_chromeos/id.def\" \"--special_pos_file=../../data/rules/special_pos.def\" \"--pos_matcher_rule_file=../../data/rules/pos_matcher_rule.def\" \"--output_pos_matcher_data=${SHARED_INTERMEDIATE_DIR}/data_manager/chromeos/pos_matcher_data.h\"\nexit 1\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6C9F4368B4CC33C0C611BB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D4FF2342AE598B760DEB7A1 /* chromeos_user_pos_manager.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03CF5CF7CB198C85DC92748B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE7AEC5A303A7B9525210B91 /* gen_embedded_pos_matcher_data_for_chromeos */;
+			targetProxy = A01E346C11375A8BDF42A467 /* PBXContainerItemProxy */;
+		};
+		2594B6DBDF0A89798EB8A60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pos_util;
+			targetProxy = 05668208529D3D02336EE18E /* PBXContainerItemProxy */;
+		};
+		4F42414AE8F318960CD4B2C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pos_util;
+			targetProxy = D5F2DAB05E8DD8A7A6FC814F /* PBXContainerItemProxy */;
+		};
+		693B4C513C7B7F6A9EA9801C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B99C14BAB131F875F657B4 /* gen_embedded_user_pos_data_for_chromeos */;
+			targetProxy = 7BFAEB6375A7209B6A64D058 /* PBXContainerItemProxy */;
+		};
+		6ECA3EA898F580D3A3945B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B99C14BAB131F875F657B4 /* gen_embedded_user_pos_data_for_chromeos */;
+			targetProxy = 2A46198AA7F7AA011E82E59B /* PBXContainerItemProxy */;
+		};
+		8AD0DC04944A48EE62236908 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B99C14BAB131F875F657B4 /* gen_embedded_user_pos_data_for_chromeos */;
+			targetProxy = 79EE5801B13A67B2277AC452 /* PBXContainerItemProxy */;
+		};
+		96FE9A71F56C8D424BAC8471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE7AEC5A303A7B9525210B91 /* gen_embedded_pos_matcher_data_for_chromeos */;
+			targetProxy = 0E40BE8C8DAEFCC79E818909 /* PBXContainerItemProxy */;
+		};
+		9E8051D6DE8260C1B334E08A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pos_matcher;
+			targetProxy = 36FBE605CC8157761E6C8699 /* PBXContainerItemProxy */;
+		};
+		DAD72137720F22D16B536026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E80117AC2AF0690B0EFF7DF8 /* chromeos_user_pos_manager */;
+			targetProxy = B17E95695F4CB8C1050876EF /* PBXContainerItemProxy */;
+		};
+		EFD0821D5E745FBA68D745B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE7AEC5A303A7B9525210B91 /* gen_embedded_pos_matcher_data_for_chromeos */;
+			targetProxy = C55C8AE1D4DE39438B9C227A /* PBXContainerItemProxy */;
+		};
+		FD9891EA649BF2C49E1C00F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F561450B2600169AEF46A8 /* gen_chromeos_embedded_data_light */;
+			targetProxy = 755A93BF09F9A3EEB8788194 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1EA6D44F282A54F13028D111 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_embedded_pos_matcher_data_for_chromeos;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		21FE10A2CCF7D89763BBE46C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		31D5AF2B4C2775E89A149E18 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_chromeos_embedded_data_light;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		374CDB98D262E9B760A2FC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_embedded_pos_matcher_data_for_chromeos;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		38B821FBBA64E5F9FB1B0751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_embedded_user_pos_data_for_chromeos;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		5FCACD2FA604855414E4FFB1 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Optimize;
+		};
+		69804DA5E4E1485D402ED1D4 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = chromeos_user_pos_manager;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		730E435251E93F4E4E0BAD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_chromeos_embedded_data_light;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		85C0BF11C7BC2DE0AA0600DC /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_embedded_user_pos_data_for_chromeos;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+		A31C7E926A5BBA65B4F91B80 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Optimize;
+		};
+		B2C37E579BE54A21DD4EAA72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Release;
+		};
+		C2E04C2161C0E02CD942BE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = chromeos_user_pos_manager;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		C38731C51784817F957F0756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Debug;
+		};
+		C8BF3CBE2885BD3BB2F1008D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_chromeos_embedded_data_light;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		CB21360B01ABF51CB59553E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_embedded_pos_matcher_data_for_chromeos;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		D3F58C1C6C2A75FC7279CC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		D95C2C2CAAF8C0B0BF332262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = gen_embedded_user_pos_data_for_chromeos;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		F4808B57573B48DC7E875A25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = ../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = chromeos_user_pos_manager;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F6511534382FF6F557938EC /* Build configuration list for PBXProject "chromeos_data_manager_base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C38731C51784817F957F0756 /* Debug */,
+				5FCACD2FA604855414E4FFB1 /* Optimize */,
+				B2C37E579BE54A21DD4EAA72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		2A6972D6C326F0D6E78A4A96 /* Build configuration list for PBXNativeTarget "chromeos_user_pos_manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4808B57573B48DC7E875A25 /* Debug */,
+				69804DA5E4E1485D402ED1D4 /* Optimize */,
+				C2E04C2161C0E02CD942BE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		60C2771452930C15E58BDF87 /* Build configuration list for PBXAggregateTarget "gen_embedded_user_pos_data_for_chromeos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38B821FBBA64E5F9FB1B0751 /* Debug */,
+				85C0BF11C7BC2DE0AA0600DC /* Optimize */,
+				D95C2C2CAAF8C0B0BF332262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		A01512FABE1B4E85F90E33FD /* Build configuration list for PBXAggregateTarget "gen_chromeos_embedded_data_light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				730E435251E93F4E4E0BAD73 /* Debug */,
+				31D5AF2B4C2775E89A149E18 /* Optimize */,
+				C8BF3CBE2885BD3BB2F1008D /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		BD68B0FCE9E5FA91E3D8F9D4 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3F58C1C6C2A75FC7279CC4A /* Debug */,
+				A31C7E926A5BBA65B4F91B80 /* Optimize */,
+				21FE10A2CCF7D89763BBE46C /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		CD39867417920E86E0E7B52E /* Build configuration list for PBXAggregateTarget "gen_embedded_pos_matcher_data_for_chromeos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374CDB98D262E9B760A2FC41 /* Debug */,
+				1EA6D44F282A54F13028D111 /* Optimize */,
+				CB21360B01ABF51CB59553E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C24079DCF72DFEB2A19DF96F /* Project object */;
+}

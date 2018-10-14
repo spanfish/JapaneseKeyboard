@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		06F76546E88A1D33F1B7C286 /* install_session_handler_scenario_test_data */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D023EABE02F9FE64F7EFEA55 /* Build configuration list for PBXAggregateTarget "install_session_handler_scenario_test_data" */;
+			buildPhases = (
+				B07BB6FBEB8FF84EC4A8A317 /* Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+			);
+			dependencies = (
+			);
+			name = install_session_handler_scenario_test_data;
+			productName = install_session_handler_scenario_test_data;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0A919DE07EA15E1A63A47930 /* input_mode.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 933041575FDAD5C0186B2826 /* input_mode.txt */; };
+		178D9782F58D2BF9331A1ED2 /* desktop_t13n_candidates.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 4C160FA83020F586D3CFABC7 /* desktop_t13n_candidates.txt */; };
+		1C445AABF0386341E0D89AEB /* insert_characters.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 9117B4442C595523296EC0E4 /* insert_characters.txt */; };
+		27198ECFCB1C9CD8277FFB1D /* b7132535_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 69CAD4275A203246025DF887 /* b7132535_scenario.txt */; };
+		2BA429841154A63FE32E1EB7 /* b8703702_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 9F3DDCC477BBE034AB513945 /* b8703702_scenario.txt */; };
+		38366ECC74057CDA8B497D84 /* composition_display_as.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 3BB57CAAAB5C1D5262CC52C9 /* composition_display_as.txt */; };
+		40F23681FF675090AAF6256D /* pending_character.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = AF2E4F1DA1536EBB2F5DAF93 /* pending_character.txt */; };
+		44C0101306A4474886FBE580 /* b16123009_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = C1E38C88AC158DA1BA65614E /* b16123009_scenario.txt */; };
+		4584358F70DC4FA33DC8B26B /* revert.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = C49E5132E5F77F859266EFD0 /* revert.txt */; };
+		48B05D8272FF70EA337510AA /* b8690065_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 8A84DC077E1FFD9DF2C75382 /* b8690065_scenario.txt */; };
+		4BE501FBF48CEE79CD213EA5 /* b7321313_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = B9FC73EA2D9A11EA649B4CD8 /* b7321313_scenario.txt */; };
+		5CD565573C94CE834C2E874A /* b7548679_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 3580E4AC866E9679A30D580A /* b7548679_scenario.txt */; };
+		63625693BA176ECC2A82516C /* convert_from_full_katakana_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 6F7C2E80939B67DF1ACB502B /* convert_from_full_katakana_to_t13n.txt */; };
+		65A4C0C1FA42091395B89542 /* convert_from_hiragana_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = B5479DE165284A9296EECD47 /* convert_from_hiragana_to_t13n.txt */; };
+		66BC70B6DCA07BDA8A328079 /* conversion_display_as.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 65794BF352BE043A57CCB02C /* conversion_display_as.txt */; };
+		671168490CA6BD263BBC740A /* mobile_t13n_candidates.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 6B7F1A965FF1ABCF28BFB2A4 /* mobile_t13n_candidates.txt */; };
+		6941DC1707408BD9E6D83606 /* conversion_with_long_history_segments.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 18930F219BC234A8B8C15D10 /* conversion_with_long_history_segments.txt */; };
+		6A82E431E68F13FFABA8C72B /* convert_from_half_katakana_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 1ADD4AFCDDD2B17840BBB091 /* convert_from_half_katakana_to_t13n.txt */; };
+		77DD2794C8815074DD85EB6E /* b12751061_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 6E08425C96ACBB41DADCA37C /* b12751061_scenario.txt */; };
+		7FC94DEFC78B61951905B792 /* undo.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 2ED3D419DBDEADD9A5E39FA3 /* undo.txt */; };
+		8484C4ACC736065930B326DA /* convert_from_full_ascii_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 81E7A7509301C538FB16C54E /* convert_from_full_ascii_to_t13n.txt */; };
+		8794A62CEEDC0EAF7CF489FB /* twelvekeys_switch_inputmode_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = CC22C10823E4E049AF6E7477 /* twelvekeys_switch_inputmode_scenario.txt */; };
+		94BAD1912CE331BFFEDB281C /* on_off_cancel.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 414D59A1BB71C7BE1164098B /* on_off_cancel.txt */; };
+		960C88A0F81D442B8470B172 /* mobile_qwerty_transliteration_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 2D13E53CA9C63546749B774D /* mobile_qwerty_transliteration_scenario.txt */; };
+		9A89EA3AF2D042319B17D60B /* delete_history.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 9E80561F6FBF3AB5983ABE65 /* delete_history.txt */; };
+		AD00223F6B38EE790BF684C3 /* twelvekeys_toggle_flick_alphabet_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 437DE204E56BADC59C8C3336 /* twelvekeys_toggle_flick_alphabet_scenario.txt */; };
+		B0EE3A1F3F807EE016C2E085 /* reconvert.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = CFBD071D898E0D1683FD29EF /* reconvert.txt */; };
+		B1EAABB0C9AF5880434CC5E2 /* auto_partial_suggestion.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = C5CB98AAFD28A6A242C74EB5 /* auto_partial_suggestion.txt */; };
+		B887030298E69FE5728E173B /* clear_user_prediction.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 638FC662C5D2732C8ADD53D9 /* clear_user_prediction.txt */; };
+		B8EB7DF1D4C4DE67ADD122F9 /* convert_from_half_ascii_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 03538A86DBA6F321EDAE66DF /* convert_from_half_ascii_to_t13n.txt */; };
+		C7354C12CD1B0E852296C0BF /* twelvekeys_toggle_hiragana_preedit_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 9B76F96DAEC02E0D7856AB65 /* twelvekeys_toggle_hiragana_preedit_scenario.txt */; };
+		C8D7888A67EE5EF3448D23E1 /* conversion_with_history_segment.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 3F3408D309BE8C26A6493092 /* conversion_with_history_segment.txt */; };
+		CC1B11ECC5274BED37A38624 /* segment_focus.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 45A19BCFA49F2CAE7A88C4A9 /* segment_focus.txt */; };
+		D04DC34F9B619D533FC59457 /* predict_and_convert.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 6B99338B189410A853F4249F /* predict_and_convert.txt */; };
+		D231D10DC24B5906EBB5C924 /* change_request.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = F8E1C463F478E9FEAD2A3825 /* change_request.txt */; };
+		DBE18A4144B1DEC42F96D2C5 /* conversion.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 52D150F6F73B3D7893E0C002 /* conversion.txt */; };
+		DD65171F3C88A8885A8240BE /* segment_width.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 82034A3538EEBE535A06C368 /* segment_width.txt */; };
+		E73962A1239E5427EADB4B65 /* commit.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 42D831063CE576830DF33DA1 /* commit.txt */; };
+		F6E1CB471E6F2B70D2AB67EE /* partial_suggestion.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {isa = PBXBuildFile; fileRef = 0A493EDF43EF3D33D31E694C /* partial_suggestion.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B07BB6FBEB8FF84EC4A8A317 /* Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario";
+			dstSubfolderSpec = 0;
+			files = (
+				B1EAABB0C9AF5880434CC5E2 /* auto_partial_suggestion.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				77DD2794C8815074DD85EB6E /* b12751061_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				44C0101306A4474886FBE580 /* b16123009_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				27198ECFCB1C9CD8277FFB1D /* b7132535_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				4BE501FBF48CEE79CD213EA5 /* b7321313_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				5CD565573C94CE834C2E874A /* b7548679_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				48B05D8272FF70EA337510AA /* b8690065_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				2BA429841154A63FE32E1EB7 /* b8703702_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				D231D10DC24B5906EBB5C924 /* change_request.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				B887030298E69FE5728E173B /* clear_user_prediction.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				E73962A1239E5427EADB4B65 /* commit.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				38366ECC74057CDA8B497D84 /* composition_display_as.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				DBE18A4144B1DEC42F96D2C5 /* conversion.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				66BC70B6DCA07BDA8A328079 /* conversion_display_as.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				C8D7888A67EE5EF3448D23E1 /* conversion_with_history_segment.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				6941DC1707408BD9E6D83606 /* conversion_with_long_history_segments.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				8484C4ACC736065930B326DA /* convert_from_full_ascii_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				63625693BA176ECC2A82516C /* convert_from_full_katakana_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				B8EB7DF1D4C4DE67ADD122F9 /* convert_from_half_ascii_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				6A82E431E68F13FFABA8C72B /* convert_from_half_katakana_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				65A4C0C1FA42091395B89542 /* convert_from_hiragana_to_t13n.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				9A89EA3AF2D042319B17D60B /* delete_history.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				178D9782F58D2BF9331A1ED2 /* desktop_t13n_candidates.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				0A919DE07EA15E1A63A47930 /* input_mode.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				1C445AABF0386341E0D89AEB /* insert_characters.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				960C88A0F81D442B8470B172 /* mobile_qwerty_transliteration_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				671168490CA6BD263BBC740A /* mobile_t13n_candidates.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				94BAD1912CE331BFFEDB281C /* on_off_cancel.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				F6E1CB471E6F2B70D2AB67EE /* partial_suggestion.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				40F23681FF675090AAF6256D /* pending_character.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				D04DC34F9B619D533FC59457 /* predict_and_convert.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				B0EE3A1F3F807EE016C2E085 /* reconvert.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				4584358F70DC4FA33DC8B26B /* revert.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				CC1B11ECC5274BED37A38624 /* segment_focus.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				DD65171F3C88A8885A8240BE /* segment_width.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				8794A62CEEDC0EAF7CF489FB /* twelvekeys_switch_inputmode_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				AD00223F6B38EE790BF684C3 /* twelvekeys_toggle_flick_alphabet_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				C7354C12CD1B0E852296C0BF /* twelvekeys_toggle_hiragana_preedit_scenario.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+				7FC94DEFC78B61951905B792 /* undo.txt in Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario */,
+			);
+			name = "Copy to $(SHARED_INTERMEDIATE_DIR)//data/test/session/scenario";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03538A86DBA6F321EDAE66DF /* convert_from_half_ascii_to_t13n.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = convert_from_half_ascii_to_t13n.txt; sourceTree = "<group>"; };
+		0A493EDF43EF3D33D31E694C /* partial_suggestion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = partial_suggestion.txt; sourceTree = "<group>"; };
+		18930F219BC234A8B8C15D10 /* conversion_with_long_history_segments.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conversion_with_long_history_segments.txt; sourceTree = "<group>"; };
+		1ADD4AFCDDD2B17840BBB091 /* convert_from_half_katakana_to_t13n.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = convert_from_half_katakana_to_t13n.txt; sourceTree = "<group>"; };
+		2D13E53CA9C63546749B774D /* mobile_qwerty_transliteration_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mobile_qwerty_transliteration_scenario.txt; sourceTree = "<group>"; };
+		2ED3D419DBDEADD9A5E39FA3 /* undo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = undo.txt; sourceTree = "<group>"; };
+		3580E4AC866E9679A30D580A /* b7548679_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b7548679_scenario.txt; sourceTree = "<group>"; };
+		3BB57CAAAB5C1D5262CC52C9 /* composition_display_as.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = composition_display_as.txt; sourceTree = "<group>"; };
+		3F3408D309BE8C26A6493092 /* conversion_with_history_segment.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conversion_with_history_segment.txt; sourceTree = "<group>"; };
+		414D59A1BB71C7BE1164098B /* on_off_cancel.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = on_off_cancel.txt; sourceTree = "<group>"; };
+		42D831063CE576830DF33DA1 /* commit.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = commit.txt; sourceTree = "<group>"; };
+		437DE204E56BADC59C8C3336 /* twelvekeys_toggle_flick_alphabet_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = twelvekeys_toggle_flick_alphabet_scenario.txt; sourceTree = "<group>"; };
+		45A19BCFA49F2CAE7A88C4A9 /* segment_focus.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = segment_focus.txt; sourceTree = "<group>"; };
+		4C160FA83020F586D3CFABC7 /* desktop_t13n_candidates.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = desktop_t13n_candidates.txt; sourceTree = "<group>"; };
+		52D150F6F73B3D7893E0C002 /* conversion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conversion.txt; sourceTree = "<group>"; };
+		546338F5E4849ED1E6870A3F /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = ../../../../gyp/common.gypi; sourceTree = "<group>"; };
+		638FC662C5D2732C8ADD53D9 /* clear_user_prediction.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clear_user_prediction.txt; sourceTree = "<group>"; };
+		65794BF352BE043A57CCB02C /* conversion_display_as.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = conversion_display_as.txt; sourceTree = "<group>"; };
+		69CAD4275A203246025DF887 /* b7132535_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b7132535_scenario.txt; sourceTree = "<group>"; };
+		6B7F1A965FF1ABCF28BFB2A4 /* mobile_t13n_candidates.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mobile_t13n_candidates.txt; sourceTree = "<group>"; };
+		6B99338B189410A853F4249F /* predict_and_convert.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = predict_and_convert.txt; sourceTree = "<group>"; };
+		6E08425C96ACBB41DADCA37C /* b12751061_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b12751061_scenario.txt; sourceTree = "<group>"; };
+		6F7C2E80939B67DF1ACB502B /* convert_from_full_katakana_to_t13n.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = convert_from_full_katakana_to_t13n.txt; sourceTree = "<group>"; };
+		81E7A7509301C538FB16C54E /* convert_from_full_ascii_to_t13n.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = convert_from_full_ascii_to_t13n.txt; sourceTree = "<group>"; };
+		82034A3538EEBE535A06C368 /* segment_width.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = segment_width.txt; sourceTree = "<group>"; };
+		8A84DC077E1FFD9DF2C75382 /* b8690065_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b8690065_scenario.txt; sourceTree = "<group>"; };
+		9117B4442C595523296EC0E4 /* insert_characters.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = insert_characters.txt; sourceTree = "<group>"; };
+		933041575FDAD5C0186B2826 /* input_mode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = input_mode.txt; sourceTree = "<group>"; };
+		9B76F96DAEC02E0D7856AB65 /* twelvekeys_toggle_hiragana_preedit_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = twelvekeys_toggle_hiragana_preedit_scenario.txt; sourceTree = "<group>"; };
+		9E80561F6FBF3AB5983ABE65 /* delete_history.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = delete_history.txt; sourceTree = "<group>"; };
+		9F3DDCC477BBE034AB513945 /* b8703702_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b8703702_scenario.txt; sourceTree = "<group>"; };
+		A10A631165D5831DB01D64F8 /* install_testdata.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = install_testdata.gypi; path = ../../../../gyp/install_testdata.gypi; sourceTree = "<group>"; };
+		AF2E4F1DA1536EBB2F5DAF93 /* pending_character.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pending_character.txt; sourceTree = "<group>"; };
+		B5479DE165284A9296EECD47 /* convert_from_hiragana_to_t13n.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = convert_from_hiragana_to_t13n.txt; sourceTree = "<group>"; };
+		B9FC73EA2D9A11EA649B4CD8 /* b7321313_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b7321313_scenario.txt; sourceTree = "<group>"; };
+		C1E38C88AC158DA1BA65614E /* b16123009_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = b16123009_scenario.txt; sourceTree = "<group>"; };
+		C49E5132E5F77F859266EFD0 /* revert.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = revert.txt; sourceTree = "<group>"; };
+		C5CB98AAFD28A6A242C74EB5 /* auto_partial_suggestion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = auto_partial_suggestion.txt; sourceTree = "<group>"; };
+		CC22C10823E4E049AF6E7477 /* twelvekeys_switch_inputmode_scenario.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = twelvekeys_switch_inputmode_scenario.txt; sourceTree = "<group>"; };
+		CCD89A3BEF666A2BFDE5D58E /* scenario.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = scenario.gyp; sourceTree = "<group>"; };
+		CFBD071D898E0D1683FD29EF /* reconvert.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = reconvert.txt; sourceTree = "<group>"; };
+		F8E1C463F478E9FEAD2A3825 /* change_request.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = change_request.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		7599C4930952E4B761078064 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C5CB98AAFD28A6A242C74EB5 /* auto_partial_suggestion.txt */,
+				6E08425C96ACBB41DADCA37C /* b12751061_scenario.txt */,
+				C1E38C88AC158DA1BA65614E /* b16123009_scenario.txt */,
+				69CAD4275A203246025DF887 /* b7132535_scenario.txt */,
+				B9FC73EA2D9A11EA649B4CD8 /* b7321313_scenario.txt */,
+				3580E4AC866E9679A30D580A /* b7548679_scenario.txt */,
+				8A84DC077E1FFD9DF2C75382 /* b8690065_scenario.txt */,
+				9F3DDCC477BBE034AB513945 /* b8703702_scenario.txt */,
+				F8E1C463F478E9FEAD2A3825 /* change_request.txt */,
+				638FC662C5D2732C8ADD53D9 /* clear_user_prediction.txt */,
+				42D831063CE576830DF33DA1 /* commit.txt */,
+				3BB57CAAAB5C1D5262CC52C9 /* composition_display_as.txt */,
+				52D150F6F73B3D7893E0C002 /* conversion.txt */,
+				65794BF352BE043A57CCB02C /* conversion_display_as.txt */,
+				3F3408D309BE8C26A6493092 /* conversion_with_history_segment.txt */,
+				18930F219BC234A8B8C15D10 /* conversion_with_long_history_segments.txt */,
+				81E7A7509301C538FB16C54E /* convert_from_full_ascii_to_t13n.txt */,
+				6F7C2E80939B67DF1ACB502B /* convert_from_full_katakana_to_t13n.txt */,
+				03538A86DBA6F321EDAE66DF /* convert_from_half_ascii_to_t13n.txt */,
+				1ADD4AFCDDD2B17840BBB091 /* convert_from_half_katakana_to_t13n.txt */,
+				B5479DE165284A9296EECD47 /* convert_from_hiragana_to_t13n.txt */,
+				9E80561F6FBF3AB5983ABE65 /* delete_history.txt */,
+				4C160FA83020F586D3CFABC7 /* desktop_t13n_candidates.txt */,
+				933041575FDAD5C0186B2826 /* input_mode.txt */,
+				9117B4442C595523296EC0E4 /* insert_characters.txt */,
+				2D13E53CA9C63546749B774D /* mobile_qwerty_transliteration_scenario.txt */,
+				6B7F1A965FF1ABCF28BFB2A4 /* mobile_t13n_candidates.txt */,
+				414D59A1BB71C7BE1164098B /* on_off_cancel.txt */,
+				0A493EDF43EF3D33D31E694C /* partial_suggestion.txt */,
+				AF2E4F1DA1536EBB2F5DAF93 /* pending_character.txt */,
+				6B99338B189410A853F4249F /* predict_and_convert.txt */,
+				CFBD071D898E0D1683FD29EF /* reconvert.txt */,
+				C49E5132E5F77F859266EFD0 /* revert.txt */,
+				45A19BCFA49F2CAE7A88C4A9 /* segment_focus.txt */,
+				82034A3538EEBE535A06C368 /* segment_width.txt */,
+				CC22C10823E4E049AF6E7477 /* twelvekeys_switch_inputmode_scenario.txt */,
+				437DE204E56BADC59C8C3336 /* twelvekeys_toggle_flick_alphabet_scenario.txt */,
+				9B76F96DAEC02E0D7856AB65 /* twelvekeys_toggle_hiragana_preedit_scenario.txt */,
+				2ED3D419DBDEADD9A5E39FA3 /* undo.txt */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		B1EF914CED38C76D635DEA66 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				546338F5E4849ED1E6870A3F /* common.gypi */,
+				A10A631165D5831DB01D64F8 /* install_testdata.gypi */,
+				CCD89A3BEF666A2BFDE5D58E /* scenario.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		DBF2ACEF8C883E25E9357C88 = {
+			isa = PBXGroup;
+			children = (
+				7599C4930952E4B761078064 /* Source */,
+				B1EF914CED38C76D635DEA66 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4C267226554EDDCF956C0D2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 156AACF950C29C8DFED0525D /* Build configuration list for PBXProject "scenario" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = DBF2ACEF8C883E25E9357C88;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06F76546E88A1D33F1B7C286 /* install_session_handler_scenario_test_data */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1023322F522524674802E4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+					NO_LOGGING,
+					IGNORE_HELP_FLAG,
+					IGNORE_INVALID_FLAG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = install_session_handler_scenario_test_data;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Release;
+		};
+		3D1380C592E346998EA3E477 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Optimize;
+		};
+		4B2A656F82189DBCAD53115F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Release;
+		};
+		52AD1D36502F204249520F96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = ../../../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O0",
+					"-g",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = install_session_handler_scenario_test_data;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Debug;
+		};
+		BF68CAB96B838CEA837AE619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+				SYMROOT = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/out_ios";
+			};
+			name = Debug;
+		};
+		FB5AD8852426EFCAD6669044 /* Optimize */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../../../../../mac/Releases/GoogleBreakpad;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					OS_MACOSX,
+					MOZC_BUILD,
+					CHANNEL_DEV,
+					MOZC_ENABLE_UNITTEST,
+					NDEBUG,
+					QT_NO_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src",
+					"$(SHARED_INTERMEDIATE_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fno-strict-aliasing",
+					"-funsigned-char",
+					"-include base/namespace.h",
+					"-pipe",
+					"-pthread",
+					"-fno-omit-frame-pointer",
+					"-fstack-protector",
+					"-O2",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				PRODUCT_NAME = install_session_handler_scenario_test_data;
+				PYTHONPATH = "/Users/xiangweiwang/MyApps/JapaneseKeyboardKit-master/Mozc-for-iOS/src/";
+				SDKROOT = macosx10.8;
+				WARNING_CFLAGS = (
+					"-Wno-c++11-narrowing",
+					"-Wno-covered-switch-default",
+					"-Wno-unnamed-type-template-args",
+				);
+			};
+			name = Optimize;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156AACF950C29C8DFED0525D /* Build configuration list for PBXProject "scenario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF68CAB96B838CEA837AE619 /* Debug */,
+				3D1380C592E346998EA3E477 /* Optimize */,
+				4B2A656F82189DBCAD53115F /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		D023EABE02F9FE64F7EFEA55 /* Build configuration list for PBXAggregateTarget "install_session_handler_scenario_test_data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52AD1D36502F204249520F96 /* Debug */,
+				FB5AD8852426EFCAD6669044 /* Optimize */,
+				1023322F522524674802E4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C267226554EDDCF956C0D2C /* Project object */;
+}
