@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EmailKeyboardView.h"
-#import "NumberKeyboardView.h"
-#import "JapaneseKeyboardView.h"
-@interface KeyboardViewController : UIInputViewController<EmailKeyboardViewDelegate, NumberKeyboardViewDelegate, JapaneseKeyboardViewDelegate>
+
+@interface KeyboardViewController : UIInputViewController
 
 @end

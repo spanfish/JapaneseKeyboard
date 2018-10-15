@@ -101,7 +101,7 @@ typedef NS_ENUM(NSInteger, KeyboardSize) {
         
         self.markedText = @"";
         
-        [self setupKeyboardLayout];
+        self.keyboardLayout = [[KeyboardLayout alloc] initWithDelegate: self];
     }
     
     return self;
@@ -111,160 +111,160 @@ typedef NS_ENUM(NSInteger, KeyboardSize) {
 {
     [super layoutSubviews];
     
-    if (!self.keyboardLayout) {
-        [self setupKeyboardLayout];
-        [self.keyboardLayout setupKeyboardButtonsWithView:self];
-    }
-    
-    [self updateKeyboardLayout];
+//    if (!self.keyboardLayout) {
+//        [self setupKeyboardLayout];
+//        [self.keyboardLayout setupKeyboardButtonsWithView:self];
+//    }
+//
+//    [self updateKeyboardLayout];
 }
 
 #pragma mark -
 
-- (void)setupKeyboardLayout
-{
-    KeyboardSize keyboardSize = [self currentKeyboardSize];
-#ifdef DEBUG
-    NSLog(@"keyboardSize:%ld", keyboardSize);
-#endif
-    switch (keyboardSize) {
-        case KeyboardSize4Portrait:
-        case KeyboardSize4Landscape:
-        case KeyboardSize5Landscape:
-            self.keyboardLayout = [KeyboardLayoutPhone5 keyboardLayout];
-            break;
-            
-        case KeyboardSize6Portrait:
-        case KeyboardSize6Landscape:
-            self.keyboardLayout = [KeyboardLayoutPhone6 keyboardLayout];
-            break;
-            
-        case KeyboardSize6PlusPortrait:
-        case KeyboardSize6PlusLandscape:
-            self.keyboardLayout = [KeyboardLayoutPhone6Plus keyboardLayout];
-            break;
-            
-        case KeyboardSizePadPortrait:
-        case KeyboardSizePadLandscape:
-            self.keyboardLayout = [KeyboardLayoutiPad keyboardLayout];
-            break;
-            
-        case KeyboardSizeUnknown:
-            break;
-    }
-    
-    self.keyboardLayout.inputMode = self.inputMode;
-}
-
-- (void)updateKeyboardLayout
-{
-    KeyboardMetrics metrics = [self currentKeyboardMetrics];
-    self.keyboardLayout.metrics = metrics;
-    
-    CGRect bounds = self.bounds;
-    
-    if (metrics == KeyboardMetricsDefault) {
-        CGRect labelFrame = bounds;
-        
-        if(self.inputMode == KeyboardInputModeHandWriting) {
-            labelFrame.size.height = 0;
-        } else {
-            labelFrame.size.height = MarkedTextLabelHeightDefault;
-        }
-        
-        self.markedTextLabel.frame = labelFrame;
-        
-        CGRect barFrame = labelFrame;
-        barFrame.origin.y = CGRectGetHeight(labelFrame);
-        barFrame.size.height = AccessoryViewHeightDefault - CGRectGetHeight(labelFrame);
-        self.candidateBar.frame = barFrame;
-    } else {
-        [self.markedTextLabel sizeToFit];
-        CGRect labelFrame = self.markedTextLabel.frame;
-        labelFrame.size.height = AccessoryViewHeightLandscape;
-        self.markedTextLabel.frame = labelFrame;
-        
-        CGRect barFrame = labelFrame;
-        barFrame.origin.x = CGRectGetMaxX(labelFrame);
-        barFrame.size.width = CGRectGetWidth(bounds) - CGRectGetMaxX(labelFrame);
-        barFrame.size.height = AccessoryViewHeightLandscape;
-        self.candidateBar.frame = barFrame;
-    }
-    
-    CGRect borderBottomFrame = self.borderBottom.frame;
-    borderBottomFrame.origin.y = CGRectGetMaxY(self.candidateBar.frame) - 1.0 / [[UIScreen mainScreen] scale];
-    self.borderBottom.frame = borderBottomFrame;
-}
-
-- (KeyboardSize)currentKeyboardSize
-{
-#ifdef DEBUG
-    NSLog(@"currentKeyboardSize");
-#endif
-    CGRect bounds = self.bounds;
-    if (CGRectIsEmpty(bounds)) {
-        return KeyboardSizeUnknown;
-    }
-    
-    CGFloat viewWidth = CGRectGetWidth(bounds);
-    CGFloat viewHeight = CGRectGetHeight(bounds);
-#ifdef DEBUG
-    NSLog(@"viewWidth:%f, viewHeight:%f", viewWidth, viewHeight);
-#endif
-    
-    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
-        if(viewWidth < viewHeight) {
-            return KeyboardSizePadPortrait;
-        } else {
-            return KeyboardSizePadLandscape;
-        }
-    }
-    
-    if (viewWidth >= 414.0 && viewHeight >= 226.0) {
-        return KeyboardSize6PlusPortrait;
-    } else if (viewWidth >= 375.0 && viewHeight >= 216.0) {
-        return KeyboardSize6Portrait;
-    } else if (viewWidth >= 320.0 && viewHeight >= 216.0) {
-        return KeyboardSize4Portrait;
-    } else if (viewWidth >= 736.0 && viewHeight >= 162.0) {
-        return KeyboardSize6PlusLandscape;
-    } else if (viewWidth >= 667.0 && viewHeight >= 162.0) {
-        return KeyboardSize6Landscape;
-    } else if (viewWidth >= 568.0 && viewHeight >= 162.0) {
-        return KeyboardSize5Landscape;
-    } else if (viewWidth >= 480.0 && viewHeight >= 162.0) {
-        return KeyboardSize4Landscape;
-    }
-    return KeyboardSizeUnknown;
-}
-
-- (KeyboardMetrics)currentKeyboardMetrics
-{
-    CGRect bounds = self.bounds;
-    if (CGRectIsEmpty(bounds)) {
-        return KeyboardMetricsDefault;
-    }
-    
+//- (void)setupKeyboardLayout
+//{
 //    KeyboardSize keyboardSize = [self currentKeyboardSize];
-    
-    /*
-    switch (keyboardSize) {
-        case KeyboardSize4Portrait:
-        case KeyboardSize6Portrait:
-        case KeyboardSize6PlusPortrait:
-        case KeyboardSizeUnknown:
-            return KeyboardMetricsDefault;
-        case KeyboardSize4Landscape:
-        case KeyboardSize6Landscape:
-        case KeyboardSize6PlusLandscape:
-            return KeyboardMetricsLandscape;
-        case KeyboardSize5Landscape:
-            return KeyboardMetricsLandscape568;
-    }
-    */
-    return KeyboardMetricsDefault;
-}
+//#ifdef DEBUG
+//    NSLog(@"keyboardSize:%ld", keyboardSize);
+//#endif
+//    switch (keyboardSize) {
+//        case KeyboardSize4Portrait:
+//        case KeyboardSize4Landscape:
+//        case KeyboardSize5Landscape:
+//            self.keyboardLayout = [KeyboardLayoutPhone5 keyboardLayout];
+//            break;
+//
+//        case KeyboardSize6Portrait:
+//        case KeyboardSize6Landscape:
+//            self.keyboardLayout = [KeyboardLayoutPhone6 keyboardLayout];
+//            break;
+//
+//        case KeyboardSize6PlusPortrait:
+//        case KeyboardSize6PlusLandscape:
+//            self.keyboardLayout = [KeyboardLayoutPhone6Plus keyboardLayout];
+//            break;
+//
+//        case KeyboardSizePadPortrait:
+//        case KeyboardSizePadLandscape:
+//            self.keyboardLayout = [KeyboardLayoutiPad keyboardLayout];
+//            break;
+//
+//        case KeyboardSizeUnknown:
+//            break;
+//    }
+//
+//    self.keyboardLayout.inputMode = self.inputMode;
+//}
 
+//- (void)updateKeyboardLayout
+//{
+//    KeyboardMetrics metrics = [self currentKeyboardMetrics];
+//    self.keyboardLayout.metrics = metrics;
+//
+//    CGRect bounds = self.bounds;
+//
+//    if (metrics == KeyboardMetricsDefault) {
+//        CGRect labelFrame = bounds;
+//
+//        if(self.inputMode == KeyboardInputModeHandWriting) {
+//            labelFrame.size.height = 0;
+//        } else {
+//            labelFrame.size.height = MarkedTextLabelHeightDefault;
+//        }
+//
+//        self.markedTextLabel.frame = labelFrame;
+//
+//        CGRect barFrame = labelFrame;
+//        barFrame.origin.y = CGRectGetHeight(labelFrame);
+//        barFrame.size.height = AccessoryViewHeightDefault - CGRectGetHeight(labelFrame);
+//        self.candidateBar.frame = barFrame;
+//    } else {
+//        [self.markedTextLabel sizeToFit];
+//        CGRect labelFrame = self.markedTextLabel.frame;
+//        labelFrame.size.height = AccessoryViewHeightLandscape;
+//        self.markedTextLabel.frame = labelFrame;
+//
+//        CGRect barFrame = labelFrame;
+//        barFrame.origin.x = CGRectGetMaxX(labelFrame);
+//        barFrame.size.width = CGRectGetWidth(bounds) - CGRectGetMaxX(labelFrame);
+//        barFrame.size.height = AccessoryViewHeightLandscape;
+//        self.candidateBar.frame = barFrame;
+//    }
+//
+//    CGRect borderBottomFrame = self.borderBottom.frame;
+//    borderBottomFrame.origin.y = CGRectGetMaxY(self.candidateBar.frame) - 1.0 / [[UIScreen mainScreen] scale];
+//    self.borderBottom.frame = borderBottomFrame;
+//}
+//
+//- (KeyboardSize)currentKeyboardSize
+//{
+//#ifdef DEBUG
+//    NSLog(@"currentKeyboardSize");
+//#endif
+//    CGRect bounds = self.bounds;
+//    if (CGRectIsEmpty(bounds)) {
+//        return KeyboardSizeUnknown;
+//    }
+//    
+//    CGFloat viewWidth = CGRectGetWidth(bounds);
+//    CGFloat viewHeight = CGRectGetHeight(bounds);
+//#ifdef DEBUG
+//    NSLog(@"viewWidth:%f, viewHeight:%f", viewWidth, viewHeight);
+//#endif
+//    
+//    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
+//        if(viewWidth < viewHeight) {
+//            return KeyboardSizePadPortrait;
+//        } else {
+//            return KeyboardSizePadLandscape;
+//        }
+//    }
+//    
+//    if (viewWidth >= 414.0 && viewHeight >= 226.0) {
+//        return KeyboardSize6PlusPortrait;
+//    } else if (viewWidth >= 375.0 && viewHeight >= 216.0) {
+//        return KeyboardSize6Portrait;
+//    } else if (viewWidth >= 320.0 && viewHeight >= 216.0) {
+//        return KeyboardSize4Portrait;
+//    } else if (viewWidth >= 736.0 && viewHeight >= 162.0) {
+//        return KeyboardSize6PlusLandscape;
+//    } else if (viewWidth >= 667.0 && viewHeight >= 162.0) {
+//        return KeyboardSize6Landscape;
+//    } else if (viewWidth >= 568.0 && viewHeight >= 162.0) {
+//        return KeyboardSize5Landscape;
+//    } else if (viewWidth >= 480.0 && viewHeight >= 162.0) {
+//        return KeyboardSize4Landscape;
+//    }
+//    return KeyboardSizeUnknown;
+//}
+//
+//- (KeyboardMetrics)currentKeyboardMetrics
+//{
+//    CGRect bounds = self.bounds;
+//    if (CGRectIsEmpty(bounds)) {
+//        return KeyboardMetricsDefault;
+//    }
+//    
+////    KeyboardSize keyboardSize = [self currentKeyboardSize];
+//    
+//    /*
+//    switch (keyboardSize) {
+//        case KeyboardSize4Portrait:
+//        case KeyboardSize6Portrait:
+//        case KeyboardSize6PlusPortrait:
+//        case KeyboardSizeUnknown:
+//            return KeyboardMetricsDefault;
+//        case KeyboardSize4Landscape:
+//        case KeyboardSize6Landscape:
+//        case KeyboardSize6PlusLandscape:
+//            return KeyboardMetricsLandscape;
+//        case KeyboardSize5Landscape:
+//            return KeyboardMetricsLandscape568;
+//    }
+//    */
+//    return KeyboardMetricsDefault;
+//}
+//
 #pragma mark -
 
 - (void)setupEventHandlers:(UIButton *)button
@@ -294,10 +294,30 @@ typedef NS_ENUM(NSInteger, KeyboardSize) {
 }
 
 #pragma mark -
+- (void)handleInputModeListFromView:(nonnull UIView *)view withEvent:(nonnull UIEvent *)event {
+    if([self.delegate respondsToSelector:@selector(handleInputModeListFromView:withEvent:)]) {
+        [self.delegate handleInputModeListFromView:view withEvent:event];
+    } else {
+        [self.delegate advanceToNextInputMode];
+    }
+}
 
-- (void)buttonDidTouchDown:(KeyboardButton *)button
+-(void)buttonDidCreated:(KeyboardButton *) button {
+    [self addSubview:button];
+}
+
+- (void)buttonDidTouchDown:(KeyboardButton *)button event:(UIEvent *) event
 {
     KeyboardButtonIndex keyIndex = button.keyIndex;
+    if(keyIndex == KeyboardButtonIndexNextKeyboard) {
+        if([self.delegate respondsToSelector:@selector(handleInputModeListFromView:withEvent:)]) {
+            [self.delegate handleInputModeListFromView:self withEvent:UIControlEventAllTouchEvents];
+        } else {
+            [self.delegate advanceToNextInputMode];
+        }
+    } else {
+        
+    }
     if (keyIndex < KeyboardButtonIndexNextKeyboard) {
         NSString *input = [button titleForState:UIControlStateNormal];
         if (self.inputMode == KeyboardInputModeKana) {
@@ -424,7 +444,7 @@ typedef NS_ENUM(NSInteger, KeyboardSize) {
     
     [self.keyboardLayout setMetrics:self.keyboardLayout.metrics];
     
-    [self updateKeyboardLayout];
+//    [self updateKeyboardLayout];
     //[self.keyboardLayout setInputMode:<#(KeyboardInputMode)#> updateButtonLayout];
 }
 

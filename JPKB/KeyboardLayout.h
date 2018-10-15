@@ -47,6 +47,12 @@ typedef NS_ENUM(NSInteger, KeyboardInputMode) {
 
 @class KeyboardButton;
 
+
+@protocol KeyboardLayoutDelegate<NSObject>
+-(void)buttonDidTouchDown:(KeyboardButton *)button event:(UIEvent *) event;
+-(void)buttonDidCreated:(KeyboardButton *) button;
+@end
+
 @interface KeyboardLayout : NSObject
 
 @property (nonatomic) KeyboardMetrics metrics;
@@ -54,6 +60,9 @@ typedef NS_ENUM(NSInteger, KeyboardInputMode) {
 
 @property (nonatomic) BOOL shifted;
 @property (nonatomic) BOOL shiftLocked;
+
+@property (nonatomic, weak) id<KeyboardLayoutDelegate> delegate;
+- (instancetype)initWithDelegate:(id) delegate;
 
 + (KeyboardLayout *)keyboardLayout;
 - (void)setupKeyboardButtonsWithView:(UIView *)view;

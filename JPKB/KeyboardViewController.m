@@ -8,24 +8,14 @@
 
 #import "KeyboardViewController.h"
 #import "KeyboardView.h"
-#import "NumberKeyboardView.h"
-#import "JapaneseKeyboardView.h"
-#import "EmailKeyboardView.h"
 
 @interface KeyboardViewController () <KeyboardViewDelegate>
 
 @property (nonatomic) NSString *currentDocumentIdentifier;
-@property (nonatomic) NSLayoutConstraint *widthConstraint;
-@property (nonatomic) NSLayoutConstraint *heightConstraint;
-@property (nonatomic) NSLayoutConstraint *leftSideConstraint;
-@property (nonatomic) NSLayoutConstraint *rightSideConstraint;
-@property (nonatomic) NSLayoutConstraint *topSideConstraint;
-@property (nonatomic) NSLayoutConstraint *bottomSideConstraint;
 
-@property (nonatomic) UIView *currentKeyboardView;
-@property (nonatomic) JapaneseKeyboardView *japaneseKeyboardView;
-@property (nonatomic) NumberKeyboardView *numberKeyboardView;
-@property (nonatomic) EmailKeyboardView *emailKeyboardView;
+@property (nonatomic) NSLayoutConstraint *leadingConstraint;
+@property (nonatomic) NSLayoutConstraint *tailingConstraint;
+@property (nonatomic) NSLayoutConstraint *heightConstraint;
 
 @property (nonatomic) KeyboardView *keyboardView;
 
@@ -33,8 +23,7 @@
 
 @implementation KeyboardViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.inputView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -45,233 +34,109 @@
     
     [self.inputView addSubview:self.keyboardView];
     
+    [self.inputView addConstraints:@[
+                                     [NSLayoutConstraint constraintWithItem:self.keyboardView
+                                                                  attribute:NSLayoutAttributeLeading
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self.inputView
+                                                                  attribute:NSLayoutAttributeLeading
+                                                                 multiplier:1.0
+                                                                   constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:self.keyboardView
+                                                                  attribute:NSLayoutAttributeTrailing
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self.inputView
+                                                                  attribute:NSLayoutAttributeTrailing
+                                                                 multiplier:1.0
+                                                                   constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:self.keyboardView
+                                                                  attribute:NSLayoutAttributeTop
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self.inputView
+                                                                  attribute:NSLayoutAttributeTop
+                                                                 multiplier:1.0
+                                                                   constant:0.0],
+                                     [NSLayoutConstraint constraintWithItem:self.keyboardView
+                                                                  attribute:NSLayoutAttributeBottom
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self.inputView
+                                                                  attribute:NSLayoutAttributeBottom
+                                                                 multiplier:1.0
+                                                                   constant:0.0]
+                                     ]];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-
-    [self.inputView.superview addConstraint:[NSLayoutConstraint constraintWithItem:self.inputView
-                                                                    attribute:NSLayoutAttributeLeading
-                                                                    relatedBy:NSLayoutRelationEqual
-                                                                       toItem:self.inputView.superview
-                                                                    attribute:NSLayoutAttributeLeading
-                                                                   multiplier:1.0
-                                                                     constant:0.0]];
-
-    [self.inputView.superview addConstraint:[NSLayoutConstraint constraintWithItem:self.inputView
-                                                                    attribute:NSLayoutAttributeTrailing
-                                                                    relatedBy:NSLayoutRelationEqual
-                                                                       toItem:self.inputView.superview
-                                                                    attribute:NSLayoutAttributeTrailing
-                                                                   multiplier:1.0
-                                                                     constant:0.0]];
-
-    CGFloat height = CGRectGetHeight(self.inputView.bounds);
-    self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
-                                                         attribute:NSLayoutAttributeHeight
-                                                         relatedBy:NSLayoutRelationEqual
-                                                            toItem:nil
-                                                         attribute:NSLayoutAttributeNotAnAttribute
-                                                        multiplier:0.0
-                                                          constant:height + 44.0];
-    [self.inputView addConstraint:self.heightConstraint];
-
+-(void) updateViewConstraints {
+    if(!self.leadingConstraint && self.inputView.superview) {
+        self.leadingConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
+                                                            attribute:NSLayoutAttributeLeading
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:self.inputView.superview
+                                                            attribute:NSLayoutAttributeLeading
+                                                           multiplier:1.0
+                                                             constant:0.0];
+        [self.inputView.superview addConstraint:self.leadingConstraint];
+    }
+    
+    if(!self.tailingConstraint && self.inputView.superview) {
+        self.tailingConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
+                                                            attribute:NSLayoutAttributeTrailing
+                                                            relatedBy:NSLayoutRelationEqual
+                                                               toItem:self.inputView.superview
+                                                            attribute:NSLayoutAttributeTrailing
+                                                           multiplier:1.0
+                                                             constant:0.0];
+        [self.inputView.superview addConstraint:self.tailingConstraint];
+    }
+    
+    if(!self.heightConstraint && self.inputView.superview) {
+        CGFloat height = CGRectGetHeight(self.inputView.bounds);
+        self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
+                                                             attribute:NSLayoutAttributeHeight
+                                                             relatedBy:NSLayoutRelationEqual
+                                                                toItem:nil
+                                                             attribute:NSLayoutAttributeNotAnAttribute
+                                                            multiplier:0.0
+                                                              constant:65 * 4];
+        [self.inputView addConstraint:self.heightConstraint];
+    }
+    
+    [super updateViewConstraints];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark -
 
-- (void)textWillChange:(id<UITextInput>)textInput
-{
+- (void)textWillChange:(id<UITextInput>)textInput {
     
 }
 
-- (void)textDidChange:(id<UITextInput>)textInput
-{
-    NSLog(@"Coach Keyboard-documentIdentifier:%@, keyboardType:%ld", self.textDocumentProxy.documentIdentifier, self.textDocumentProxy.keyboardType);
+- (void)textDidChange:(id<UITextInput>)textInput {
+    NSLog(@"Keyboard-keyboardType:%ld", self.textDocumentProxy.keyboardType);
     
-    NSString *UUIDString = [self.textDocumentProxy.documentIdentifier UUIDString];
-    if(![self.currentDocumentIdentifier isEqualToString:UUIDString]) {
-        self.currentDocumentIdentifier = UUIDString;
+    BOOL changed = YES;
+    if([self.textDocumentProxy respondsToSelector:@selector(documentIdentifier)]) {
+        NSString *UUIDString = [self.textDocumentProxy.documentIdentifier UUIDString];
+        changed = ![self.currentDocumentIdentifier isEqualToString:UUIDString];
+        if(changed) {
+            self.currentDocumentIdentifier = UUIDString;
+        }
+    }
+    
+    if(changed) {
         //change keyboard
         switch (self.textDocumentProxy.keyboardType) {
             case UIKeyboardTypeNumberPad:
             case UIKeyboardTypePhonePad:
             case UIKeyboardTypeNumbersAndPunctuation:
-                [self showNumberKeyboard];
+                [self.keyboardView setInputMode:KeyboardInputModeNumber];
                 break;
             case UIKeyboardTypeEmailAddress:
-                [self showEmailKeyboard];
+                [self.keyboardView setInputMode:KeyboardInputModeEmail];
                 break;
             default:
                 [self.keyboardView setInputMode:KeyboardInputModeKana];
                 break;
         }
     }
-}
-
--(void) showJapaneseKeyboard {
-    NSLog(@"Coach Keyboard-Japanese");
-    if([self.currentKeyboardView isKindOfClass:[JapaneseKeyboardView class]]) {
-        return;
-    } else {
-        if(self.leftSideConstraint != nil) {
-            [self.inputView removeConstraint:self.leftSideConstraint];
-        }
-        if(self.rightSideConstraint != nil) {
-            [self.inputView removeConstraint:self.rightSideConstraint];
-        }
-        if(self.topSideConstraint != nil) {
-            [self.inputView removeConstraint:self.topSideConstraint];
-        }
-        if(self.bottomSideConstraint != nil) {
-            [self.inputView removeConstraint:self.bottomSideConstraint];
-        }
-        [self.currentKeyboardView removeFromSuperview];
-        self.leftSideConstraint = self.rightSideConstraint = self.topSideConstraint = self.bottomSideConstraint = nil;
-    }
-    
-    if(self.japaneseKeyboardView == nil) {
-        self.japaneseKeyboardView = [[JapaneseKeyboardView alloc] initWithFrame:self.inputView.bounds];
-        self.japaneseKeyboardView.delegate = self;
-    }
-    self.currentKeyboardView = self.japaneseKeyboardView;
-    [self.inputView addSubview: self.japaneseKeyboardView];
-    
-    self.leftSideConstraint = [NSLayoutConstraint constraintWithItem: self.japaneseKeyboardView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
-    self.rightSideConstraint = [NSLayoutConstraint constraintWithItem:self.japaneseKeyboardView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0];
-    self.bottomSideConstraint = [NSLayoutConstraint constraintWithItem:self.japaneseKeyboardView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
-    self.topSideConstraint = [NSLayoutConstraint constraintWithItem:self.japaneseKeyboardView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
-    
-    [self.inputView addConstraints:@[self.leftSideConstraint, self.rightSideConstraint, self.bottomSideConstraint, self.topSideConstraint]];
-    
-    if (self.heightConstraint) {
-        [self.inputView removeConstraints:@[self.heightConstraint]];
-    }
-    
-    self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
-                                                         attribute:NSLayoutAttributeHeight
-                                                         relatedBy:NSLayoutRelationEqual
-                                                            toItem:nil
-                                                         attribute:NSLayoutAttributeNotAnAttribute
-                                                        multiplier:0.0
-                                                          constant:KEY_WIDTH * 4 + KEY_V_SEP * 4 + AccessoryViewHeightDefault];
-    [self.inputView addConstraint:self.heightConstraint];
-    
-    [self.japaneseKeyboardView updateLayout];
-}
-
--(void) showEmailKeyboard {
-    NSLog(@"Coach Keyboard-Email");
-    if([self.currentKeyboardView isKindOfClass:[EmailKeyboardView class]]) {
-        return;
-    } else {
-        if(self.leftSideConstraint != nil) {
-            [self.inputView removeConstraint:self.leftSideConstraint];
-        }
-        if(self.rightSideConstraint != nil) {
-            [self.inputView removeConstraint:self.rightSideConstraint];
-        }
-        if(self.topSideConstraint != nil) {
-            [self.inputView removeConstraint:self.topSideConstraint];
-        }
-        if(self.bottomSideConstraint != nil) {
-            [self.inputView removeConstraint:self.bottomSideConstraint];
-        }
-        [self.currentKeyboardView removeFromSuperview];
-        self.leftSideConstraint = self.rightSideConstraint = self.topSideConstraint = self.bottomSideConstraint = nil;
-    }
-    
-    if(self.emailKeyboardView == nil) {
-        self.emailKeyboardView = [[EmailKeyboardView alloc] initWithFrame:self.inputView.bounds];
-        self.emailKeyboardView.delegate = self;
-    }
-    self.currentKeyboardView = self.emailKeyboardView;
-    [self.inputView addSubview: self.emailKeyboardView];
-
-    self.leftSideConstraint = [NSLayoutConstraint constraintWithItem: self.emailKeyboardView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
-    self.rightSideConstraint = [NSLayoutConstraint constraintWithItem:self.emailKeyboardView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0];
-    self.bottomSideConstraint = [NSLayoutConstraint constraintWithItem:self.emailKeyboardView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
-    self.topSideConstraint = [NSLayoutConstraint constraintWithItem:self.emailKeyboardView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
-
-    [self.inputView addConstraints:@[self.leftSideConstraint, self.rightSideConstraint, self.bottomSideConstraint, self.topSideConstraint]];
-    
-    if (self.heightConstraint) {
-        [self.inputView removeConstraints:@[self.heightConstraint]];
-    }
-    
-    self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
-                                                         attribute:NSLayoutAttributeHeight
-                                                         relatedBy:NSLayoutRelationEqual
-                                                            toItem:nil
-                                                         attribute:NSLayoutAttributeNotAnAttribute
-                                                        multiplier:0.0
-                                                          constant:65 * 5 + 4];
-    [self.inputView addConstraint:self.heightConstraint];
-}
-
--(void) showNumberKeyboard {
-    NSLog(@"Coach Keyboard-Number");
-    
-    if([self.currentKeyboardView isKindOfClass:[NumberKeyboardView class]]) {
-        return;
-    } else {
-        if(self.leftSideConstraint != nil) {
-            [self.inputView removeConstraint:self.leftSideConstraint];
-        }
-        if(self.rightSideConstraint != nil) {
-            [self.inputView removeConstraint:self.rightSideConstraint];
-        }
-        if(self.topSideConstraint != nil) {
-            [self.inputView removeConstraint:self.topSideConstraint];
-        }
-        if(self.bottomSideConstraint != nil) {
-            [self.inputView removeConstraint:self.bottomSideConstraint];
-        }
-        [self.currentKeyboardView removeFromSuperview];
-        self.leftSideConstraint = self.rightSideConstraint = self.topSideConstraint = self.bottomSideConstraint = nil;
-    }
-    
-    if(self.numberKeyboardView == nil) {
-        self.numberKeyboardView = [[NumberKeyboardView alloc] initWithFrame:self.inputView.bounds];
-        self.numberKeyboardView.delegate = self;
-    }
-    self.currentKeyboardView = self.numberKeyboardView;
-    [self.inputView addSubview: self.numberKeyboardView];
-    
-    self.leftSideConstraint = [NSLayoutConstraint constraintWithItem: self.numberKeyboardView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
-    self.rightSideConstraint = [NSLayoutConstraint constraintWithItem:self.numberKeyboardView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0];
-    self.bottomSideConstraint = [NSLayoutConstraint constraintWithItem:self.numberKeyboardView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
-    self.topSideConstraint = [NSLayoutConstraint constraintWithItem:self.numberKeyboardView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
-    
-    [self.inputView addConstraints:@[self.leftSideConstraint, self.rightSideConstraint, self.bottomSideConstraint, self.topSideConstraint]];
-    
-    if (self.heightConstraint) {
-        [self.inputView removeConstraints:@[self.heightConstraint]];
-    }
-    
-    self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
-                                                         attribute:NSLayoutAttributeHeight
-                                                         relatedBy:NSLayoutRelationEqual
-                                                            toItem:nil
-                                                         attribute:NSLayoutAttributeNotAnAttribute
-                                                        multiplier:0.0
-                                                          constant:76 * 4 + 24 + 4];
-    [self.inputView addConstraint:self.heightConstraint];
-}
-
--(void) addViewConstraints {
-    NSLayoutConstraint *leftSideConstraint = [NSLayoutConstraint constraintWithItem: self.currentKeyboardView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *rightSideConstraint = [NSLayoutConstraint constraintWithItem:self.currentKeyboardView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint constraintWithItem:self.currentKeyboardView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
-    NSLayoutConstraint *topConstraint = [NSLayoutConstraint constraintWithItem:self.currentKeyboardView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.inputView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
-    
-    [self.inputView addConstraints:@[leftSideConstraint, rightSideConstraint, bottomConstraint, topConstraint]];
 }
 #pragma mark -
 

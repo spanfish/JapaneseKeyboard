@@ -77,13 +77,13 @@
     return layout;
 }
 
-- (instancetype)init
-{
+- (instancetype)initWithDelegate:(id) delegate {
     self = [super init];
     if (self) {
-        [self setupInputButtons];
-        [self setupFunctionButtons];
-        [self setupHandwritingView];
+//        [self setupInputButtons];
+//        [self setupFunctionButtons];
+//        [self setupHandwritingView];
+        self.delegate = delegate;
     }
     
     return self;
@@ -241,6 +241,7 @@
 
 #pragma mark -
 -(void) setKanaLayout {
+    NSLog(@"Keyboard-setKanaLayout");
     NSArray *keys = @[
              @[@[@"q"], @[@"w"], @[@"e"], @[@"r"], @[@"t"], @[@"y"], @[@"u"], @[@"i"], @[@"o"], @[@"p"]/*, @[@"Del"]*/],
              @[@[@"a"], @[@"s"], @[@"d"], @[@"f"], @[@"g"], @[@"h"], @[@"j"], @[@"k"], @[@"l"]/*, @[@"Return"]*/],
@@ -252,6 +253,7 @@
     NSUInteger width = 65;
     NSUInteger height = 65;
     for(NSArray *keyRow in keys) {
+        left = 0;
         for(NSArray *keys in keyRow) {
             NSString *keyTitle = [keys firstObject];
             if([keys count] == 2) {
@@ -262,7 +264,7 @@
             
             KeyboardButton *button = [self whiteButtonWithTitle:keyTitle image:nil];
             [button setFrame:CGRectMake(left, top, width, height)];
-            [_keyboardView addSubview:button];
+            [self.delegate buttonDidCreated:button];
             left += width;
         }
         top += height;
@@ -270,6 +272,15 @@
     //del
     //shift
     //
+    KeyboardButton *button = [self darkgrayButtonWithTitle:nil image:[UIImage imageNamed:@"global"]];
+    [button setFrame:CGRectMake(left, top, 65, 65)];
+    [button addTarget:self action:@selector(buttonDidKeyDown:) forControlEvents:UIControlEventAllTouchEvents];
+    button.keyIndex = KeyboardButtonIndexNextKeyboard;
+    [self.delegate buttonDidCreated:button];
+}
+
+-(void) buttonDidKeyDown:(KeyboardButton *) button {
+//    [self.delegate buttonDidTouchDown:button];
 }
 //KeyboardInputModeKana,
 //KeyboardInputModeAlphabet,
@@ -281,31 +292,7 @@
 //KeyboardInputModeHandWriting
 
 - (void)updateKeycaps {
-    switch (self.inputMode) {
-        case KeyboardInputModeKana:
-            [self setKanaLayout];
-            break;
-        case KeyboardInputModeAlphabet:
-            
-            break;
-        case KeyboardInputModeNumberPunctual:
-            
-            break;
-        case KeyboardInputModeNumber:
-            
-            break;
-        case KeyboardInputModeEmail:
-            
-            break;
-        case KeyboardInputModeKataKana:
-            
-            break;
-        case KeyboardInputModeHandWriting:
-            
-            break;
-        default:
-            break;
-    }
+    
     
     if(self.inputMode == KeyboardInputModeHandWriting) {
         //NSArray *buttons = [self.inputButtons arrayByAddingObjectsFromArray:self.functionButtons];
@@ -474,8 +461,34 @@
 - (void)setInputMode:(KeyboardInputMode)inputMode
 {
     _inputMode = inputMode;
-    [self updateKeycaps];
+//    [self updateKeycaps];
     //[self updateFunctionButtonFrames];
+    
+    switch (self.inputMode) {
+        case KeyboardInputModeKana:
+            [self setKanaLayout];
+            break;
+        case KeyboardInputModeAlphabet:
+            
+            break;
+        case KeyboardInputModeNumberPunctual:
+            
+            break;
+        case KeyboardInputModeNumber:
+            
+            break;
+        case KeyboardInputModeEmail:
+            
+            break;
+        case KeyboardInputModeKataKana:
+            
+            break;
+        case KeyboardInputModeHandWriting:
+            
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)setShifted:(BOOL)shifted
