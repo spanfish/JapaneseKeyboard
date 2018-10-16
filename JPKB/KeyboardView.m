@@ -13,6 +13,7 @@
 #import "InputManager.h"
 #import "InputCandidate.h"
 #import "HandWritingController.h"
+#import "DrawView.h"
 
 const CGFloat AccessoryViewHeightDefault = 50.0;
 //const CGFloat AccessoryViewHeightLandscape = 30.0;
@@ -23,6 +24,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     BOOL _shiftOn;
     BOOL _leftFuncOn;
     BOOL _rightFuncOn;
+    DrawView *_drawView;
 }
 
 //@property (nonatomic) HandWritingController *handWritingController;
@@ -128,24 +130,18 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
         case KeyboardInputModeKana:
             [self setKanaLayout];
             break;
-        case KeyboardInputModeAlphabet:
-            
-            break;
-        case KeyboardInputModeNumberPunctual:
-            
-            break;
         case KeyboardInputModeNumber:
             [self setNumberLayout];
             break;
         case KeyboardInputModeEmail:
             [self setEmailLayout];
             break;
-        case KeyboardInputModeKataKana:
-            
-            break;
         case KeyboardInputModeHandWriting:
-            
+            [self setHandwritingLayout];
             break;
+        case KeyboardInputModeAlphabet:
+        case KeyboardInputModeNumberPunctual:
+        case KeyboardInputModeKataKana:
         default:
             [self setKanaLayout];
             break;
@@ -461,6 +457,48 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 }
 
 #pragma mark -
+-(void) setHandwritingLayout {
+    NSUInteger left = 2;
+    NSUInteger top = AccessoryViewHeightDefault;
+    
+    CGFloat w = [UIScreen mainScreen].bounds.size.width;
+    CGFloat width = MIN(MAX(w/11, 65), 75);
+    CGFloat height = width;
+    
+    //Draw view
+    _drawView = [[DrawView alloc] initWithFrame:CGRectMake(2, top, w - 65, self.frame.size.height - AccessoryViewHeightDefault)];
+    left = CGRectGetMaxX(_drawView.frame);
+    [self addSubview:_drawView];
+
+    
+    //QWERTY button
+    UIButton *button = [self darkgrayButtonWithTitle:@"あいう" image: nil];
+    [button addTarget:self action:@selector(handleQwertButton:) forControlEvents:UIControlEventTouchDown];
+    [button setFrame:CGRectMake(self.frame.size.width - width, self.frame.size.height - height, width, height)];
+    [self addSubview:button];
+    
+    top = AccessoryViewHeightDefault;
+    button = [self darkgrayButtonWithTitle:nil image: [UIImage imageNamed:@"del"]];
+    [button setFrame:CGRectMake(self.frame.size.width - width, top, width, height)];
+    [self addSubview: button];
+    [button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+    
+    //Handwriting clear button
+    top += height;
+    button = [self darkgrayButtonWithTitle:nil image: [UIImage imageNamed:@"eraser"]];
+    [button setFrame:CGRectMake(self.frame.size.width - width, top, width, height)];
+    [self addSubview:button];
+//    [button addTarget:self action:@selector(handleHandwritingClearButton:) forControlEvents:UIControlEventTouchDown];
+//
+//    _handwritingController = [[HandWritingController alloc] init];
+//
+//    BOOL result = [_handwritingController HandsInkInitialize];
+//    NSAssert(result, @"HandWriting Initialize Failed");
+//    _handwritingController.delegate = self;
+//    _drawView.controller = _handwritingController;
+//    [_handwritingController HandsInkSetOneLineRecognize];
+}
+
 -(void) setPhoneLayout {
     [self setNumberLayout:YES];
 }
@@ -768,8 +806,12 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 }
 
 #pragma mark - Button Event
+-(void) handleQwertButton:(id)sender {
+    [self setInputMode:KeyboardInputModeKana];
+}
+
 -(void) handHandwritingButton:(id)sender {
-    
+    [self setInputMode:KeyboardInputModeHandWriting];
 }
 
 -(void) handleCloseButton:(id)sender {
