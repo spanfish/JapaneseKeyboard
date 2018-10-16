@@ -42,9 +42,4 @@
     return CGRectInset(bounds, 6.0, 6.0);
 }
 
--(BOOL) isNumberButton {
-    NSString *title = [self titleForState:UIControlStateNormal];
-    NSScanner *scanner = [NSScanner scannerWithString:title];
-    return [scanner scanInt:NULL];
-}
 @end

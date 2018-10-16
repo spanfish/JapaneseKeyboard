@@ -14,10 +14,10 @@
 #import "InputCandidate.h"
 #import "HandWritingController.h"
 
-const CGFloat AccessoryViewHeightDefault = 40.0;
-const CGFloat AccessoryViewHeightLandscape = 30.0;
-const CGFloat MarkedTextLabelHeightDefault = 14.0;
-const CGFloat MarkedTextLabelHeightLandscape = 10.0;
+const CGFloat AccessoryViewHeightDefault = 50.0;
+//const CGFloat AccessoryViewHeightLandscape = 30.0;
+const CGFloat MarkedTextLabelHeightDefault = 16.0;
+//const CGFloat MarkedTextLabelHeightLandscape = 10.0;
 
 @interface KeyboardView () <KeyboardInputEngineDelegate, KeyboardCandidateBarDelegate> {
     BOOL _shiftOn;
@@ -115,9 +115,15 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
     self.borderBottom.frame = CGRectMake(0, MarkedTextLabelHeightDefault - 1/scale, self.frame.size.width, 1/scale);
 }
 #pragma mark -
+-(void) removeAllButtons {
+    for (UIView *view in self.subviews) {
+        [view removeFromSuperview];
+    }
+}
 
 - (void)setInputMode:(KeyboardInputMode)inputMode {
     _inputMode = inputMode;
+    [self removeAllButtons];
     switch (inputMode) {
         case KeyboardInputModeKana:
             [self setKanaLayout];
@@ -129,10 +135,10 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
             
             break;
         case KeyboardInputModeNumber:
-            
+            [self setNumberLayout];
             break;
         case KeyboardInputModeEmail:
-            
+            [self setEmailLayout];
             break;
         case KeyboardInputModeKataKana:
             
@@ -141,6 +147,7 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
             
             break;
         default:
+            [self setKanaLayout];
             break;
     }
 }
@@ -454,8 +461,71 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
 }
 
 #pragma mark -
--(void) setKanaLayout {
-    NSLog(@"Keyboard-setKanaLayout");
+-(void) setPhoneLayout {
+    [self setNumberLayout:YES];
+}
+
+-(void) setNumberLayout {
+    [self setNumberLayout: NO];
+}
+
+-(void) setNumberLayout:(BOOL) phone {
+    NSArray *keys = keys = @[
+                             @[@[@"1"], @[@"2"], @[@"3"], @[phone ? @"*" : @""]],
+                             @[@[@"4"], @[@"5"], @[@"6"], @[phone ? @"+" : @""]],
+                             @[@[@"7"], @[@"8"], @[@"9"], @[phone ? @"#" : @""]],
+                             ];
+    
+    NSUInteger numOfCols = phone ? 4 : 3;
+    CGFloat w = [UIScreen mainScreen].bounds.size.width;
+    CGFloat width = MIN(MAX(w/numOfCols, 65), 75);
+    CGFloat height = width;
+    CGFloat leftMargin = (w - width * numOfCols) / 2;
+    CGFloat top = AccessoryViewHeightDefault;
+    
+    NSUInteger row = 0;
+    for(NSArray *keyRow in keys) {
+        NSUInteger left = leftMargin;
+        for(NSArray *keys in keyRow) {
+            NSString *keyTitle = [keys firstObject];
+            if([keyTitle length] == 0) {
+                break;
+            }
+            KeyboardButton *button = [self whiteButtonWithTitle:keyTitle image:nil];
+            [button addTarget:self action:@selector(handleButtonUp:) forControlEvents:UIControlEventTouchUpInside];
+            [button setFrame:CGRectMake(left, top, width, height)];
+            [self addSubview: button];
+            left += width;
+        }
+        row++;
+        top += height;
+    }
+    
+    NSUInteger left = leftMargin;
+    KeyboardButton *zeroButton = [self whiteButtonWithTitle:@"0" image:nil];
+    [zeroButton addTarget:self action:@selector(handleButtonUp:) forControlEvents:UIControlEventTouchUpInside];
+    [zeroButton setFrame:CGRectMake(left, top, width, height)];
+    [self addSubview: zeroButton];
+    left += width * 2;
+    
+    KeyboardButton *delButton = [self darkgrayButtonWithTitle:@"" image: [UIImage imageNamed:@"del"]];
+    [delButton addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchUpInside];
+    [delButton setFrame:CGRectMake(left, top, width, height)];
+    [self addSubview: delButton];
+    
+    if(phone) {
+        CGRect frame = zeroButton.frame;
+        frame.size.width *= 2;
+        zeroButton.frame = frame;
+        
+        frame = delButton.frame;
+        frame.size.width *= 2;
+        delButton.frame = frame;
+    }
+}
+
+-(void) setEmailLayout {
+    NSLog(@"Keyboard-setEmailLayout");
     NSArray *keys = nil;
     if(_leftFuncOn == 1) {
         keys = @[
@@ -467,7 +537,7 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
         keys = @[
                  @[@[@"q"], @[@"w"], @[@"e"], @[@"r"], @[@"t"], @[@"y"], @[@"u"], @[@"i"], @[@"o"], @[@"p"]/*, @[@"Del"]*/],
                  @[@[@"a"], @[@"s"], @[@"d"], @[@"f"], @[@"g"], @[@"h"], @[@"j"], @[@"k"], @[@"l"]/*, @[@"Return"]*/],
-                 @[/*@[@"Shift"],*/ @[@"z"], @[@"x"], @[@"c"], @[@"v"], @[@"b"], @[@"n"], @[@"m"], @[@"！", @"、"], @[@"？", @"。"], @[@"ー"]]
+                 @[/*@[@"Shift"],*/ @[@"z"], @[@"x"], @[@"c"], @[@"v"], @[@"b"], @[@"n"], @[@"m"], @[@"@"], @[@"."], @[@"-"]]
                  ];
     }
     
@@ -525,6 +595,122 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
             [self addSubview: button];
             [button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
         } else if(row == 1) {
+            self.returnButton = [self darkgrayButtonWithTitle:@"開く" image: nil];
+            [self.returnButton setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
+            [self addSubview: self.returnButton];
+            [self.returnButton addTarget:self action:@selector(handleReturn:) forControlEvents:UIControlEventTouchDown];
+        }
+        
+        row++;
+        top += height;
+    }
+    NSUInteger left = leftMargin;
+    
+    KeyboardButton *button = nil;
+    if(!_leftFuncOn) {
+        button = [self darkgrayButtonWithTitle:@".?123" image:nil];
+    } else {
+        button = [self darkgrayButtonWithTitle:@"abc" image:nil];
+    }
+    [button setFrame:CGRectMake(left, top, width, height)];
+    [button addTarget:self action:@selector(handLeftFuncButton:) forControlEvents:UIControlEventTouchDown];
+    [self addSubview: button];
+    left += width;
+    
+    //close
+    button = [self darkgrayButtonWithTitle:nil image:[UIImage imageNamed:@"keyboard"]];
+    [button setFrame:CGRectMake(w - width, top, width, height)];
+    [button addTarget:self action:@selector(handleCloseButton:) forControlEvents:UIControlEventAllTouchEvents];
+    [self addSubview: button];
+    
+    self.nextIMEButton = [self darkgrayButtonWithTitle:nil image:[UIImage imageNamed:@"global"]];
+    [self.nextIMEButton setFrame:CGRectMake(left, top, width, height)];
+    [self.nextIMEButton addTarget:self action:@selector(handleInputModeListFromView:withEvent:) forControlEvents:UIControlEventAllTouchEvents];
+    [self addSubview: self.nextIMEButton];
+    
+    //right func button
+    if(!_leftFuncOn && !_rightFuncOn) {
+        self.rightFuncButton = [self darkgrayButtonWithTitle:@"abc" image:nil];
+    } else {
+        self.rightFuncButton = [self darkgrayButtonWithTitle:@"abc" image:nil];
+    }
+    [self.rightFuncButton addTarget:self action:@selector(handRightFuncButton:) forControlEvents:UIControlEventTouchDown];
+    [self.rightFuncButton setFrame:CGRectMake(w - width - width - 4, top, width + 4, height)];
+    [self addSubview: self.rightFuncButton];
+    
+    //space
+    self.spaceButton = [self whiteButtonWithTitle:@"" image:nil];
+    [self.spaceButton setFrame:CGRectMake(CGRectGetMaxX(self.nextIMEButton.frame), top, CGRectGetMinX(self.rightFuncButton.frame) - CGRectGetMaxX(self.nextIMEButton.frame), height)];
+    [self.spaceButton addTarget:self action:@selector(handRightFuncButton:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview: self.spaceButton];
+}
+
+-(void) setKanaLayout {
+    NSLog(@"Keyboard-setKanaLayout");
+    NSArray *keys = nil;
+    if(_leftFuncOn == 1) {
+        keys = @[
+                 @[@[@"1"], @[@"2"], @[@"3"], @[@"4"], @[@"5"], @[@"6"], @[@"7"], @[@"8"], @[@"9"], @[@"0"]/*, @[@"Del"]*/],
+                 @[@[@"@"], @[@"#"], @[@"¥"], @[@"-"], @[@"*"], @[@"("], @[@")"], @[@"「"], @[@"」"]/*, @[@"Return"]*/],
+                 @[/*@[@"Shift"],*/ @[@"^_^"], @[@"%"], @[@"〜"], @[@"…"], @[@"/"], @[@";"], @[@":"], @[@"！", @"、"], @[@"？", @"。"]]
+                 ];
+    } else {
+        keys = @[
+                 @[@[@"q"], @[@"w"], @[@"e"], @[@"r"], @[@"t"], @[@"y"], @[@"u"], @[@"i"], @[@"o"], @[@"p"]/*, @[@"Del"]*/],
+                 @[@[@"a"], @[@"s"], @[@"d"], @[@"f"], @[@"g"], @[@"h"], @[@"j"], @[@"k"], @[@"l"]/*, @[@"Return"]*/],
+                 @[/*@[@"Shift"],*/ @[@"z"], @[@"x"], @[@"c"], @[@"v"], @[@"b"], @[@"n"], @[@"m"], @[@"！", @"、"], @[@"？", @"。"], @[@"ー"]]
+                 ];
+    }
+    
+    CGFloat w = [UIScreen mainScreen].bounds.size.width;
+    CGFloat width = MIN(MAX(w/11, 65), 85);
+    CGFloat height = width;
+    CGFloat leftMargin = (w - width * 11) / 2;
+    CGFloat top = AccessoryViewHeightDefault;
+    
+    NSUInteger row = 0;
+    for(NSArray *keyRow in keys) {
+        NSUInteger left = leftMargin;
+        if(row == 1) {
+            left += width / 2;
+        }
+        
+        if(row == 2) {
+            //shift
+            //shift
+            if(_shiftOn) {
+                self.shiftButton = [self darkgrayButtonWithTitle:@"" image: [UIImage imageNamed:@"shift_on"]];
+            } else {
+                self.shiftButton = [self whiteButtonWithTitle:nil image:[UIImage imageNamed:@"shift"]];
+            }
+            [self.shiftButton setFrame:CGRectMake(left, top, width, height)];
+            [self addSubview: self.shiftButton];
+            [self.shiftButton addTarget:self action:@selector(handleShiftButton:) forControlEvents:UIControlEventTouchDown];
+            left += width;
+        }
+        
+        for(NSArray *keys in keyRow) {
+            NSString *keyTitle = [keys firstObject];
+            if([keys count] == 2) {
+                if(!_shiftOn) {
+                    keyTitle = [NSString stringWithFormat:@"%@\n%@", keyTitle, [keys objectAtIndex:1]];
+                }
+            }
+            if(_shiftOn) {
+                keyTitle = [keyTitle uppercaseString];
+            }
+            KeyboardButton *button = [self whiteButtonWithTitle:keyTitle image:nil];
+            [button addTarget:self action:@selector(handleButtonUp:) forControlEvents:UIControlEventTouchUpInside];
+            [button setFrame:CGRectMake(left, top, width, height)];
+            [self addSubview: button];
+            left += width;
+        }
+        if(row == 0) {
+            KeyboardButton *button = [self darkgrayButtonWithTitle:@"" image: [UIImage imageNamed:@"del"]];
+            [button setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
+            [self addSubview: button];
+            [button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+        } else if(row == 1) {
             self.returnButton = [self darkgrayButtonWithTitle:@"改行" image: nil];
             [self.returnButton setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
             [self addSubview: self.returnButton];
@@ -547,9 +733,15 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
     [self addSubview: button];
     left += width;
     
-    //close
-    button = [self darkgrayButtonWithTitle:@"Close" image:nil];
+    button = [self darkgrayButtonWithTitle:nil image: [UIImage imageNamed:@"hand"]];
+    [button setFrame:CGRectMake(left, top, width, height)];
+    [self addSubview: button];
+    [button addTarget:self action:@selector(handHandwritingButton:) forControlEvents:UIControlEventTouchDown];
+    left += width;
+    
+    button = [self darkgrayButtonWithTitle:nil image:[UIImage imageNamed:@"keyboard"]];
     [button setFrame:CGRectMake(w - width, top, width, height)];
+    [button addTarget:self action:@selector(handleCloseButton:) forControlEvents:UIControlEventAllTouchEvents];
     [self addSubview: button];
     
     self.nextIMEButton = [self darkgrayButtonWithTitle:nil image:[UIImage imageNamed:@"global"]];
@@ -576,6 +768,14 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
 }
 
 #pragma mark - Button Event
+-(void) handHandwritingButton:(id)sender {
+    
+}
+
+-(void) handleCloseButton:(id)sender {
+    [self.delegate dismissKeyboard];
+}
+
 -(void) handleSpaceButton :(id)sender{
     NSString *markedText = self.markedText;
     NSUInteger length = markedText.length;
@@ -630,6 +830,7 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
 
 -(void) handleButtonUp:(id) button {
     NSString *input = [button titleForState:UIControlStateNormal];
+    input = [[input componentsSeparatedByString:@"\n"] lastObject];
     NSLog(@"key:%@", input);
     if (self.inputMode == KeyboardInputModeKana) {
         if(_rightFuncOn) {
@@ -638,7 +839,7 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
             [self.inputEngine insertCharacter:input];
         }
     } else {
-//        [self.delegate keyboardView:self didAcceptCandidate:input];
+        [self.delegate keyboardView:self didAcceptCandidate:input];
     }
 }
 #pragma mark -
@@ -693,6 +894,6 @@ const CGFloat MarkedTextLabelHeightLandscape = 10.0;
 }
 
 - (UIFont *)buttonTitleFont {
-    return [UIFont fontWithName:@"HiraKakuProN-W3" size:16.0];;
+    return [UIFont systemFontOfSize:22];
 }
 @end

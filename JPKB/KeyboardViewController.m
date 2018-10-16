@@ -90,7 +90,6 @@
     }
     
     if(!self.heightConstraint && self.inputView.superview) {
-        CGFloat height = CGRectGetHeight(self.inputView.bounds);
         self.heightConstraint = [NSLayoutConstraint constraintWithItem:self.inputView
                                                              attribute:NSLayoutAttributeHeight
                                                              relatedBy:NSLayoutRelationEqual
@@ -124,8 +123,10 @@
     if(changed) {
         //change keyboard
         switch (self.textDocumentProxy.keyboardType) {
-            case UIKeyboardTypeNumberPad:
             case UIKeyboardTypePhonePad:
+                [self.keyboardView setInputMode:KeyboardInputModePhone];
+                break;
+            case UIKeyboardTypeNumberPad:
             case UIKeyboardTypeNumbersAndPunctuation:
                 [self.keyboardView setInputMode:KeyboardInputModeNumber];
                 break;

@@ -40,6 +40,7 @@ typedef NS_ENUM(NSInteger, KeyboardInputMode) {
     KeyboardInputModeNumberPunctual,
     KeyboardInputModeSymbol,
     KeyboardInputModeNumber,
+    KeyboardInputModePhone,
     KeyboardInputModeEmail,
     KeyboardInputModeKataKana,
     KeyboardInputModeHandWriting
