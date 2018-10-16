@@ -39,7 +39,7 @@
 
 - (CGRect)backgroundRectForBounds:(CGRect)bounds
 {
-    return CGRectInset(bounds, 4.0, 4.0);
+    return CGRectInset(bounds, 6.0, 6.0);
 }
 
 -(BOOL) isNumberButton {

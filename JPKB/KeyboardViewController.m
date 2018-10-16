@@ -97,7 +97,7 @@
                                                                 toItem:nil
                                                              attribute:NSLayoutAttributeNotAnAttribute
                                                             multiplier:0.0
-                                                              constant:65 * 4];
+                                                              constant:65 * 4 + 100];
         [self.inputView addConstraint:self.heightConstraint];
     }
     

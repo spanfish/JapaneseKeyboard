@@ -191,8 +191,8 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     InputCandidate *segment = self.candidates[indexPath.item];
-    CGSize size = [segment.candidate sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:14.0]}];
-    return CGSizeMake(size.width + 20.0, self.flowLayout.itemSize.height);
+    CGSize size = [segment.candidate sizeWithAttributes:@{NSFontAttributeName: [UIFont systemFontOfSize:18.0]}];
+    return CGSizeMake(size.width + 20, self.flowLayout.itemSize.height);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath

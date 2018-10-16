@@ -36,4 +36,7 @@
     return NSUINTROTATE([_input hash], NSUINT_BIT / 2) ^ [_candidate hash];
 }
 
+-(NSString *) description {
+    return [NSString stringWithFormat:@"%@, %@", _input, _candidate];
+}
 @end

@@ -17,8 +17,9 @@
 
 @implementation KeyboardCandidateBarCell
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
     CGFloat scale = [[UIScreen mainScreen] scale];
     self.leftSeparator = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 1.0 / scale, CGRectGetHeight(self.bounds))];
     self.leftSeparator.backgroundColor = [UIColor colorWithRed:0.773 green:0.780 blue:0.820 alpha:1.000];
@@ -29,8 +30,7 @@
     [self.contentView addSubview:self.rightSeparator];
 }
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     self.textLabel.text = self.text;
     
@@ -40,6 +40,7 @@
     
     self.leftSeparator.hidden = !self.showsTopSeparator;
     self.rightSeparator.hidden = !self.showsBottomSeparator;
+    self.textLabel.frame = CGRectMake(0, 0, self.frame.size.width - 2, self.frame.size.height);
 }
 
 - (void)setText:(NSString *)text

@@ -248,12 +248,34 @@
              @[/*@[@"Shift"],*/ @[@"z"], @[@"x"], @[@"c"], @[@"v"], @[@"b"], @[@"n"], @[@"m"], @[@"！", @"、"], @[@"？", @"。"], @[@"ー"]]
              ];
     
-    NSUInteger left = 0;
-    NSUInteger top = 0;
-    NSUInteger width = 65;
-    NSUInteger height = 65;
+    
+    CGFloat w = [UIScreen mainScreen].bounds.size.width/11;
+    CGFloat width = MIN(MAX(w, 65), 75);
+    CGFloat height = width;
+    CGFloat leftMargin = (w - width * 11) / 2;
+    CGFloat top = 0;
+    
+    NSUInteger row = 0;
     for(NSArray *keyRow in keys) {
-        left = 0;
+        NSUInteger left = leftMargin;
+        if(row == 1) {
+            left = (w - width * 10.5) / 2;
+        }
+        
+        if(row == 2) {
+            //shift
+            //shift
+            if(_shiftOn) {
+                self.shiftButton = [self darkgrayButtonWithTitle:@"" image: [UIImage imageNamed:@"shift_on"]];
+            } else {
+                self.shiftButton = [self whiteButtonWithTitle:nil image:[UIImage imageNamed:@"shift"]];
+            }
+            [self.shiftButton setFrame:CGRectMake(left, top, width, height)];
+            [self.delegate buttonDidCreated: self.shiftButton];
+            [self.shiftButton addTarget:self action:@selector(handleShiftButton:) forControlEvents:UIControlEventTouchDown];
+            left += width;
+        }
+        
         for(NSArray *keys in keyRow) {
             NSString *keyTitle = [keys firstObject];
             if([keys count] == 2) {
@@ -263,20 +285,33 @@
             }
             
             KeyboardButton *button = [self whiteButtonWithTitle:keyTitle image:nil];
+            
             [button setFrame:CGRectMake(left, top, width, height)];
             [self.delegate buttonDidCreated:button];
             left += width;
         }
+        if(row == 0) {
+            KeyboardButton *button = [self darkgrayButtonWithTitle:@"" image: [UIImage imageNamed:@"del"]];
+            [button setFrame:CGRectMake(left, top, width, height)];
+            [self.delegate buttonDidCreated:button];
+            //[button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+        }
+        
+        row++;
         top += height;
     }
     //del
-    //shift
-    //
+    NSUInteger left = leftMargin;
+    
     KeyboardButton *button = [self darkgrayButtonWithTitle:nil image:[UIImage imageNamed:@"global"]];
-    [button setFrame:CGRectMake(left, top, 65, 65)];
-    [button addTarget:self action:@selector(buttonDidKeyDown:) forControlEvents:UIControlEventAllTouchEvents];
+    [button setFrame:CGRectMake(left, top, width, height)];
+    [button addTarget:self.delegate action:@selector(handleInputModeListFromView:withEvent:) forControlEvents:UIControlEventAllTouchEvents];
     button.keyIndex = KeyboardButtonIndexNextKeyboard;
     [self.delegate buttonDidCreated:button];
+}
+
+-(void) handleShiftButton:(id)sender {
+    _shiftOn = !_shiftOn;
 }
 
 -(void) buttonDidKeyDown:(KeyboardButton *) button {
