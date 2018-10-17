@@ -109,8 +109,49 @@
 }
 
 - (void)textDidChange:(id<UITextInput>)textInput {
-    NSLog(@"Keyboard-keyboardType:%ld", self.textDocumentProxy.keyboardType);
-    
+#if DEBUG
+    switch (self.textDocumentProxy.keyboardType) {
+        case UIKeyboardTypeDefault:
+            NSLog(@"UIKeyboardTypeDefault");
+            break;
+        case UIKeyboardTypeASCIICapable:
+            NSLog(@"UIKeyboardTypeASCIICapable");
+            break;
+        case UIKeyboardTypeNumbersAndPunctuation:
+            NSLog(@"UIKeyboardTypeNumbersAndPunctuation");
+            break;
+        case UIKeyboardTypeURL:
+            NSLog(@"UIKeyboardTypeURL");
+            break;
+        case UIKeyboardTypeNumberPad:
+            NSLog(@"UIKeyboardTypeNumberPad");
+            break;
+        case UIKeyboardTypePhonePad:
+            NSLog(@"UIKeyboardTypePhonePad");
+            break;
+        case UIKeyboardTypeNamePhonePad:
+            NSLog(@"UIKeyboardTypeNamePhonePad");
+            break;
+        case UIKeyboardTypeEmailAddress:
+            NSLog(@"UIKeyboardTypeEmailAddress");
+            break;
+        case UIKeyboardTypeDecimalPad:
+            NSLog(@"UIKeyboardTypeDecimalPad");
+            break;
+        case UIKeyboardTypeTwitter:
+            NSLog(@"UIKeyboardTypeTwitter");
+            break;
+        case UIKeyboardTypeWebSearch:
+            NSLog(@"UIKeyboardTypeWebSearch");
+            break;
+        case UIKeyboardTypeASCIICapableNumberPad:
+            NSLog(@"UIKeyboardTypeASCIICapableNumberPad");
+            break;
+
+        default:
+            break;
+    }
+#endif
     BOOL changed = YES;
     if([self.textDocumentProxy respondsToSelector:@selector(documentIdentifier)]) {
         NSString *UUIDString = [self.textDocumentProxy.documentIdentifier UUIDString];

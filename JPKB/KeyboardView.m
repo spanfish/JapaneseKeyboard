@@ -25,6 +25,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     BOOL _leftFuncOn;
     BOOL _rightFuncOn;
     DrawView *_drawView;
+    HandWritingController *_handwritingController;
 }
 
 //@property (nonatomic) HandWritingController *handWritingController;
@@ -83,6 +84,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
         self.candidateBar = candidateBar;
         self.candidateBar.backgroundColor = [UIColor clearColor];
         
+        
 //        UIColor *borderColor = [UIColor colorWithWhite:0.784 alpha:1.000];
 //        CGFloat scale = [[UIScreen mainScreen] scale];
 //
@@ -99,8 +101,6 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 //        self.borderBottom = borderBottom;
         
         self.markedText = @"";
-        
-//        self.keyboardLayout = [[KeyboardLayout alloc] initWithDelegate: self];
     }
     
     return self;
@@ -108,18 +108,23 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 
 -(void) layoutSubviews {
     [super layoutSubviews];
+    
+    NSLog(@"textLabel:%@%@", NSStringFromCGRect(self.markedTextLabel.frame), NSStringFromCGRect(self.candidateBar.frame));
     self.markedTextLabel.frame = CGRectMake(0, 0, self.frame.size.width, MarkedTextLabelHeightDefault);
     self.candidateBar.frame = CGRectMake(0, MarkedTextLabelHeightDefault, self.frame.size.width, AccessoryViewHeightDefault - MarkedTextLabelHeightDefault);
+    NSLog(@"textLabel:%@%@", NSStringFromCGRect(self.markedTextLabel.frame), NSStringFromCGRect(self.candidateBar.frame));
     
-    CGFloat scale = [[UIScreen mainScreen] scale];
-    self.borderTop.frame = CGRectMake(0, 0, self.frame.size.width, 1/scale);
-    
-    self.borderBottom.frame = CGRectMake(0, MarkedTextLabelHeightDefault - 1/scale, self.frame.size.width, 1/scale);
+//    CGFloat scale = [[UIScreen mainScreen] scale];
+//    self.borderTop.frame = CGRectMake(0, 0, self.frame.size.width, 1/scale);
+//
+//    self.borderBottom.frame = CGRectMake(0, MarkedTextLabelHeightDefault - 1/scale, self.frame.size.width, 1/scale);
 }
 #pragma mark -
 -(void) removeAllButtons {
     for (UIView *view in self.subviews) {
-        [view removeFromSuperview];
+        if([view isKindOfClass:[KeyboardButton class]]) {
+            [view removeFromSuperview];
+        }
     }
 }
 
@@ -404,9 +409,13 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 }
 
 #pragma mark - Input Engine
+- (void)handWritingRecognized:(NSString *)str {
+    InputCandidate *candidate = [[InputCandidate alloc] initWithInput:nil candidate:str];
+    [self inputManager:nil didCompleteWithCandidates:@[candidate]];
+}
 
 - (void)keyboardInputEngine:(KanaInputEngine *)engine processedText:(NSString *)text displayText:(NSString *)displayText {
-    NSLog(@"keyboardInputEngine:%@", displayText);
+    //NSLog(@"keyboardInputEngine:%@", displayText);
     self.markedText = displayText;
     [self.inputManager requestCandidatesForInput:text];
 }
@@ -421,7 +430,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 
 - (void)inputManager:(InputManager *)inputManager didCompleteWithCandidates:(NSArray *)candidates {
     self.candidateBar.candidates = candidates;
-    NSLog(@"candidates:%@", candidates);
+    //NSLog(@"candidates:%@", candidates);
     //InputCandidate *segment = [candidates firstObject];
     if([candidates count] > 0) {
         [self.spaceButton setTitle:@"次候補" forState:UIControlStateNormal];
@@ -439,7 +448,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 - (void)candidateBar:(KeyboardCandidateBar *)candidateBar didAcceptCandidate:(InputCandidate *)segment
 {
     if(self.inputMode == KeyboardInputModeHandWriting) {
-//        [[HandWritingController controller] clear];
+        [self handleHandwritingClearButton:nil];
     } else {
         NSString *input = segment.input;
         NSRange range = [self.markedText rangeOfString:input];
@@ -466,7 +475,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     CGFloat height = width;
     
     //Draw view
-    _drawView = [[DrawView alloc] initWithFrame:CGRectMake(2, top, w - 65, self.frame.size.height - AccessoryViewHeightDefault)];
+    _drawView = [[DrawView alloc] initWithFrame:CGRectMake(2, top, w - width - 2, self.frame.size.height - AccessoryViewHeightDefault)];
     left = CGRectGetMaxX(_drawView.frame);
     [self addSubview:_drawView];
 
@@ -488,15 +497,17 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     button = [self darkgrayButtonWithTitle:nil image: [UIImage imageNamed:@"eraser"]];
     [button setFrame:CGRectMake(self.frame.size.width - width, top, width, height)];
     [self addSubview:button];
-//    [button addTarget:self action:@selector(handleHandwritingClearButton:) forControlEvents:UIControlEventTouchDown];
+    [button addTarget:self action:@selector(handleHandwritingClearButton:) forControlEvents:UIControlEventTouchUpInside];
 //
-//    _handwritingController = [[HandWritingController alloc] init];
-//
-//    BOOL result = [_handwritingController HandsInkInitialize];
-//    NSAssert(result, @"HandWriting Initialize Failed");
-//    _handwritingController.delegate = self;
-//    _drawView.controller = _handwritingController;
-//    [_handwritingController HandsInkSetOneLineRecognize];
+    if(!_handwritingController) {
+        _handwritingController = [[HandWritingController alloc] init];
+    }
+    
+    BOOL result = [_handwritingController HandsInkInitialize];
+    NSAssert(result, @"HandWriting Initialize Failed");
+    _handwritingController.delegate = self;
+    _drawView.controller = _handwritingController;
+    [_handwritingController HandsInkSetOneLineRecognize];
 }
 
 -(void) setPhoneLayout {
@@ -686,11 +697,17 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 -(void) setKanaLayout {
     NSLog(@"Keyboard-setKanaLayout");
     NSArray *keys = nil;
-    if(_leftFuncOn == 1) {
+    if(_leftFuncOn) {
         keys = @[
                  @[@[@"1"], @[@"2"], @[@"3"], @[@"4"], @[@"5"], @[@"6"], @[@"7"], @[@"8"], @[@"9"], @[@"0"]/*, @[@"Del"]*/],
                  @[@[@"@"], @[@"#"], @[@"¥"], @[@"-"], @[@"*"], @[@"("], @[@")"], @[@"「"], @[@"」"]/*, @[@"Return"]*/],
                  @[/*@[@"Shift"],*/ @[@"^_^"], @[@"%"], @[@"〜"], @[@"…"], @[@"/"], @[@";"], @[@":"], @[@"！", @"、"], @[@"？", @"。"]]
+                 ];
+    } else if(_rightFuncOn){
+        keys = @[
+                 @[@[@"q"], @[@"w"], @[@"e"], @[@"r"], @[@"t"], @[@"y"], @[@"u"], @[@"i"], @[@"o"], @[@"p"]/*, @[@"Del"]*/],
+                 @[@[@"a"], @[@"s"], @[@"d"], @[@"f"], @[@"g"], @[@"h"], @[@"j"], @[@"k"], @[@"l"]/*, @[@"Return"]*/],
+                 @[/*@[@"Shift"],*/ @[@"z"], @[@"x"], @[@"c"], @[@"v"], @[@"b"], @[@"n"], @[@"m"], @[@"!", @","], @[@"?", @"."], @[@"-"]]
                  ];
     } else {
         keys = @[
@@ -806,6 +823,11 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 }
 
 #pragma mark - Button Event
+-(void) handleHandwritingClearButton:(id) sender {
+    [_drawView clearPoints];
+    [_handwritingController clear];
+}
+
 -(void) handleQwertButton:(id)sender {
     [self setInputMode:KeyboardInputModeKana];
 }
