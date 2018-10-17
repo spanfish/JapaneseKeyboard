@@ -19,6 +19,7 @@
 - (void)buttonDidTouchDown:(KeyboardButton *)button;
 - (void)buttonDidTouchUp:(KeyboardButton *)button;
 - (void)buttonDidTouchDownRepeat:(KeyboardButton *)button;
+-(void) keyboardViewDidDeterminedHeight:(CGFloat) hight layout:(KeyboardView *) keyboardView;
 @end
 
 @protocol KeyboardViewDelegate <NSObject>

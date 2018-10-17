@@ -10,7 +10,11 @@
 #import <UIKit/UIKit.h>
 
 IB_DESIGNABLE
-@interface KeyboardButton : UIButton
+@interface KeyboardButton : UIButton {
+    
+}
 
++(id) buttonWithType:(UIButtonType) type insect:(CGSize) size;
 @property (nonatomic) NSUInteger keyIndex;
+@property (nonatomic) CGSize inset;
 @end

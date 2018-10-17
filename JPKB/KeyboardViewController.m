@@ -102,6 +102,7 @@
     
     [super updateViewConstraints];
 }
+
 #pragma mark -
 
 - (void)textWillChange:(id<UITextInput>)textInput {
@@ -181,6 +182,10 @@
     }
 }
 #pragma mark -
+-(void) keyboardViewDidDeterminedHeight:(CGFloat) height layout:(KeyboardView *) keyboardView {
+    self.heightConstraint.constant = height;
+    [self.inputView layoutIfNeeded];
+}
 
 - (void)keyboardViewShouldAdvanceToNextInputMode:(KeyboardView *)keyboardView
 {

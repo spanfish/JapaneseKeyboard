@@ -26,6 +26,8 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     BOOL _rightFuncOn;
     DrawView *_drawView;
     HandWritingController *_handwritingController;
+    CGFloat _keyboardWidth;
+    NSTimer *_timer;
 }
 
 //@property (nonatomic) HandWritingController *handWritingController;
@@ -108,19 +110,23 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 
 -(void) layoutSubviews {
     [super layoutSubviews];
+    NSLog(@"layoutSubviews:%@", NSStringFromCGRect(self.frame));
     
     NSLog(@"textLabel:%@%@", NSStringFromCGRect(self.markedTextLabel.frame), NSStringFromCGRect(self.candidateBar.frame));
     self.markedTextLabel.frame = CGRectMake(0, 0, self.frame.size.width, MarkedTextLabelHeightDefault);
     self.candidateBar.frame = CGRectMake(0, MarkedTextLabelHeightDefault, self.frame.size.width, AccessoryViewHeightDefault - MarkedTextLabelHeightDefault);
     NSLog(@"textLabel:%@%@", NSStringFromCGRect(self.markedTextLabel.frame), NSStringFromCGRect(self.candidateBar.frame));
     
-//    CGFloat scale = [[UIScreen mainScreen] scale];
-//    self.borderTop.frame = CGRectMake(0, 0, self.frame.size.width, 1/scale);
-//
-//    self.borderBottom.frame = CGRectMake(0, MarkedTextLabelHeightDefault - 1/scale, self.frame.size.width, 1/scale);
+    if(self.bounds.size.width != _keyboardWidth) {
+        [self setInputMode:self.inputMode];
+    }
 }
+
 #pragma mark -
 -(void) removeAllButtons {
+    if(_drawView.superview) {
+        [_drawView removeFromSuperview];
+    }
     for (UIView *view in self.subviews) {
         if([view isKindOfClass:[KeyboardButton class]]) {
             [view removeFromSuperview];
@@ -131,6 +137,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 - (void)setInputMode:(KeyboardInputMode)inputMode {
     _inputMode = inputMode;
     [self removeAllButtons];
+    _keyboardWidth = self.bounds.size.width;
     switch (inputMode) {
         case KeyboardInputModeKana:
             [self setKanaLayout];
@@ -266,18 +273,6 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
 //    }
 //}
 
-//- (void)buttonDidTouchDownRepeat:(KeyboardButton *)button
-//{
-//    KeyboardButtonIndex keyIndex = button.keyIndex;
-//    switch (keyIndex) {
-//        case KeyboardButtonIndexShift:
-//            [self handleShiftLock];
-//            break;
-//
-//        default:
-//            break;
-//    }
-//}
 //
 //-(void) handleHandWritingClear {
 ////    [[HandWritingController controller] clear];
@@ -491,6 +486,11 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     [button setFrame:CGRectMake(self.frame.size.width - width, top, width, height)];
     [self addSubview: button];
     [button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+    [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpOutside];
+    [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchCancel];
+    
+    [button addTarget:self action:@selector(delButtonDidTouchDownRepeat:) forControlEvents:UIControlEventTouchDownRepeat];
     
     //Handwriting clear button
     top += height;
@@ -508,6 +508,8 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     _handwritingController.delegate = self;
     _drawView.controller = _handwritingController;
     [_handwritingController HandsInkSetOneLineRecognize];
+    
+    [self.delegate keyboardViewDidDeterminedHeight:height * 4 + AccessoryViewHeightDefault layout:self];
 }
 
 -(void) setPhoneLayout {
@@ -530,7 +532,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     CGFloat width = MIN(MAX(w/numOfCols, 65), 75);
     CGFloat height = width;
     CGFloat leftMargin = (w - width * numOfCols) / 2;
-    CGFloat top = AccessoryViewHeightDefault;
+    CGFloat top = 0;
     
     NSUInteger row = 0;
     for(NSArray *keyRow in keys) {
@@ -558,7 +560,11 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     left += width * 2;
     
     KeyboardButton *delButton = [self darkgrayButtonWithTitle:@"" image: [UIImage imageNamed:@"del"]];
-    [delButton addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchUpInside];
+    [delButton addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+    [delButton addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpInside];
+    [delButton addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpOutside];
+    [delButton addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchCancel];
+    
     [delButton setFrame:CGRectMake(left, top, width, height)];
     [self addSubview: delButton];
     
@@ -571,6 +577,8 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
         frame.size.width *= 2;
         delButton.frame = frame;
     }
+    
+    [self.delegate keyboardViewDidDeterminedHeight:height * 4 layout:self];
 }
 
 -(void) setEmailLayout {
@@ -594,7 +602,7 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     CGFloat width = MIN(MAX(w/11, 65), 85);
     CGFloat height = width;
     CGFloat leftMargin = (w - width * 11) / 2;
-    CGFloat top = AccessoryViewHeightDefault;
+    CGFloat top = 0;
     
     NSUInteger row = 0;
     for(NSArray *keyRow in keys) {
@@ -643,6 +651,9 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
             [button setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
             [self addSubview: button];
             [button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+            [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpOutside];
+            [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchCancel];
         } else if(row == 1) {
             self.returnButton = [self darkgrayButtonWithTitle:@"開く" image: nil];
             [self.returnButton setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
@@ -692,6 +703,8 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     [self.spaceButton setFrame:CGRectMake(CGRectGetMaxX(self.nextIMEButton.frame), top, CGRectGetMinX(self.rightFuncButton.frame) - CGRectGetMaxX(self.nextIMEButton.frame), height)];
     [self.spaceButton addTarget:self action:@selector(handRightFuncButton:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview: self.spaceButton];
+    
+    [self.delegate keyboardViewDidDeterminedHeight:height * 4 layout:self];
 }
 
 -(void) setKanaLayout {
@@ -718,9 +731,9 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     }
     
     CGFloat w = [UIScreen mainScreen].bounds.size.width;
-    CGFloat width = MIN(MAX(w/11, 65), 85);
+    CGFloat width = MIN(MAX(w/11, 65), 90);
     CGFloat height = width;
-    CGFloat leftMargin = (w - width * 11) / 2;
+    CGFloat leftMargin = (w - width * 11) / 2;    
     CGFloat top = AccessoryViewHeightDefault;
     
     NSUInteger row = 0;
@@ -765,6 +778,10 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
             [button setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
             [self addSubview: button];
             [button addTarget:self action:@selector(handleDeleteButton:) forControlEvents:UIControlEventTouchDown];
+            [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchUpOutside];
+            [button addTarget:self action:@selector(handleDeleteComp:) forControlEvents:UIControlEventTouchCancel];
+            
         } else if(row == 1) {
             self.returnButton = [self darkgrayButtonWithTitle:@"改行" image: nil];
             [self.returnButton setFrame:CGRectMake(left, top, w - leftMargin - left, height)];
@@ -819,7 +836,8 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     [self.spaceButton setFrame:CGRectMake(CGRectGetMaxX(self.nextIMEButton.frame), top, CGRectGetMinX(self.rightFuncButton.frame) - CGRectGetMaxX(self.nextIMEButton.frame), height)];
     [self.spaceButton addTarget:self action:@selector(handRightFuncButton:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview: self.spaceButton];
-    
+ 
+    [self.delegate keyboardViewDidDeterminedHeight:height * 4 + AccessoryViewHeightDefault layout:self];
 }
 
 #pragma mark - Button Event
@@ -874,7 +892,21 @@ const CGFloat MarkedTextLabelHeightDefault = 16.0;
     [self setInputMode:self.inputMode];
 }
 
+- (void)delButtonDidTouchDownRepeat:(KeyboardButton *)button {
+//    [self handleDeleteButton:button];
+}
+
+-(void) handleDeleteComp:(id) sender {
+    [_timer invalidate];
+    _timer = nil;
+}
+
 -(void) handleDeleteButton:(id)sender {
+    [self handleDelete];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(handleDelete) userInfo:nil repeats:YES];
+}
+
+-(void) handleDelete {
     NSString *markedText = self.markedText;
     NSUInteger length = markedText.length;
     if (length == 0) {
